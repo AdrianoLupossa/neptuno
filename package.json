@@ -3,6 +3,20 @@
   "version": "0.37.0",
   "description": "A CSS library to create UI components",
   "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "electron": "^1.8.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-terser": "^1.0.1",
+    "gulp-uglify": "^3.0.0"
+  },
   "directories": {
     "doc": "docs"
   },
@@ -15,12 +29,14 @@
   },
   "keywords": [
     "CSS",
-    "framework",
+    "css framework",
     "ui",
     "components",
     "neptuno",
     "css",
-    "neptune"
+    "neptune",
+    "css library",
+    "adriano lupossa"
   ],
   "author": "Adriano Lupossa <adrianolupossa@gmail.com> (https://adrianolupossa.com/)",
   "license": "MIT",
