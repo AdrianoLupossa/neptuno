@@ -14,7 +14,7 @@ nav.menu
 	.icon-bar
 	input[type="checkbox"]
 		display none
-	&.mobile
+	&.responsive
 		.icon-bar > span
 			display block
 			background-color #fff
@@ -90,7 +90,7 @@ nav.menu
 	@media screen and (min-width $screen-sm-max)
 		text-align center
 		
-	&:not(.mobile)
+	&:not(.responsive)
 		// text-align center
 		& ul.menu-items
 			display inline
@@ -110,6 +110,8 @@ ul.menu-items
 			display inline
 			margin-right 5%
 			padding 10px
+			&:hover a
+				// color $white
 		@media screen and (max-width $screen-xs-max)
 			line-height 1.7			
 		&:last-child
@@ -134,7 +136,7 @@ ul.menu-items
 
 // SIDENAV MOBILE ONLY
 					
-nav.menu.mobile.sidenav
+nav.menu.responsive.sidenav
 	@media (max-width $screen-sm)
 		input[type="checkbox"]:not(:checked) ~ ul.menu-items
 			margin-left 0
