@@ -7,7 +7,7 @@
 	padding 0.9em 0.8em 0.8em 0.8em
 	border 1px solid #ccc
 	borderRadius(3px)
-	boxShadow(1px 1px 10px #ccc)
+	boxShadow(0 5px 10px rgba(153, 153, 153, 0.349019607843137))
 	transition(opacity 0.1s ease-in)
 	&:not(.is-disabled):not([disabled])
 		&:hover
@@ -31,6 +31,18 @@ a.btn
 	line-height 35px
 	position relative
 	top 1.3px
+	
+.link
+.btn.link
+	color $green
+	cursor pointer
+	border none
+	display inline
+	background none
+	outline none
+	box-shadow none
+	&:hover
+		color #00796b
 			
 .btn:not(.is-disabled):not([disabled])
 	cursor pointer
