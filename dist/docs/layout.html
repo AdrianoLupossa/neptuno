@@ -87,11 +87,6 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam saepe deleniti nihil, possimus alias delectus tempora inventore dolorum molestias officiis architecto aut consectetur minima distinctio soluta dolor ipsa nulla atque.
 				</div>
 
-					<p>
-						<a href="helpers.html#flexclass">Flexbox Class</a>
-						<a href="#" onclick="alert('Sorry but we don\'t have Grids!')">- Grids</a>
-					</p>
-
 				<div class="navmenu">
 					<h2>Navmenu</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis quos enim possimus sit quidem, ut error rerum, inventore, corrupti reprehenderit? Vel ipsam est tempore. Nulla, cum! Quos, temporibus reiciendis!</p>
@@ -180,6 +175,47 @@
 &lt;/nav&gt;</code></pre>
 
 					</div>
+
+					<div class="custom-navmenu">
+						<h2>Customize</h2>
+						<p>You can customize navmenu using this selectors.</p>
+<pre class="language-css"><code>nav.menu {
+	background-color: #f5f5f5;
+	--gray: #909090;
+}
+
+ul.menu-items li.active {
+	background-color: var(--gray);
+}
+
+ul.menu-items li:not(.active) > a {
+	color: #000;
+}
+
+ul.menu-items li:hover,
+ul.menu-items li:hover a {
+	background-color: var(--gray);
+}
+
+ul.menu-items li:hover a {
+	color: #fff;
+}
+</code></pre>			<p>Example: </p>
+						<nav class="menu mobile shadow">
+							<input type="checkbox" id="target4">
+							<label for="target4" class="icon-bar">
+								<span></span>
+							</label>
+							<ul class="menu-items">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="dist/_components.html">Components</a></li>
+								<li><a href="dist/_interface.html">Interface</a></li>
+								<li><a href="dist/_forms.html">Forms</a></li>
+								<li><a href="dist/docs/index.html">Docs</a></li>
+							</ul>
+						</nav>
+					</div>
+
 				</div>
 
 				<div class="layout-banner">

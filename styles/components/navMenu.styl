@@ -91,45 +91,45 @@ nav.menu
 		text-align center
 		
 	&:not(.mobile)
-		text-align center
+		// text-align center
 		& ul.menu-items
 			display inline
 			li
 				display inline
 				margin-right 5%
 				padding 8px 10px 10px 10px
-	ul.menu-items
-		list-style none
-		@media screen and (min-width 769px) 
-		//> 768
+ul.menu-items
+	list-style none
+	@media screen and (min-width 769px) 
+	//> 768
+		display inline
+	li
+		border-radius(5px)
+		cursor pointer
+		@media screen and (min-width 769px)
 			display inline
-		li
-			border-radius(5px)
-			cursor pointer
-			@media screen and (min-width 769px)
-				display inline
-				margin-right 5%
-				padding 10px
-			@media screen and (max-width $screen-xs-max)
-				line-height 1.7			
-			&:last-child
-				margin 0
-			&:hover
-				background-color $transparent
-				@media screen and (min-width $screen-sm)
-					background-color rgba($dark-green, 0.7)	
-			&.active
-				background-color $transparent
-				@media screen and (min-width $screen-sm)
-					background-color rgba($dark-green, 0.7)	
-					
-			a
-				color $white
-				@media screen and (min-width $screen-sm)
-					padding 10px
-				@media screen and (max-width $screen-sm)
-					&:hover
-						color #ccc
+			margin-right 5%
+			padding 10px
+		@media screen and (max-width $screen-xs-max)
+			line-height 1.7			
+		&:last-child
+			margin 0
+		&:hover
+			background-color $transparent
+			@media screen and (min-width $screen-sm)
+				background-color rgba($dark-green, 0.7)	
+		&.active
+			background-color $transparent
+			@media screen and (min-width $screen-sm)
+				background-color rgba($dark-green, 0.7)	
+				
+		a
+			color $white
+			@media screen and (min-width $screen-sm)
+				padding 8px 10px 10px 10px
+			@media screen and (max-width $screen-sm)
+				&:hover
+					color #ccc
 						
 
 // SIDENAV MOBILE ONLY

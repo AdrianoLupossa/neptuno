@@ -111,6 +111,29 @@ h2 {
 }
 
 
+nav.menu {
+	background-color: #f5f5f5;
+	--gray: #909090;
+}
+
+ul.menu-items li.active {
+	background-color: var(--gray);
+}
+
+ul.menu-items li:not(.active) > a {
+	color: #000;
+}
+
+ul.menu-items li:hover,
+ul.menu-items li:hover a {
+	background-color: var(--gray);
+}
+
+ul.menu-items li:hover a {
+	color: #fff;
+}
+
+
 /* DOCS/BUTTON RULES */
 
 .small-button,
