@@ -289,6 +289,39 @@
 							<li><code class="token keyword">content-stretch</code>: lines stretch to take up the remaining space.</li>
 						</ul>
 					</div>
+							
+					<div class="flex-items">
+						<h2>Flex items</h2>
+						<h3>Properties for the Children (flex items).</h3>
+						<div class="order">
+							<h2>Order</h2>
+							<p><code class="token keyword">class="order-number"</code>. By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.</p>
+							<img src="../assets/img/order.svg" class="box flex-image" style="height: 400px;" alt="CSS Flexbox layout: Order">
+							<p>Example:</p>
+							<div class="container box row">
+								<article class="item order-4">Item 1</article>
+								<article class="item order-3">Item 2</article>
+								<article class="item order-2">Item 3</article>
+								<article class="item order-1">Item 4</article>
+							</div>
+<p><pre class="language-markup"><code>&lt;div class="container row wrap"&gt;
+	&lt;article class="item order-4" &gt;Item 1&lt;/article&gt;
+	&lt;article class="item order-3" &gt;Item 2&lt;/article&gt;
+	&lt;article class="item order-2" &gt;Item 3&lt;/article&gt;
+	&lt;article class="item order-1" &gt;Item 4&lt;/article&gt;
+&lt;/div&gt;
+</code></pre></p>
+							<h5>Default Classes</h5>
+							<ul class="default-classes">
+								<li><code class="token keyword">order-1...10</code>: Defines the order of flex-items within container.</li>
+							</ul>
+						</div>
+
+						
+
+					</div>
+
+
 
 				</div>
 
