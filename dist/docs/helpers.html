@@ -236,7 +236,7 @@
 
 					<div class="align-items">
 						<h2>Flex-align-items</h2>
-						<p><code class="token keyword">class="middle-align"</code> or <code class="token keyword">class="bottom-align"</code>. This defines the default behaviour for how flex items are laid out along the cross axis on the current line. Think of it as the flex-align version for the cross-axis (perpendicular to the main-axis).</p>
+						<p><code class="token keyword">class="middle-align"</code> or <code class="token keyword">class="bottom-align"</code>. This defines the default behaviour for how flex items are laid out along the cross axis on the current line. Think of it as the flex-alignment version for the cross-axis (perpendicular to the main-axis).</p>
 						<p>Example:</p>
 						<div class="container box row middle-align" style="height: 300px;">
 							<article class="item">Item 1</article>
@@ -260,7 +260,35 @@
 							<li><code class="token keyword">stretch or stretch-items</code>: Stretch to fill the container (still respect min-width/max-width)</li>
 						</ul>
 					</div>
-					
+
+					<div class="flex-align-content">
+						<h2>Flex-align-content</h2>
+						<p>This aligns a flex container's lines within when there is extra space in the cross-axis, similar to how flex-alignment aligns individual items within the main-axis.</p>
+						<p><b>Note: </b>this property has no effect when there is only one line of flex items.</p>
+						<p>Example:</p>
+						<div class="container box row wrap content-top" style="height: 400px;">
+							<article class="item">Item 1</article>
+							<article class="item">Item 2</article>
+							<article class="item">Item 3</article>
+							<article class="item">Item 4</article>
+						</div>
+<p><pre class="language-markup"><code>&lt;div class="container row wrap content-top" style="height: 400px;"&gt;
+	&lt;article class="item" &gt;Item 1&lt;/article&gt;
+	&lt;article class="item" &gt;Item 2&lt;/article&gt;
+	&lt;article class="item" &gt;Item 3&lt;/article&gt;
+	&lt;article class="item" &gt;Item 4&lt;/article&gt;
+&lt;/div&gt;
+</code></pre></p>
+						<h5>Default Classes</h5>
+						<ul class="default-classes">
+							<li><code class="token keyword">content-top or col-top</code>: lines packed to the start of the container.</li>
+							<li><code class="token keyword">content-bottom</code>: lines packed to the end of the container.</li>
+							<li><code class="token keyword">content-center</code>: lines packed to the center of the container.</li>
+							<li><code class="token keyword">content-space-between</code>: lines evenly distributed; the first line is at the start of the container while the last one is at the end.</li>
+							<li><code class="token keyword">content-space-around</code>: lines evenly distributed with equal space around each line.</li>
+							<li><code class="token keyword">content-stretch</code>: lines stretch to take up the remaining space.</li>
+						</ul>
+					</div>
 
 				</div>
 
