@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../css/neptuno.css">
+	<title>Login Page Example</title>
+</head>
+<body>
+	<div id="login-page" class="center-align middle-align column" style="height: 100vh;">
+		<img src="../assets/icons/icon.png" width="100" alt="Logo do neptuno">
+		<div class="card container shadow-0" style="width: 350px; padding: 20px;">
+			<form class="form" action="login-example.html">
+				<h3>Login to your account</h3>
+				<div class="group block">
+					<label for="email">Email address</label>
+					<input type="email" class="highlight" placeholder="Enter email" />
+				</div>
+				<div class="group block wrap space-between middle-align">
+					<label for="password">Password</label>
+					<a href="#" class="font-pt-sans">I forgot password</a>
+					<input type="password" class="highlight" id="password" placeholder="Password" />
+				</div>
+				<div class="group">
+					<label for="keepme" class="switch">
+						Remember me
+						<input type="checkbox" id="keepme" />
+						<span class="pull-right"></span>
+					</label>
+				</div>
+				<button class="btn primary block">Sign in</button>
+			</form>
+		</div>
+		<p>Don't have account yet? <a href="#">Sign up</a></p>
+	</div>
+</body>
+</html>
