@@ -1,9 +1,31 @@
 @charset 'utf-8';
 
+.doc-body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .doc-content {
 	padding: 40px;
-	width: 70%;
-	margin: 20px 30px 0 20px;
+	width: 100%;
+	order: 2;
+}
+
+.doc-links {
+	order: 1;
+	flex-grow: 1;
+}
+
+@media (min-width: 780px) {
+	.doc-content {
+		margin: 20px 30px 0 20px;
+		width: 70%;
+		order: 1;
+	}
+
+	.doc-links {
+		flex-grow: 0;
+	}
 }
 
 #btn-source-code {
@@ -216,5 +238,9 @@ h2 {
 
 .customize-library li:not(:last-child) {
 	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.why-use ul li:not(:last-child) {
 	margin-bottom: 10px;
 }
