@@ -208,3 +208,13 @@ h2 {
 .default-classes li {
 	margin: 10px;
 }
+
+.customize-library ul {
+	list-style: none;
+	padding: 0;
+}
+
+.customize-library li:not(:last-child) {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
