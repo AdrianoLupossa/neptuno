@@ -1,4 +1,4 @@
-# Project Title
+# Neptuno - The CSS Library
 
 One Paragraph of project description goes here
 

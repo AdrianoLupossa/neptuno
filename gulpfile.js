@@ -1,6 +1,5 @@
 var gulp = require("gulp"),
 	stylus = require("gulp-stylus"),
-	minifycss = require("gulp-minify-css"),
 	autoprefixer = require("gulp-autoprefixer"),
 	uglify = require("gulp-uglify"),
 	browserSync = require("browser-sync"),
@@ -17,7 +16,9 @@ var target = {
 gulp.task("styles", function(){
 	gulp.src(target.stylus_src)
 	.pipe(plumber())
-	.pipe(stylus("compressed"))
+	.pipe(stylus({
+		compress: true
+	}))
 	.pipe(autoprefixer(
 		'last 2 version',
 		'> 1%',
@@ -26,7 +27,6 @@ gulp.task("styles", function(){
 		'ios 6',
 		'android 4'
 	))
-	.pipe(minifycss())
 	.pipe(gulp.dest(target.cssOutput));
 });
 
