@@ -233,6 +233,35 @@
 							<li><code class="token keyword">space-evenly</code>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
 						</ul>
 					</div>
+
+					<div class="align-items">
+						<h2>Flex-align-items</h2>
+						<p><code class="token keyword">class="middle-align"</code> or <code class="token keyword">class="bottom-align"</code>. This defines the default behaviour for how flex items are laid out along the cross axis on the current line. Think of it as the flex-align version for the cross-axis (perpendicular to the main-axis).</p>
+						<p>Example:</p>
+						<div class="container box row middle-align" style="height: 300px;">
+							<article class="item">Item 1</article>
+							<article class="item">Item 2</article>
+							<article class="item">Item 3</article>
+							<article class="item">Item 4</article>
+						</div>
+<p><pre class="language-markup"><code>&lt;div class="container row middle-align" style="height: 300px;"&gt;
+	&lt;article class="item" &gt;Item 1&lt;/article&gt;
+	&lt;article class="item" &gt;Item 2&lt;/article&gt;
+	&lt;article class="item" &gt;Item 3&lt;/article&gt;
+	&lt;article class="item" &gt;Item 4&lt;/article&gt;
+&lt;/div&gt;
+</code></pre></p>
+						<h5>Default Classes</h5>
+						<ul class="default-classes">
+							<li><code class="token keyword">top-align or align-items-start</code>: Cross-start margin edge of the items is placed on the cross-start line.</li>
+							<li><code class="token keyword">middle-align or align-items-center</code>: Items are centered in the cross-axis.</li>
+							<li><code class="token keyword">bottom-align or align-items-end</code>: Cross-end margin edge of the items is placed on the cross-end line.</li>
+							<li><code class="token keyword">baseline or baseline-items</code>: Items are aligned such as their baselines align.</li>
+							<li><code class="token keyword">stretch or stretch-items</code>: Stretch to fill the container (still respect min-width/max-width)</li>
+						</ul>
+					</div>
+					
+
 				</div>
 
 				
