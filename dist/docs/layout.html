@@ -76,7 +76,7 @@
 	<span class="token comment" spellcheck="true">&lt;!-- Content here --&gt;</span>
  &lt;/div&gt;
 </code></pre>
-				</p>
+					</p>
 				</div>
 
 				
@@ -91,6 +91,97 @@
 						<a href="helpers.html#flexclass">Flexbox Class</a>
 						<a href="#" onclick="alert('Sorry but we don\'t have Grids!')">- Grids</a>
 					</p>
+
+				<div class="navmenu">
+					<h2>Navmenu</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis quos enim possimus sit quidem, ut error rerum, inventore, corrupti reprehenderit? Vel ipsam est tempore. Nulla, cum! Quos, temporibus reiciendis!</p>
+					<nav class="menu">
+						<label for="target" class="icon-bar">
+							<span></span>
+						</label>
+						<input type="checkbox" id="target">
+						<ul class="menu-items">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="dist/_components.html">Components</a></li>
+							<li><a href="dist/_interface.html">Interface</a></li>
+							<li><a href="dist/_forms.html">Forms</a></li>
+							<li><a href="dist/docs/index.html">Docs</a></li>
+						</ul>
+					</nav>
+					<p>
+<pre class="language-markup"><code>&lt;nav class="menu"&gt;
+	&lt;label for="target" class="icon-bar"&gt;
+		&lt;span&gt;&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;input type="checkbox" id="target"&gt;
+	&lt;ul class="menu-items"&gt;
+		&lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Components&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Interface&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Docs&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+					</p>
+					<div class="navmenu-shadow">
+						<h3>Shadow</h3>
+						<p>Add <code class="token keyword">class="shadow-1"</code> to add shadow in navmenu.</p>
+						<nav class="menu shadow-1">
+							<label for="target2" class="icon-bar">
+								<span></span>
+							</label>
+							<input type="checkbox" id="target2">
+							<ul class="menu-items">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="dist/_components.html">Components</a></li>
+								<li><a href="dist/_interface.html">Interface</a></li>
+								<li><a href="dist/_forms.html">Forms</a></li>
+								<li><a href="dist/docs/index.html">Docs</a></li>
+							</ul>
+						</nav>
+<pre class="language-markup"><code>&lt;nav class="menu shadow-1"&gt;
+	<span class="token comment" spellcheck="true">...</span>
+&lt;/nav&gt;
+</code></pre>						
+					</div>
+
+					<div class="navmenu-mobile">
+						<h3>Mobile</h3>
+						<p>add <code class="token keyword">class="mobile"</code> to make a responsive menu.</p>
+						<nav class="menu mobile">
+							<input type="checkbox" id="target3">
+							<label for="target3" class="icon-bar">
+								<span></span>
+							</label>
+							<ul class="menu-items">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="dist/_components.html">Components</a></li>
+								<li><a href="dist/_interface.html">Interface</a></li>
+								<li><a href="dist/_forms.html">Forms</a></li>
+								<li><a href="dist/docs/index.html">Docs</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="sidenav">
+						<h3>Sidenav</h3>
+						<p>Add <code class="token keyword">class="sidenav"</code> to make a sidenav menu.</p>
+<pre class="language-markup"><code>&lt;nav class="menu mobile sidenav"&gt;
+	&lt;input type="checkbox" id="target"&gt;
+	&lt;label for="target" class="icon-bar"&gt;
+		&lt;span&gt;&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;ul class="menu-items"&gt;
+		&lt;li class="active"&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+					</div>
+
+				</div>
 				
 				<h2>Issues</h2>
 				<p>Bug or features request? <a href="http://github.com/adrianolupossa/neptuno/issues/new" target="_blank">Open an Issue</a></p>
