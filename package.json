@@ -1,6 +1,6 @@
 {
   "name": "neptuno",
-  "version": "1.0.0",
+  "version": "0.37.0",
   "description": "A CSS library to create UI components",
   "main": "index.js",
   "directories": {
