@@ -9,8 +9,10 @@
 	
 .alert
 	borderRadius(4px)
+	transition(0.5s all linear)
+	will-change opacity
 	
-alertErrors(bgColor, color)
+alert(bgColor, color)
 	display block
 	min-height 0
 	padding 17px 15px 15px 15px
@@ -18,12 +20,12 @@ alertErrors(bgColor, color)
 	background-color rgba(bgColor, 0.3);
 	color color
 
-.alert.success
-	alertErrors($green, $dark-green)
-.alert.danger
-	alertErrors($red, darkred)
-.alert.warning
-	alertErrors($orange, #7d6608)
+.alert:not(.flat).success
+	alert($green, $dark-green)
+.alert:not(.flat).danger
+	alert($red, darkred)
+.alert:not(.flat).warning
+	alert($orange, #7d6608)
 	
 .alert.floating
 	position fixed
@@ -47,6 +49,35 @@ alertErrors(bgColor, color)
 .alert.block
 	width 100%
 	
+flatColor($color)
+	border-color $color
+	.title
+		color $color
+		
+
+.alert.flat
+	width 23em
+	min-height 100px
+	display block
+	border-left 5px solid $black
+	padding 18px
+	background-color #fbfbfb
+	borderRadius(4px)
+	boxShadow(5px 5px 10px rgba(153, 153, 153, 0.349019607843137))
+	.title
+		color $black
+		margin 0
+		padding 0
+		
+.alert.flat.success
+	flatColor($green)
+	
+.alert.flat.warning
+	flatColor($dark-orange)
+	
+.alert.flat.danger
+	flatColor($red)
+	
 .alert > .close
 	float right
 	color #777
@@ -61,7 +92,8 @@ alertErrors(bgColor, color)
 		cursor pointer
 		
 .alert:target
-	display none
+	opacity 0
+	z-index -100
 	
 .alert .title
 	display inline
@@ -74,4 +106,5 @@ alertErrors(bgColor, color)
 		display block
 		width 100%
 	.alert.floating
+		z-index 3
 		position static

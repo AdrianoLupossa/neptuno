@@ -10,15 +10,17 @@
 </head>
 <body>
 	<header>
-		<nav class="menu shadow-1 mobile">
-			<label class="icon-bar" for="checkbox">☰</label>
+		<nav class="menu shadow-1 responsive">
 			<input type="checkbox" id="checkbox">
+			<label for="checkbox" class="icon-bar has-effect">
+				<span></span>
+			</label>
 			<ul class="menu-items">
-				<li><a href="../index.html" target="_self">Home</a></li>
-				<li class="active"><a href="_components.html" target="_self">Components</a></li>
-				<li><a href="_interface.html" target="_self">Interface</a></li>
-				<li><a href="_forms.html" target="_self">Forms</a></li>
-				<li><a href="docs/index.html" target="_self">Docs</a></li>
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="_components.html">Components</a></li>
+				<li><a href="_interface.html">Interface</a></li>
+				<li><a href="_forms.html">Forms</a></li>
+				<li><a href="docs/index.html">Docs</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -36,154 +38,35 @@
 				<a href="#customize" class="btn has-effect">Customize</a>
 			</div>
 		</div>
-		<div class="card-group mobile">
-			<section class="card container">
-				<h3>Form buttons</h3>
-					
-				<div class="group">
-					<button class="btn has-effect">Abrir</button>
-					<button class="btn has-effect secondary">Alterar</button>
-					<button class="btn is-disabled has-effect secondary">Button</button>
-					<button class="btn primary has-effect">Registar</button>
-					<button class="btn warning has-effect">Warning</button>
-					<button class="btn inverse has-effect">Reverter</button>	
-				</div>
-				<div class="group">
-					<h4>Dropdown</h4>
-					<label for="countries" class="btn dropdown">
-						Countries
-						<input type="checkbox" id="countries">
-						<ul>
-							<li class="item"><a href="#">Angola</a></li>
-							<li class="item"><a href="#">South Africa</a></li>
-							<li class="divider"></li>
-							<li class="item"><a href="#">Brasil</a></li>
-							<li class="item"><a href="#">USA</a></li>
-						</ul>
-					</label>
-				</div>
-				<div class="group">
-					<h4>Touch Button</h4>
-					<button class="btn touch has-effect shadow">SOMETHING</button>
-				</div>
-
-
-			</section>
+		<div class="card-group responsive">
 
 			<section class="card form">
-				<div class="group content">
-					<div class="group">
-						<span>Errors</span>
+				<h1 class="title">Registo de Clientes</h1>
+				<div class="container">
+					<div class="group block">
+						<label for="client-name">Nome do cliente</label>
+						<input type="text" id="client-name" class="highlight" value="Malaquias Gonçalves" />
 					</div>
-					<p class='text-error'>
-						Something is Wrong :(
-					</p>
-					<p class='text-success'>
-						Welcome Mr.Lupossa
-					</p>
-					<p class="text-warning">
-						Updating 20%, don't turn off your computer
-					</p>
-				</div>
-				<div class="group content">
-					<div class="alert success text-center">
-						<i class="close">X</i>
-						Everything is okay :)
+					<div class="group block">
+						<label for="client-phone">Telefone</label>
+						<input type="telephone" placeholder="Ex. 912093344" id="client-phone" class="highlight">
+						<p class="text-error text-center">Por favor digite o número de telefone do cliente.</p>
 					</div>
-					<div class="alert error">
-						Something is Wrong, please try again :(
-					</div>
-					<div class="alert warning">
-						A Bug is comming!!!
-					</div>
+					<button class="btn primary block">Registar cliente</button>
 				</div>
 			</section>
 
-			<section class="card content">
-				<div class="group">
-					<p>Preloaders</p>
-					<div class="group">
-						<p>Progress Bar</p>
-						<div class="progress">
-					      <div class="indeterminate" style="width: 70%"></div>
-					  	</div>
-					</div>
-					<span class="preloader slow sm"></span>
-					<span class="preloader"></span>
-					<span class="preloader fast lg"></span>
-				</div>
-				<div class="group">
-					<p>Colors</p>
-					<span class="preloader success"></span>
-					<span class="preloader warning"></span>
-					<span class="preloader danger"></span>
-				</div>
+			<section class="card containern">
+				<div class="flat alert danger">Error</div>
+			</section>
+
+			<section class="card">
+				
 			</section>
 			
 		</div>
 
-		<div class="card" id="card-carousel" style="width: 100%;">
-			<section class="carousel content">
-				<h1>Lightbox</h1>
-				<ul class="min">
-					<li><a href="#img1"><img src="assets/img/adrian-infernus-281832-500.jpg"></a></li>
-					<li><a href="#img2"><img src="assets/img/ales-krivec-107499-500.jpg"></a></li>
-					<li><a href="#img3"><img src="assets/img/christian-joudrey-96208-500.jpg"></a></li>
-					<li><a href="#img3"><img src="assets/img/christian-joudrey-96208-500.jpg"></a></li>
-				</ul>
-				<div class="picture" id="img1">
-					<figure>
-						<a href="#img4" class="btn-prev"></a>
-						<a href="#card-carousel" class="btn-close"></a>
-						<a href="#img2" class="btn-next"></a>
-						
-						<div class="inner">
-							<img src="assets/img/adrian-infernus-281832-500.jpg">
-							<figcaption class="caption">
-								<h1>Uma boa paisagem</h1>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eveniet nam doloribus commodi beatae aspernatur saepe cupiditate provident, qui et omnis aperiam maiores itaque, fugit cum voluptatibus nulla possimus perferendis.
-								</div>
-							</figcaption>
-						</div>
-					</figure>
-				</div>
-				<div class="picture" id="img2">
-					<figure>
-						<a href="#img1" class="btn-prev"></a>
-						<a href="#card-carousel" class="btn-close"></a>
-						<a href="#img3" class="btn-next"></a>
-						<div class="inner">
-							<img src="assets/img/ales-krivec-107499-500.jpg">
-							<figcaption class="caption hover">
-								<h1>Uma outra paisagem</h1>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus dolor tempora vel. Fugit voluptate, autem accusamus dolorum delectus nostrum qui magnam quaerat cum blanditiis cumque, architecto, consequatur hic! Odit!
-								</div>
-							</figcaption>
-						</div>
-					</figure>
-				</div>
-				<div class="picture" id="img3">
-					<figure>
-						<a href="#img2" class="btn-prev"></a>
-						<a href="#card-carousel" class="btn-close"></a>
-						<a href="#img4" class="btn-next"></a>
-						<img src="assets/img/christian-joudrey-96208-500.jpg">
-					</figure>
-				</div>
-				<div class="picture" id="img4">
-					<figure>
-						<a href="#img3" class="btn-prev"></a>
-						<a href="#card-carousel" class="btn-close"></a>
-						<a href="#img1" class="btn-next"></a>
-						<img src="assets/img/david-klaasen-54203-500.jpg">
-					</figure>
-				</div>
-			</section>
-		</div>
-
-		<div id="material-box" style="text-align: center;">
+		<!-- <div id="material-box" style="text-align: center;">
 			<h2>Material Box</h2>
 			<div class="materialbox">
 				<input type="checkbox" id="trigger">
@@ -191,13 +74,7 @@
 					<img src="assets/img/adrian-infernus-281832-500.jpg">
 				</label>
 			</div>
-		</div>
-
-		<div class="alerts hide">
-			<div class="alert error">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, eum quis odit voluptatem voluptatum id, deserunt fugiat ipsum quos nesciunt ullam tempore, expedita aliquid molestias aut cum voluptas asperiores.
-			</div>
-		</div>
+		</div> -->
 
 	</main>
 </body>
