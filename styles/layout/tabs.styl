@@ -26,9 +26,9 @@ active()
 			active()
 		&:target
 			active()
-		&:not(:target)
-			background-color #ddd
-			border none
+		// &:not(:target):not(.active)
+		// 	background-color #ddd
+		// 	border none
 		&:hover:not(:target)
 			background-color #eee
 		&:target a + *
@@ -40,6 +40,8 @@ active()
 				position absolute
 				margin-top 10px
 				display none
+			&:target
+				color red
 	&.primary
 		background-color $green
 		li
@@ -52,4 +54,9 @@ active()
 				background-color $dark-green
 			a
 				color $white
+				
+.tabs-content .tab
+	display none
+	&:target
+		display block
 		
