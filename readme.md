@@ -1,106 +1,87 @@
-# [Bulma](https://bulma.io)
+# Project Title
 
-Bulma is a **modern CSS framework** based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
+One Paragraph of project description goes here
 
-[![npm](https://img.shields.io/npm/v/bulma.svg)](https://www.npmjs.com/package/bulma)
-[![npm](https://img.shields.io/npm/dm/bulma.svg)](https://www.npmjs.com/package/bulma)
-[![Join the chat at https://gitter.im/jgthms/bulma](https://badges.gitter.im/jgthms/bulma.svg)](https://gitter.im/jgthms/bulma)
-[![Build Status](https://travis-ci.org/jgthms/bulma.svg?branch=master)](https://travis-ci.org/jgthms/bulma)
+## Getting Started
 
-<a href="https://bulma.io"><img src="https://raw.githubusercontent.com/jgthms/bulma/master/docs/images/bulma-banner.png" alt="Bulma: a Flexbox CSS framework" style="max-width:100%;" width="600" height="315"></a>
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Quick install
+### Prerequisites
 
-Bulma is constantly in development! Try it out now:
+What things you need to install the software and how to install them
 
-### NPM
-
-```sh
-npm install bulma
+```
+Give examples
 ```
 
-**or**
+### Installing
 
-### Yarn
+A step by step series of examples that tell you how to get a development env running
 
-```sh
-yarn add bulma
+Say what the step will be
+
+```
+Give the example
 ```
 
-### Bower
+And repeat
 
-```sh
-bower install bulma
+```
+until finished
 ```
 
-### Import
-After installation, you can import the CSS file into your project using this snippet:
+End with an example of getting some data out of the system or using it for a little demo
 
-```sh
-import 'bulma/css/bulma.css'
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
 ```
 
-### CDN
+### And coding style tests
 
-[https://cdnjs.com/libraries/bulma](https://cdnjs.com/libraries/bulma)
+Explain what these tests test and why
 
-Feel free to raise an issue or submit a pull request.
+```
+Give an example
+```
 
-## CSS only
+## Deployment
 
-Bulma is a **CSS** framework. As such, the sole output is a single CSS file: [bulma.css](https://github.com/jgthms/bulma/blob/master/css/bulma.css)
+Add additional notes about how to deploy this on a live system
 
-You can either use that file, "out of the box", or download the Sass source files to customize the [variables](https://bulma.io/documentation/overview/variables/).
+## Built With
 
-There is **no** JavaScript included. People generally want to use their own JS implementation (and usually already have one). Bulma can be considered "environment agnostic": it's just the style layer on top of the logic.
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Browser Support
+## Contributing
 
-Bulma uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. According to [Can I use](https://caniuse.com/#feat=flexbox), Bulma is compatible with **recent** versions of:
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-* Chrome
-* Edge
-* Firefox
-* Opera
-* Safari
+## Versioning
 
-Internet Explorer (10+) is only partially supported.
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Documentation
+## Authors
 
-The documentation resides in the [docs](docs) directory, and is built with the Ruby-based [Jekyll](https://jekyllrb.com/) tool.
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-Browse the [online documentation here.](https://bulma.io/documentation/overview/start/)
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-## Related projects
+## License
 
-| Project                                                                            | Description                                                        |
-|------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [Bulma with Attribute Modules](https://github.com/j5bot/bulma-attribute-selectors) | Adds support for attribute-based selectors.                        |
-| [Bulma with Rails](https://github.com/joshuajansen/bulma-rails)                    | Integrates Bulma with the rails asset pipeline                     |
-| [Vue Admin](https://github.com/vue-bulma/vue-admin)                                | Vue Admin framework powered by Bulma                               |
-| [Bulmaswatch](https://github.com/jenil/bulmaswatch)                                | Free themes for Bulma                                              |
-| [Goldfish](https://github.com/Caiyeon/goldfish)                                    | Vault UI with Bulma, Golang, and Vue Admin                         |
-| [ember-bulma](https://github.com/open-tux/ember-bulma)                             | Ember addon providing a collection of UI components for Bulma      |
-| [Bloomer](https://bloomer.js.org)                                                  | A set of React components for Bulma                                |
-| [Re-bulma](https://github.com/bokuweb/re-bulma)                                    | Bulma components build with React                                  |
-| [React-bulma](https://github.com/kulakowka/react-bulma)                            | React.js components for Bulma                                      |
-| [Buefy](https://buefy.github.io)                                                   | Lightweight UI components for Vue.js based on Bulma                |
-| [vue-bulma-components](https://github.com/vouill/vue-bulma-components)             | Bulma components for Vue.js with straightforward syntax            |
-| [BulmaJS](https://github.com/VizuaaLOG/BulmaJS)                                    | Javascript integration for Bulma. Written in ES6 with a data-* API |
-| [Bulma.styl](https://github.com/log1x/bulma.styl)                                  | 1:1 Stylus translation of Bulma                                    |
-| [elm-bulma](https://github.com/surprisetalk/elm-bulma)                             | Bulma + Elm                                                        |
-| [elm-bulma-classes](https://github.com/ahstro/elm-bulma-classes)                   | Bulma classes prepared for usage with Elm                          |
-| [Bulma Customizer](https://bulma-customizer.bstash.io/)                            | Bulma Customizer &#8211; Create your own **bespoke** Bulma build   |
-| [Fulma](https://mangelmaxime.github.io/Fulma/)                                     | Wrapper around Bulma for [fable-react](https://github.com/fable-compiler/fable-react)   |
-| [Laravel Enso](https://github.com/laravel-enso/enso)                               | SPA Admin Panel built with Bulma, VueJS and Laravel 			      |
-| [Django Bulma](https://github.com/timonweb/django-bulma)                           | Integrates Bulma with Django 			    |
-| [Bulma Templates](https://github.com/dansup/bulma-templates)                       | Free Templates for Bulma                       |
-| [React Bulma Components](https://github.com/couds/react-bulma-components)          | Another React wrap on React for Bulma.io                           |
-| [purescript-bulma](https://github.com/sectore/purescript-bulma)                    | PureScript bindings for Bulma                                      |
-| [Vue Datatable](https://github.com/laravel-enso/vuedatatable)                      | Bulma themed datatable based on Vue, Laravel & JSON templates      |
-| [bulma-fluent](https://mubaidr.github.io/bulma-fluent/)                            | Fluent Design Theme for Bulma inspired by Microsoft’s Fluent Design System      |
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Copyright and license
+## Acknowledgments
 
-Code copyright 2018 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma/blob/master/LICENSE).
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
