@@ -1,3 +1,58 @@
-.btn {
+.container {
 	padding: 10px;
 }
+
+header {
+	padding 25px
+	text-align center
+	background-color $green
+	color $white
+}
+
+.btn
+	color #fbfbfb
+	text-transform uppercase
+	font-size 0.8em
+	background-color grey
+	outline none
+	box-sizing border-box
+	padding 9.5px 8px 8px 8px
+	border 1px solid #ccc
+	borderRadius(3px)
+	boxShadow(1px 1px 10px #ccc)
+	transition(opacity 0.1s ease-in)
+	&:not(.is-disabled):not([disabled])
+		&:hover
+			border-color $btn-border-color
+			
+.btn:not(.is-disabled):not([disabled])
+	cursor pointer
+	
+// .btn:not(has-wave)
+// 	&:active
+// 		boxShadow(1px 0 0 #bbb)
+		
+.btn.primary
+	background-color $green
+	
+.btn.warning
+	background-color $orange
+	
+.btn.danger
+	background-color $dark-red
+
+.btn.inverse
+	background-color #333
+	&:hover
+		border-color $btn-border-color
+		
+.btn.has-wave:active
+	&:not(.is-disabled)
+		opacity 0.8
+	
+.btn.is-disabled
+.btn[disabled]
+	border-color $btn-border-color
+	background-color @border-color
+	color $black
+	
