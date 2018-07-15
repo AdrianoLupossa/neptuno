@@ -174,7 +174,7 @@ header {
   -webkit-transition: opacity 0.1s ease-in;
   -o-transition: opacity 0.1s ease-in;
   -ms-transition: opacity 0.1s ease-in;
-  box-shadow: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
 }
 .btn:not(.is-disabled):not([disabled]):hover {
   border-color: #aaa;
@@ -187,6 +187,11 @@ header {
 }
 .btn.warning {
   background-color: #ff9800;
+}
+.btn.secondary {
+  color: #fff;
+  background: #6c757d;
+  border-color: #6c757d;
 }
 .btn.danger {
   background-color: #f44336;
