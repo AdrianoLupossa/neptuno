@@ -25,6 +25,10 @@ header {
 		&:hover
 			border-color $btn-border-color
 			
+// a.btn
+// 	display block
+// 	height 35px
+			
 .btn:not(.is-disabled):not([disabled])
 	cursor pointer
 	
@@ -38,6 +42,11 @@ header {
 .btn.warning
 	background-color $orange
 	
+// .btn.secondary
+// 	color $white
+// 	background-color #6c757d
+// 	border-color #6c757d
+	
 .btn.danger
 	background-color $dark-red
 
@@ -45,6 +54,14 @@ header {
 	background-color #333
 	&:hover
 		border-color $btn-border-color
+		
+.btn.small
+.btn.sm
+	font-size 0.6em
+	
+.btn.large
+.btn.lg
+	font-size 0.9em
 		
 .btn.has-wave:active
 	&:not(.is-disabled)

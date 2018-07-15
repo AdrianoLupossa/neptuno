@@ -197,6 +197,14 @@ header {
 .btn.inverse:hover {
   border-color: #aaa;
 }
+.btn.small,
+.btn.sm {
+  font-size: 0.6em;
+}
+.btn.large,
+.btn.lg {
+  font-size: 0.9em;
+}
 .btn.has-wave:active:not(.is-disabled) {
   opacity: 0.8;
 }
