@@ -2,7 +2,7 @@
 	padding: 10px;
 }
 
-header {
+nav {
 	padding 25px
 	text-align center
 	background-color $green
@@ -24,6 +24,12 @@ header {
 	&:not(.is-disabled):not([disabled])
 		&:hover
 			border-color $btn-border-color
+			
+.btn.block
+	&:not(:last-child)
+		display block
+		width 100%
+		margin-bottom 5px
 			
 a.btn
 	line-height 35px
@@ -65,7 +71,7 @@ a.btn
 .btn.has-wave:active
 	&:not(.is-disabled)
 		opacity 0.8
-	
+			
 .btn.is-disabled
 .btn[disabled]
 	border-color $btn-border-color
