@@ -1,3 +1,7 @@
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: "Roboto";
+}
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -193,7 +197,7 @@ template {
   float: right;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 h1,
 h2,
@@ -206,6 +210,27 @@ h6 {
 a {
   text-decoration: none;
   color: #00796b;
+}
+.shadow-1 {
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
+  -o-box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
+  -ms-box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
+}
+.shadow-2 {
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
+  -o-box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
+  -ms-box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
+}
+.shadow-3 {
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
+  -o-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
+  -ms-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
 }
 nav.menu {
   padding: 20px;
@@ -253,27 +278,6 @@ ul.menu-items li a {
 }
 ul.menu-items li a:hover {
   color: #ccc;
-}
-.shadow-1 {
-  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
-  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
-  -o-box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
-  -ms-box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
-  box-shadow: 1px 2px 1px rgba(0,0,0,0.5) !important;
-}
-.shadow-2 {
-  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
-  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
-  -o-box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
-  -ms-box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
-  box-shadow: 1px 2px 1px rgba(0,0,0,0.7) !important;
-}
-.shadow-3 {
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
-  -o-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
-  -ms-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
-  box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
 }
 .btn {
   color: #fbfbfb;
