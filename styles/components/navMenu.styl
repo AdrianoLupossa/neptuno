@@ -1,0 +1,46 @@
+nav.menu
+	padding 10px
+	background-color $green
+
+@media screen and (max-width 480px)
+	nav.menu.text-center
+		li
+			line-height 1.5
+			
+	nav.menu.mobile
+		text-align left
+			
+	nav.menu.mobile
+		a.icon-bar
+			padding 3px
+			border-radius 3px
+			background-color $dark-green
+			display inline
+			
+		a:hover + ul.menu-items
+			display flex
+			
+		ul.menu-items
+			display none
+			flex-direction column
+			padding 0
+
+a.icon-bar
+	display none
+	color $white
+		
+ul.menu-items
+	list-style none
+	display inline
+	
+	li
+		display inline
+		margin-right 5%
+		&:last-child
+			margin-right 0
+			
+		a
+			color $white
+			&:hover
+				color #ccc
+	
