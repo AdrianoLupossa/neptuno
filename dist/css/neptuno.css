@@ -163,7 +163,7 @@ template {
   color: #000 !important;
 }
 .blue {
-  background-color: #3f51b5;
+  background-color: #6495ed;
 }
 .dark-blue {
   background-color: #283593;
@@ -275,6 +275,93 @@ ul.menu-items li a:hover {
   -ms-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
   box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
 }
+.switch {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.switch + label {
+  position: relative;
+  display: block;
+  outline: none;
+  user-select: none;
+  width: 120px;
+  height: 60px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+.switch + label:before,
+.switch + label:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.switch + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+}
+.switch + label:after {
+  width: 62px;
+  background-color: #fff;
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  -o-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  -ms-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.switch:checked + label:before {
+  background-color: #009688;
+}
+.switch:checked + label:after {
+  -webkit-transform: translateX(60px);
+  -moz-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  -o-transform: translateX(60px);
+  transform: translateX(60px);
+}
+.switch.round + label:after,
+.switch.circle + label:after {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.switch.round + label,
+.switch.circle + label,
+.switch.round + label:before,
+.switch.circle + label:before {
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+.switch.red:checked + label:before {
+  background-color: #f44336;
+}
+.switch.dark-red:checked + label:before {
+  background-color: #e51c23;
+}
+.switch.blue:checked + label:before {
+  background-color: #6495ed;
+}
+.switch.dark-blue:checked + label:before {
+  background-color: #283593;
+}
+.switch.orange:checked + label:before {
+  background-color: #ff9800;
+}
+.switch.dark-orange:checked + label:before {
+  background-color: #ff5722;
+}
+.switch.black:checked + label:before {
+  background-color: #000;
+}
 .btn {
   color: #fbfbfb;
   text-transform: uppercase;
@@ -292,8 +379,8 @@ ul.menu-items li a:hover {
   -o-box-shadow: 1px 1px 10px #ccc;
   -ms-box-shadow: 1px 1px 10px #ccc;
   box-shadow: 1px 1px 10px #ccc;
-  -moz-transition: opacity 0.1s ease-in;
   -webkit-transition: opacity 0.1s ease-in;
+  -moz-transition: opacity 0.1s ease-in;
   -o-transition: opacity 0.1s ease-in;
   -ms-transition: opacity 0.1s ease-in;
   transition: opacity 0.1s ease-in;
