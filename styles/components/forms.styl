@@ -1,3 +1,6 @@
+$Width = 100
+$Height = 50
+	
 .switch
 	position absolute
 	margin-left -9999px
@@ -8,27 +11,25 @@
 	display block
 	outline none
 	user-select none
-	width 120px
-	height 60px
+	width unit($Width, px)
+	height unit($Height, px)
 	background-color #ddd
 	cursor pointer
-	
-.switch + label:before, 
-.switch + label:after
-	content ''
-	position absolute
-	display block
-	left 1px
-	top 1px
-	bottom 1px
-	transition(all 0.4s)
-
-.switch + label:before
-	right 1px
-	background-color #f1f1f1
+	&:before
+	&:after
+		content ''
+		position absolute
+		display block
+		left 1px
+		top 1px
+		bottom 1px
+		transition(all 0.4s)
+	&:before
+		right 1px
+		background-color #f1f1f1
 
 .switch + label:after
-	width 62px
+	width 52px
 	background-color #fff
 	boxShadow(0 2px 5px rgba(black,0.3))
 
@@ -36,8 +37,9 @@
 	background-color $green
 
 .switch:checked + label:after
-	transform(translateX(60px))
+	transform(translateX(unit($Height, px)))
 
+// TYPES
 .switch.round + label:after
 .switch.circle + label:after
 	borderRadius(100%)
@@ -46,8 +48,37 @@
 .switch.circle + label 
 .switch.round + label:before
 .switch.circle + label:before
-	borderRadius(60px)
+	borderRadius(unit($Height, px))
 	
+
+// SIZES
+.switch.sm + label
+.switch.small + label
+	width 70px
+	height 35px
+	
+.switch.sm + label:after
+.switch.small + label:after
+	width 37px
+	
+.switch.sm:checked + label:after
+.switch.small:checked + label:after
+	transform(translateX(37px))
+
+.switch.lg + label
+.switch.large + label
+	width 120px
+	height 60px
+	
+.switch.lg + label:after
+.switch.large + label:after
+	width 62px
+	
+.switch.lg:checked + label:after
+.switch.large:checked + label:after
+	transform(translateX(62px))
+
+// COLORS
 .switch.red:checked + label:before
 	switchColorVariations($red)
 	
