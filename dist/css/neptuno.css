@@ -360,11 +360,12 @@ a.btn {
 }
 .card {
   margin-top: 10px;
-  width: 30%;
+  width: 28%;
   min-height: 300px;
   border: 1px solid #ccc;
   display: inline-block;
   position: relative;
+  margin-right: 10px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -400,7 +401,7 @@ a.btn {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 @media screen and (max-width: 480px) {
   .card-group.mobile {
