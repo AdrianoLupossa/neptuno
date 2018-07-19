@@ -419,3 +419,65 @@ a.btn {
   padding: 10px;
   color: #222;
 }
+.text-error {
+  color: #e51c23;
+}
+.text-success {
+  color: #009688;
+}
+.text-warning {
+  color: #ff5722;
+}
+.card.success {
+  display: block;
+  min-height: 0;
+  width: 300px;
+  padding: 10px;
+  color: #fff;
+  font-size: 9pt;
+  opacity: 0.9;
+  background-color: #00796b;
+}
+.card.error {
+  display: block;
+  min-height: 0;
+  width: 300px;
+  padding: 10px;
+  color: #fff;
+  font-size: 9pt;
+  opacity: 0.9;
+  background-color: #8b0000;
+}
+.card.warning {
+  display: block;
+  min-height: 0;
+  width: 300px;
+  padding: 10px;
+  color: #fff;
+  font-size: 9pt;
+  opacity: 0.9;
+  background-color: #ff5722;
+}
+.card.floating {
+  position: fixed;
+  right: 0;
+  opacity: 0.8;
+  margin-right: 5px;
+}
+.card.floating:not(.top) {
+  bottom: 10px;
+}
+.card.floating.top {
+  top: 2px;
+}
+@media screen and (max-width: 480px) {
+  .card.error,
+  .card.warning,
+  .card.success {
+    display: block;
+    width: 100%;
+  }
+  .card.floating {
+    position: static;
+  }
+}
