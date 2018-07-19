@@ -1,0 +1,27 @@
+.card
+	margin-top 10px
+	width 250px
+	min-height 300px
+	border 1px solid #ccc
+	display inline-block
+	boxShadow(1px 1px 1px rgba(black,0.2))
+	&:last-child
+		margin-right 0
+		
+.card-group
+	margin-top 10px
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content space-around
+	
+
+@media screen and (max-width 480px)
+	.card-group.mobile
+		.card
+			width 100%
+	
+	.card.mobile
+		width 100%	
+		
+	
