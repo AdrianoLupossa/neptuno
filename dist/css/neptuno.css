@@ -372,6 +372,9 @@ a.btn {
   justify-content: space-around;
 }
 @media screen and (max-width: 480px) {
+  .card-group.mobile {
+    flex-wrap: wrap;
+  }
   .card-group.mobile .card {
     width: 100%;
   }
