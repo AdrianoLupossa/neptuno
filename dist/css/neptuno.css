@@ -310,9 +310,11 @@ ul.menu-items li a:hover {
 .btn:not(.is-disabled):not([disabled]):hover {
   border-color: #aaa;
 }
-.btn.block:not(:last-child) {
+.btn.block {
   display: block;
   width: 100%;
+}
+.btn.block:not(:last-child) {
   margin-bottom: 5px;
 }
 a.btn {
@@ -405,7 +407,7 @@ a.btn {
 }
 @media screen and (max-width: 480px) {
   .card-group.mobile {
-    flex-wrap: wrap;
+    display: block;
   }
   .card-group.mobile .card {
     width: 100%;
