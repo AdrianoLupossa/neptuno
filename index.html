@@ -6,6 +6,28 @@
 	<title>Neptuno - A CSS library to create UI components</title>
 	<link rel="stylesheet" type="text/css" href="dist/css/neptuno.css" />
 </head>
+
+<style>
+		
+		.container-flex {
+			background: #444;
+			margin-bottom: 100px;
+			border: 1px solid #aaa;
+			display: flex;
+			margin-top: 40px;
+		}
+
+		.item {
+			width: 33%;
+			height: 200px;
+			background-color: #fff;
+			font-size: 2em;
+			padding: 5px;
+			border: 1px solid #ccc;
+		}
+
+</style>
+
 <body>
 	
 	<header>
@@ -143,6 +165,62 @@
 		<div class="align-center">
 			Hello World!
 		</div>
+
+		<h1>FLEX CLASS</h1>
+
+		<section class="container-flex">
+			<article class="item">1</article>
+			<article class="item">2</article>
+			<article class="item">3</article>
+		</section>
+
+		<h2>Posicionamento dos itens dentro de um container</h2>
+		<code>
+			<p>container.flex-row (default)</p>
+			<p>container.flex-row-reverse</p>
+			<p>container.flex-column</p>
+			<p>container.flex-column-reverse</p>
+		</code>
+
+
+		<h2>Quebra de linha de itens dentro de um container</h2>
+		<code>
+			<p>container.flex-wrap</p>
+			<p>container.flex-nowrap (default)</p>
+			<p>container.flex-wrap-reverse</p>
+		</code>
+
+
+		<h2>Alinhamento horizontal dos itens dentro de um container</h2>
+		<code>
+			<p>container.horizontal-align-left</p>
+			<p>container.horizontal-align-right</p>
+			<p>container.horizontal-align-center</p>
+		</code>
+
+		
+		<h2>Espaçamento horizontal entre os itens dentro Container</h2>
+		<code>
+			<p>container.space-between</p>
+			<p>container.space-around</p>
+			<p>container.space-evenly</p>
+		</code>
+
+
+		<h2>Alinhamento vertical dos itens dentro de um Container</h2>
+		<code>
+			<p>container.vertical-align-top</p>
+			<p>container.vertical-align-bottom</p>
+			<p>container.vertical-align-center</p>
+		</code>
+
+
+		<h2>Alinhamento vertical dos Itens</h2>
+		<code>
+			<p>item.align-self-top</p>
+			<p>item.align-self-bottom</p>
+			<p>item.align-self-center</p>
+		</code>
 
 	</main>
 
