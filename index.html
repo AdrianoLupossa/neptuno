@@ -18,12 +18,23 @@
 		}
 
 		.item {
-			width: 33%;
+			margin: 0;
+			width: 34%;
 			height: 200px;
 			background-color: #fff;
 			font-size: 2em;
 			padding: 5px;
 			border: 1px solid #ccc;
+		}
+
+		code {
+			display: block;
+		}
+
+		@media (max-width: 480px) {
+			code {
+				width: 100%;
+			}
 		}
 
 </style>
@@ -57,18 +68,18 @@
 				<br/>
 				<br/>
 			<code>
-				button.btn.primary
-				button.btn.secondary
-				button.btn.warning
-				button.btn.danger
-				button.btn.has-wave
+				<p>button.btn.primary</p>
+				<p>button.btn.secondary</p>
+				<p>button.btn.warning</p>
+				<p>button.btn.danger</p>
+				<p>button.btn.has-wave</p>
 			</code>
 
 			<div class="button-sizes">
 				<h3>Button Sizes:</h3>
 				<code>
-					button.lg
-					button.sm
+					<p>button.lg</p>
+					<p>button.sm</p>
 				</code>
 			</div>
 
@@ -81,8 +92,8 @@
 				<label for="switch"></label>
 					<br>
 				<code>
-					input.switch#id
-					label[for="#id"]
+					<p>input.switch#id</p>
+					<p>label[for="#id"]</p>
 				</code>
 			</div>
 
@@ -93,28 +104,28 @@
 				<label for="switch-round"></label>
 					<br>
 				<code>
-					input.switch.circle#id
-					label[for="#id"]
+					<p>input.switch.circle#id</p>
+					<p>label[for="#id"]</p>
 				</code>
 			</div>
 
 			<h3>Switch Button Colors</h3>
 			<div class="switch-color-variation">
 				<code>
-					input.red
-					input.dark-red
-					input.blue
-					input.dark-blue
-					input.orange
-					input.dark-orange
+					<p>input.red</p>
+					<p>input.dark-red</p>
+					<p>input.blue</p>
+					<p>input.dark-blue</p>
+					<p>input.orange</p>
+					<p>input.dark-orange</p>
 				</code>
 			</div>
 
 			<h3>Switch Button Sizes:</h3>
 			<div class="switch-button-sizes">
 				<code>
-					input.lg
-					input.sm
+					<p>input.lg</p>
+					<p>input.sm</p>
 				</code>
 			</div>
 
@@ -135,6 +146,10 @@
 				<p class="content">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repellat vitae provident possimus quia molestiae delectus nam ea autem architecto, omnis dolor dolorem quibusdam blanditiis voluptates iure voluptatibus perferendis beatae.
 				</p>
+			</div>
+
+			<div class="card green white-text vertical-align-center horizontal-align-center">
+				New Card
 			</div>
 		</div>
 		
@@ -160,10 +175,6 @@
 		</div>
 		<div class="card error floating">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, eum quis odit voluptatem voluptatum id, deserunt fugiat ipsum quos nesciunt ullam tempore, expedita aliquid molestias aut cum voluptas asperiores.
-		</div>
-
-		<div class="align-center">
-			Hello World!
 		</div>
 
 		<h1>FLEX CLASS</h1>
