@@ -1,0 +1,47 @@
+.text-error
+	color $dark-red
+	
+.text-success
+	color $green
+	
+.text-warning
+	color $dark-orange
+	
+cardErrors()
+	display block
+	min-height 0
+	width 300px
+	padding 10px
+	color $white
+	font-size 9pt
+	opacity 0.9
+
+.card.success
+	cardErrors()
+	background-color $dark-green
+.card.error
+	cardErrors()
+	background-color darkred
+.card.warning
+	cardErrors()
+	background-color $dark-orange
+	
+.card.floating
+	position fixed
+	right 0
+	opacity 0.8
+	margin-right 5px
+	&:not(.top)
+		bottom 10px
+
+.card.floating.top
+	top 2px
+
+@media screen and (max-width 480px)
+	.card.error
+	.card.warning
+	.card.success
+		display block
+		width 100%
+	.card.floating
+		position static
