@@ -1,29 +1,39 @@
 nav.menu
 	padding 10px
 	background-color $green
-
-@media screen and (max-width 480px)
-	nav.menu.text-center
-		li
-			line-height 1.5
-			
-	nav.menu.mobile
-		text-align left
-			
-	nav.menu.mobile
-		a.icon-bar
-			padding 6px
-			border-radius 3px
-			background-color $dark-green
-			display inline
-			
-		a:hover + ul.menu-items
-			display flex
-			
-		ul.menu-items
-			display none
-			flex-direction column
+	@media screen and (max-width 480px)
+		&.text-center
+			li
+				line-height 1.5
+				
+		&.mobile
+			text-align left
+				
+		&.mobile
+			a.icon-bar
+				padding 6px
+				border-radius 3px
+				background-color $dark-green
+				display inline
+				
+			a:hover + ul.menu-items
+				display flex
+			&.menu-items
+				display none
+				flex-direction column
+				padding 0
+				&:hover
+					background-color $dark-green
+					
+		.menu-items li
 			padding 0
+			&.active
+				background-color $transparent
+			&:hover
+				background-color $transparent
+			a:hover
+				color #ccc
+				
 
 a.icon-bar
 	display none
@@ -32,15 +42,18 @@ a.icon-bar
 ul.menu-items
 	list-style none
 	display inline
-	
 	li
+		borderRadius(3px)
+		padding 10px
 		display inline
 		margin-right 5%
 		&:last-child
 			margin-right 0
-			
+		&:hover
+			background-color rgba($dark-green, 0.7)
+		&.active
+			background-color rgba($dark-green, 0.7)
 		a
 			color $white
-			&:hover
-				color #ccc
+		
 	
