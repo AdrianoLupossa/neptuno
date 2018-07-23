@@ -405,10 +405,25 @@ nav.menu {
   nav.menu.mobile a:hover + ul.menu-items {
     display: flex;
   }
-  nav.menu.mobile ul.menu-items {
+  nav.menu.mobile.menu-items {
     display: none;
     flex-direction: column;
     padding: 0;
+  }
+  nav.menu.mobile.menu-items:hover {
+    background-color: #00796b;
+  }
+  nav.menu .menu-items li {
+    padding: 0;
+  }
+  nav.menu .menu-items li.active {
+    background-color: transparent;
+  }
+  nav.menu .menu-items li:hover {
+    background-color: transparent;
+  }
+  nav.menu .menu-items li a:hover {
+    color: #ccc;
   }
 }
 a.icon-bar {
@@ -420,17 +435,24 @@ ul.menu-items {
   display: inline;
 }
 ul.menu-items li {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
   display: inline;
   margin-right: 5%;
 }
 ul.menu-items li:last-child {
   margin-right: 0;
 }
+ul.menu-items li:hover {
+  background-color: rgba(0,121,107,0.7);
+}
+ul.menu-items li.active {
+  background-color: rgba(0,121,107,0.7);
+}
 ul.menu-items li a {
   color: #fff;
-}
-ul.menu-items li a:hover {
-  color: #ccc;
 }
 .switch {
   position: absolute;
