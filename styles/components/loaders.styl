@@ -1,0 +1,14 @@
+.loader
+	display inline-block
+	width 50px
+	height @width
+	border 8px solid rgba(black, 0.1)
+	border-left-color $green
+	border-radius 100%
+	animation loader 1.2s linear infinite
+	background transparent !important
+	
+
+@keyframes loader
+	to
+		transform(rotate(360deg))
