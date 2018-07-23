@@ -758,10 +758,10 @@ a.btn {
   width: 50px;
   height: 50px;
   border: 8px solid rgba(0,0,0,0.1);
-  border-left-color: #009688;
+  border-left-color: #00796b;
   border-radius: 100%;
   animation: loader 1.2s linear infinite;
-  background: transparent !important;
+  background-color: transparent;
 }
 .loader.sm,
 .loader.small {
@@ -772,6 +772,33 @@ a.btn {
 .loader.large {
   width: 60px;
   height: 60px;
+}
+.loader.green,
+.loader.success {
+  border-left-color: #009688;
+}
+.loader.dark-green {
+  border-left-color: #00796b;
+}
+.loader.orange {
+  border-left-color: #ff9800;
+}
+.loader.dark-orange,
+.loader.warning {
+  border-left-color: #ff5722;
+}
+.loader.red,
+.loader.danger {
+  border-left-color: #f44336;
+}
+.loader.dark-red {
+  border-left-color: #e51c23;
+}
+.loader.blue {
+  border-left-color: #6495ed;
+}
+.loader.dark-blue {
+  border-left-color: #283593;
 }
 @-moz-keyframes loader {
   to {

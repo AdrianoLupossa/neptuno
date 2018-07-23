@@ -3,10 +3,10 @@
 	width 50px
 	height @width
 	border 8px solid rgba(black, 0.1)
-	border-left-color $green
+	border-left-color $dark-green
 	border-radius 100%
 	animation loader 1.2s linear infinite
-	background transparent !important
+	background-color transparent
 
 .loader.sm
 .loader.small
@@ -18,6 +18,32 @@
 	width 60px
 	height @width
 	
+.loader.green
+.loader.success
+	border-left-color $green
+	
+.loader.dark-green
+	border-left-color $dark-green
+	
+.loader.orange
+	border-left-color $orange
+	
+.loader.dark-orange
+.loader.warning
+	border-left-color $dark-orange
+	
+.loader.red
+.loader.danger
+	border-left-color $red
+	
+.loader.dark-red
+	border-left-color $dark-red
+	
+.loader.blue
+	border-left-color $blue
+	
+.loader.dark-blue
+	border-left-color $dark-blue
 
 @keyframes loader
 	to
