@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Interface</title>
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/neptuno.css" />
+	<style>
+		.container-flex {
+			background: #444;
+			margin-bottom: 100px;
+			border: 1px solid #aaa;
+			display: flex;
+			margin-top: 40px;
+		}
+
+		.item {
+			margin: 0;
+			width: 34%;
+			height: 200px;
+			background-color: #fff;
+			font-size: 2em;
+			padding: 5px;
+			border: 1px solid #ccc;
+		}
+
+		code {
+			display: block;
+		}
+
+		@media (max-width: 480px) {
+			code {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="menu text-center shadow-1">
+			<a href="#" class="icon-bar">Menu</a>
+			<ul class="menu-items">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="_components.html">Components</a></li>
+				<li class="active"><a href="_interface.html">Interface</a></li>
+				<li><a href="_forms.html">Forms</a></li>
+				<li><a href="docs/index.html">Docs</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<h1>Interface</h1>
+		<div class="cards">
+			<h2>Cards</h2>	
+			<div class="card-group mobile">
+				<div class="card">
+					<h1 class="title white-text">Simple Card</h1>
+					<p class="content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae possimus praesentium itaque natus rem, iusto excepturi molestias, aspernatur libero, iste sint magnam quibusdam. Temporibus illo veniam quis quos, labore nam!
+						lorem
+					</p>
+				</div>
+				<div class="card">
+					<img src="assets/img/adrian-infernus-281832-500.jpg" alt="Paisagem Anómima">
+					<h1 class="title">Paisagem anómima</h1>
+					<p class="content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repellat vitae provident possimus quia molestiae delectus nam ea autem architecto, omnis dolor dolorem quibusdam blanditiis voluptates iure voluptatibus perferendis beatae.
+					</p>
+				</div>
+
+				<div class="card green white-text vertical-align-center horizontal-align-center">
+					New Card
+				</div>
+			</div>
+		</div>
+
+		<div class="flex">
+			<h2>FLEX CLASS</h2>
+			<section class="container-flex">
+				<article class="item">1</article>
+				<article class="item">2</article>
+				<article class="item">3</article>
+			</section>
+
+			<h3>Posicionamento dos itens dentro de um container</h3>
+			<code>
+				<p>container.flex-row (default)</p>
+				<p>container.flex-row-reverse</p>
+				<p>container.flex-column</p>
+				<p>container.flex-column-reverse</p>
+			</code>
+
+
+			<h3>Quebra de linha de itens dentro de um container</h3>
+			<code>
+				<p>container.flex-wrap</p>
+				<p>container.flex-nowrap (default)</p>
+				<p>container.flex-wrap-reverse</p>
+			</code>
+
+
+			<h3>Alinhamento horizontal dos itens dentro de um container</h3>
+			<code>
+				<p>container.horizontal-align-left</p>
+				<p>container.horizontal-align-right</p>
+				<p>container.horizontal-align-center</p>
+			</code>
+
+			
+			<h3>Espaçamento horizontal entre os itens dentro Container</h3>
+			<code>
+				<p>container.space-between</p>
+				<p>container.space-around</p>
+				<p>container.space-evenly</p>
+			</code>
+
+
+			<h3>Alinhamento vertical dos itens dentro de um Container</h3>
+			<code>
+				<p>container.vertical-align-top</p>
+				<p>container.vertical-align-bottom</p>
+				<p>container.vertical-align-center</p>
+			</code>
+
+
+			<h3>Alinhamento vertical dos Itens</h3>
+			<code>
+				<p>item.align-self-top</p>
+				<p>item.align-self-bottom</p>
+				<p>item.align-self-center</p>
+			</code>
+		</div>
+	</main>
+</body>
+</html>
