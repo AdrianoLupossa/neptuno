@@ -868,3 +868,16 @@ a.btn {
     transform: rotate(360deg);
   }
 }
+.banner {
+  height: 300px;
+  padding: 10px;
+  background-color: #00796b;
+  display: block;
+  margin: auto;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.banner > .title {
+  color: #fff;
+}
