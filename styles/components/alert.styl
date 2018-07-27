@@ -38,6 +38,15 @@ alertErrors(bgColor, color)
 	
 .alert.block
 	width 100%
+	
+.alert > .close
+	font-family verdana
+	float right
+	font-style normal
+	font-size 9pt
+	cursor pointer
+	&:hover
+		color $green
 
 @media screen and (max-width 480px)
 	.alert.error

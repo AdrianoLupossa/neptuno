@@ -774,6 +774,16 @@ a.btn {
 .alert.block {
   width: 100%;
 }
+.alert > .close {
+  font-family: verdana;
+  float: right;
+  font-style: normal;
+  font-size: 9pt;
+  cursor: pointer;
+}
+.alert > .close:hover {
+  color: #009688;
+}
 @media screen and (max-width: 480px) {
   .alert.error,
   .alert.warning,
