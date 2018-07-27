@@ -726,56 +726,62 @@ a.btn {
 .text-warning {
   color: #ff5722;
 }
-.card.success {
+.alert.success {
   display: block;
   min-height: 0;
   width: 300px;
-  padding: 10px;
-  color: #fff;
+  padding: 15px;
   font-size: 9pt;
   opacity: 0.9;
-  background-color: #00796b;
+  background-color: rgba(0,150,136,0.4);
+  font-weight: bold;
+  color: #00796b;
 }
-.card.error {
+.alert.error {
   display: block;
   min-height: 0;
   width: 300px;
-  padding: 10px;
-  color: #fff;
+  padding: 15px;
   font-size: 9pt;
   opacity: 0.9;
-  background-color: #8b0000;
+  background-color: rgba(244,67,54,0.4);
+  font-weight: bold;
+  color: #e51c23;
 }
-.card.warning {
+.alert.warning {
   display: block;
   min-height: 0;
   width: 300px;
-  padding: 10px;
-  color: #fff;
+  padding: 15px;
   font-size: 9pt;
   opacity: 0.9;
-  background-color: #ff5722;
+  background-color: rgba(255,152,0,0.4);
+  font-weight: bold;
+  color: #ff5722;
 }
-.card.floating {
+.alert.floating {
   position: fixed;
   right: 0;
   opacity: 0.8;
   margin-right: 5px;
 }
-.card.floating:not(.top) {
+.alert.floating:not(.top) {
   bottom: 10px;
 }
-.card.floating.top {
+.alert.floating.top {
   top: 2px;
 }
+.alert.block {
+  width: 100%;
+}
 @media screen and (max-width: 480px) {
-  .card.error,
-  .card.warning,
-  .card.success {
+  .alert.error,
+  .alert.warning,
+  .alert.success {
     display: block;
     width: 100%;
   }
-  .card.floating {
+  .alert.floating {
     position: static;
   }
 }

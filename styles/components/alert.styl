@@ -7,26 +7,25 @@
 .text-warning
 	color $dark-orange
 	
-cardErrors()
+alertErrors(bgColor, color)
 	display block
 	min-height 0
 	width 300px
-	padding 10px
-	color $white
+	padding 15px
 	font-size 9pt
 	opacity 0.9
+	background-color rgba(bgColor, 0.4);
+	font-weight bold
+	color color
 
-.card.success
-	cardErrors()
-	background-color $dark-green
-.card.error
-	cardErrors()
-	background-color darkred
-.card.warning
-	cardErrors()
-	background-color $dark-orange
+.alert.success
+	alertErrors($green, $dark-green)
+.alert.error
+	alertErrors($red, $dark-red)
+.alert.warning
+	alertErrors($orange, $dark-orange)
 	
-.card.floating
+.alert.floating
 	position fixed
 	right 0
 	opacity 0.8
@@ -34,14 +33,17 @@ cardErrors()
 	&:not(.top)
 		bottom 10px
 
-.card.floating.top
+.alert.floating.top
 	top 2px
+	
+.alert.block
+	width 100%
 
 @media screen and (max-width 480px)
-	.card.error
-	.card.warning
-	.card.success
+	.alert.error
+	.alert.warning
+	.alert.success
 		display block
 		width 100%
-	.card.floating
+	.alert.floating
 		position static
