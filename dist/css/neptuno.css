@@ -581,10 +581,10 @@ ul.menu-items li a {
   color: #fbfbfb;
   text-transform: uppercase;
   font-size: 0.8em;
-  background-color: transparent;
+  background-color: #f5f5f5;
   outline: none;
   box-sizing: border-box;
-  padding: 9.5px 8px 8px 8px;
+  padding: 0.8em;
   border: 1px solid #ccc;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -641,11 +641,11 @@ a.btn {
 }
 .btn.small,
 .btn.sm {
-  font-size: 0.6em;
+  padding: 0.6em;
 }
 .btn.large,
 .btn.lg {
-  font-size: 0.9em;
+  padding: 1em;
 }
 .btn.has-wave:active:not(.is-disabled) {
   opacity: 0.8;
