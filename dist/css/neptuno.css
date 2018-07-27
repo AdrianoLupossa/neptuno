@@ -799,10 +799,10 @@ a.btn {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border: 8px solid rgba(0,0,0,0.1);
+  border: 5px solid rgba(0,0,0,0.1);
   border-left-color: #00796b;
   border-radius: 100%;
-  animation: loader 1.2s linear infinite;
+  animation: loader 0.5s linear infinite;
   background-color: transparent;
 }
 .loader.sm,
