@@ -2,7 +2,7 @@
 	color #fbfbfb
 	text-transform uppercase
 	font-size 0.8em
-	background-color grey
+	background-color transparent
 	outline none
 	box-sizing border-box
 	padding 9.5px 8px 8px 8px
@@ -13,6 +13,8 @@
 	&:not(.is-disabled):not([disabled])
 		&:hover
 			border-color $btn-border-color
+	&:not(.primary):not(.warning):not(.secondary):not(.danger):not(.inverse)
+		color #000
 			
 .btn.block
 	display block
@@ -64,6 +66,4 @@ a.btn
 .btn.is-disabled
 .btn[disabled]
 	border-color $btn-border-color
-	background-color @border-color
-	color $black
-	
+	opacity 0.5

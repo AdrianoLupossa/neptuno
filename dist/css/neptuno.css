@@ -581,7 +581,7 @@ ul.menu-items li a {
   color: #fbfbfb;
   text-transform: uppercase;
   font-size: 0.8em;
-  background-color: #808080;
+  background-color: transparent;
   outline: none;
   box-sizing: border-box;
   padding: 9.5px 8px 8px 8px;
@@ -602,6 +602,9 @@ ul.menu-items li a {
 }
 .btn:not(.is-disabled):not([disabled]):hover {
   border-color: #aaa;
+}
+.btn:not(.primary):not(.warning):not(.secondary):not(.danger):not(.inverse) {
+  color: #000;
 }
 .btn.block {
   display: block;
@@ -650,8 +653,7 @@ a.btn {
 .btn.is-disabled,
 .btn[disabled] {
   border-color: #aaa;
-  background-color: #aaa;
-  color: #000;
+  opacity: 0.5;
 }
 .card {
   margin-top: 10px;
