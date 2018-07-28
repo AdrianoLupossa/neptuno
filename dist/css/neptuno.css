@@ -150,6 +150,18 @@ template {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.center {
+  display: block;
+  margin: auto;
+}
+.left,
+.pull-left {
+  float: left;
+}
+.right,
+.pull-right {
+  float: right;
+}
 .container {
   padding: 10px;
 }
@@ -455,6 +467,54 @@ ul.menu-items li.active {
 ul.menu-items li a {
   padding: 10px;
   color: #fff;
+}
+.form .group {
+  margin-bottom: 15px;
+}
+.form .group:last-child {
+  margin-bottom: 0;
+}
+.form input {
+  border: 1px solid #ddd;
+  padding: 10px 8px 8px 8px;
+  font-size: 0.9em;
+  outline: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  width: 200px;
+}
+.form input:invalid {
+  border: 0.1px solid #f44336;
+  -moz-box-shadow: 0px 0px 1px #f44336;
+  -webkit-box-shadow: 0px 0px 1px #f44336;
+  -o-box-shadow: 0px 0px 1px #f44336;
+  -ms-box-shadow: 0px 0px 1px #f44336;
+  box-shadow: 0px 0px 1px #f44336;
+}
+.form input.valid:valid {
+  border: 0.1px solid #00796b;
+}
+.form label {
+  margin: 4px;
+  color: #222;
+}
+.group:invalid {
+  border: 0.1px solid #f44336;
+  -moz-box-shadow: 0px 0px 1px #f44336;
+  -webkit-box-shadow: 0px 0px 1px #f44336;
+  -o-box-shadow: 0px 0px 1px #f44336;
+  -ms-box-shadow: 0px 0px 1px #f44336;
+  box-shadow: 0px 0px 1px #f44336;
+}
+.group.valid input:valid {
+  border: 0.1px solid #00796b;
+}
+.form.block input {
+  width: 100%;
+}
+.form.block * {
+  display: block;
 }
 .switch {
   position: absolute;

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form elements</title>
+	<link rel="stylesheet" href="css/neptuno.css" />
+</head>
+<body>
+	<header>
+		<nav class="menu text-center shadow-1">
+			<a href="#" class="icon-bar">Menu</a>
+			<ul class="menu-items">
+				<li><a href="../index.html">Home</a></li>
+				<li class="active"><a href="_components.html">Components</a></li>
+				<li><a href="_interface.html">Interface</a></li>
+				<li><a href="_forms.html">Forms</a></li>
+				<li><a href="docs/index.html">Docs</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<div class="banner">
+			<h1 class="title">Form elements</h1>
+		</div>
+			<br/>
+		<div class="card-group">
+			
+			<div class="form card block content">
+				<form action="#">
+					<div class="group">
+						<label for="">Simple Text</label>
+					</div>
+					<div class="group">
+						<label for="">Username</label>
+						<input type="text" placeholder="Your username..." />
+					</div>
+					<div class="group">
+						<label for="">Password</label>
+						<input type="password" placeholder="Your password..." />
+					</div>
+					<div class="group">
+						<button class="btn primary has-have">Login</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="form card block content">
+				<form action="#">
+					<div class="group">
+						<label>Required Fields</label>
+					</div>
+					<div class="group valid">
+						<label for="">Username</label>
+						<input type="text" placeholder="Your username..." required="required" />
+					</div>
+					<div class="group valid">
+						<label for="">Password</label>
+						<input type="password" placeholder="Your password..."  required="required"/>
+					</div>
+					<div class="group">
+						<button class="btn primary has-have block">Login</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</main>
+</body>
+</html>

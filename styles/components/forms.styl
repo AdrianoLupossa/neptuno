@@ -1,3 +1,38 @@
+.form 
+	.group
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0
+	input
+		border 1px solid #ddd
+		padding 10px 8px 8px 8px
+		font-size 0.9em
+		outline none
+		borderRadius(2px)
+		width 200px
+		&:invalid
+			border 0.1px solid $red
+			boxShadow(0px 0px 1px $red)
+		&.valid:valid
+			border 0.1px solid $dark-green
+				
+	label
+		margin 4px
+		color #222
+		
+.group
+	&:invalid
+		border 0.1px solid $red
+		boxShadow(0px 0px 1px $red)
+	&.valid input:valid
+		border 0.1px solid $dark-green
+		
+.form.block
+	input
+		width 100%
+	*
+		display block
+
 $Width = 100
 $Height = 50
 	
