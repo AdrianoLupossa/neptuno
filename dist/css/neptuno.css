@@ -217,6 +217,12 @@ template {
 .hide {
   display: none !important;
 }
+.divider {
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  display: block;
+  margin: 10px 0 10px 0;
+}
 body {
   font-family: 'roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -481,7 +487,7 @@ ul.menu-items li a {
 .form .group:last-child {
   margin-bottom: 0;
 }
-.form input,
+.form input:not([type ="checkbox"]),
 .form textarea {
   border: 1px solid #ddd;
   padding: 10px 8px 8px 8px;
@@ -492,7 +498,7 @@ ul.menu-items li a {
   border-radius: 2px;
   width: 200px;
 }
-.form input:invalid,
+.form input:not([type ="checkbox"]):invalid,
 .form textarea:invalid {
   border: 0.1px solid #f44336;
   -moz-box-shadow: 0px 0px 1px #f44336;
@@ -501,23 +507,23 @@ ul.menu-items li a {
   -ms-box-shadow: 0px 0px 1px #f44336;
   box-shadow: 0px 0px 1px #f44336;
 }
-.form input.valid:valid,
+.form input:not([type ="checkbox"]).valid:valid,
 .form textarea.valid:valid {
   border: 0.1px solid #00796b;
 }
-.form input.disabled,
+.form input:not([type ="checkbox"]).disabled,
 .form textarea.disabled {
   background-color: rgba(128,128,128,0.1);
 }
-.form input[disabled],
+.form input:not([type ="checkbox"])[disabled],
 .form textarea[disabled] {
   background-color: rgba(128,128,128,0.1);
 }
-.form input.readonly,
+.form input:not([type ="checkbox"]).readonly,
 .form textarea.readonly {
   background-color: rgba(128,128,128,0.1);
 }
-.form input[readonly],
+.form input:not([type ="checkbox"])[readonly],
 .form textarea[readonly] {
   background-color: rgba(128,128,128,0.1);
 }
@@ -525,37 +531,12 @@ ul.menu-items li a {
   margin: 4px;
   color: #222;
 }
-.radio.disabled {
-  opacity: 0.6;
+.form.block input:not([type="checkbox"]),
+.form.block textarea {
+  width: 100%;
 }
-.radio.disabled input[type="radio"] + * {
-  background-color: rgba(128,128,128,0.1);
-}
-.radio:not(.disabled) {
-  cursor: pointer;
-}
-.radio input[type="radio"] {
-  visibility: hidden;
-  position: absolute;
-  margin-left: -9999px;
-}
-.radio input[type="radio"][disabled] + * {
-  background-color: rgba(128,128,128,0.1);
-}
-.radio input[type="radio"] + * {
-  margin-left: 3px;
-  position: relative;
-  top: 2.7px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  border: 1px solid #ccc;
-}
-.radio input[type="radio"]:checked + * {
-  border: 5px solid #00796b;
+.form.block * {
+  display: block;
 }
 .group:invalid {
   border: 0.1px solid #f44336;
@@ -568,12 +549,71 @@ ul.menu-items li a {
 .group.valid input:valid {
   border: 0.1px solid #00796b;
 }
-.form.block input,
-.form.block textarea {
-  width: 100%;
+.radio.disabled,
+.checkbox.disabled {
+  opacity: 0.6;
 }
-.form.block * {
-  display: block;
+.radio.disabled input[type="radio"] + *,
+.checkbox.disabled input[type="radio"] + * {
+  background-color: rgba(128,128,128,0.1);
+}
+.radio:not(.disabled),
+.checkbox:not(.disabled) {
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+}
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+.radio input[type="radio"][disabled] + *,
+.checkbox input[type="checkbox"][disabled] + * {
+  background-color: rgba(128,128,128,0.1);
+}
+.radio input[type="radio"] + *,
+.checkbox input[type="checkbox"] + * {
+  margin-left: 3px;
+  position: relative;
+  top: 2.7px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+}
+.radio input[type="radio"] + * {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.checkbox input[type="checkbox"] + * {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.radio input[type="radio"]:checked + * {
+  border: 5px solid #00796b;
+}
+.checkbox input[type="checkbox"]:checked + * {
+  border-color: #00796b;
+  background-color: #00796b;
+}
+.checkbox input[type="checkbox"]:checked + *:after {
+  content: 'v';
+  position: absolute;
+  left: 3px;
+  font-size: 14px;
+  bottom: -1px;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'arial-black';
+  -webkit-transform: skewY(-40deg);
+  -moz-transform: skewY(-40deg);
+  -ms-transform: skewY(-40deg);
+  -o-transform: skewY(-40deg);
+  transform: skewY(-40deg);
 }
 .switch {
   position: absolute;

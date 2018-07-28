@@ -6,7 +6,7 @@ noeditable()
 		margin-bottom 15px
 		&:last-child
 			margin-bottom 0
-	input
+	input:not([type ="checkbox"])
 	textarea
 		border 1px solid #ddd
 		padding 10px 8px 8px 8px
@@ -33,34 +33,12 @@ noeditable()
 		margin 4px
 		color #222
 		
-.radio
-	&.disabled
-		opacity 0.6
-	&.disabled input[type="radio"] + *
-		noeditable()
-		
-.radio:not(.disabled)		
-	cursor pointer
-		
-.radio input[type="radio"]
-	visibility hidden
-	position absolute
-	margin-left -9999px
-	&[disabled] + *
-		noeditable()
-	
-.radio input[type="radio"] + *
-	margin-left 3px
-	position relative
-	top 2.7px
-	display inline-block
-	width 16px
-	height 16px
-	borderRadius(100%)
-	border 1px solid #ccc
-	
-.radio input[type="radio"]:checked + *
-	border 5px solid $dark-green
+.form.block
+	input:not([type="checkbox"])
+	textarea
+		width 100%
+	*
+		display block
 		
 .group
 	&:invalid
@@ -69,12 +47,58 @@ noeditable()
 	&.valid input:valid
 		border 0.1px solid $dark-green
 		
-.form.block
-	input
-	textarea
-		width 100%
-	*
-		display block
+.radio
+.checkbox
+	&.disabled
+		opacity 0.6
+	&.disabled input[type="radio"] + *
+		noeditable()
+		
+.radio:not(.disabled)
+.checkbox:not(.disabled)
+	outline none
+	user-select none
+	cursor pointer
+		
+.radio input[type="radio"]
+.checkbox input[type="checkbox"]
+	visibility hidden
+	position absolute
+	margin-left -9999px
+	&[disabled] + *
+		noeditable()
+	
+.radio input[type="radio"] + *
+.checkbox input[type="checkbox"] + *
+	margin-left 3px
+	position relative
+	top 2.7px
+	display inline-block
+	width 16px
+	height 16px
+	border 1px solid #ccc
+
+.radio input[type="radio"] + *
+	borderRadius(100%)
+.checkbox input[type="checkbox"] + *
+	borderRadius(2px)
+	
+.radio input[type="radio"]:checked + *
+	border 5px solid $dark-green
+
+.checkbox input[type="checkbox"]:checked + *
+	border-color $dark-green
+	background-color $dark-green
+	&:after
+		content 'v'
+		position absolute
+		left 3px
+		font-size 14px
+		bottom -1px
+		color $white
+		font-weight bold
+		font-family 'arial-black'
+		transform(skewY(-40deg))
 
 $Width = 100
 $Height = 50
