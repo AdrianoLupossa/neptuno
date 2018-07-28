@@ -10,11 +10,11 @@
 		<nav class="menu text-center shadow-1 green">
 			<a href="#" class="icon-bar">Menu</a>
 			<ul class="menu-items">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="_components.html">Components</a></li>
-				<li><a href="_interface.html">Interface</a></li>
-				<li class="active"><a href="_forms.html">Forms</a></li>
-				<li><a href="docs/index.html">Docs</a></li>
+				<li><a href="../index.html" target="_self">Home</a></li>
+				<li><a href="_components.html" target="_self">Components</a></li>
+				<li><a href="_interface.html" target="_self">Interface</a></li>
+				<li class="active"><a href="_forms.html" target="_self">Forms</a></li>
+				<li><a href="docs/index.html" target="_self">Docs</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -25,7 +25,7 @@
 			<br/>
 		<div class="card-group mobile">
 			
-			<div class="form card block content">
+			<section class="form card block content">
 				<form action="#">
 					<div class="group">
 						<label for="">Simple Text</label>
@@ -43,9 +43,9 @@
 					</div>
 					<a href="#">Forgot password ?</a>
 				</form>
-			</div>
+			</section>
 
-			<div class="form card block content">
+			<section class="form card block content">
 				<form action="#">
 					<div class="group">
 						<label>Required Fields</label>
@@ -64,9 +64,9 @@
 						<button class="btn primary has-have block">Login</button>
 					</div>
 				</form>
-			</div>
+			</section>
 
-			<div class="form card block content">
+			<section class="form card block content">
 				<div class="group">
 					<label for="">Other elements</label>
 				</div>
@@ -80,15 +80,59 @@
 				</div>
 				<div class="group">
 					<label for="textarea">Textarea</label>
-					<textarea id="textarea" rows="7"></textarea>
+					<textarea id="textarea" rows="7">Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!</textarea>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="card-group">
-			<div class="card content" style="width: 100%;">
-				<h1 class="title">Hello world!</h1>
-			</div>
+			<section class="form card content">
+				<div class="group">
+					<label for="">Switch Buttons</label>
+				</div>
+				
+			</section>
+			<section class="form card content">
+				<div class="group">
+					<label for="">Radio Buttons</label>
+				</div>
+				<div class="group">
+					<label for="radio-button" class="radio">
+						<input type="radio" name="option" id="radio-button" checked="checked">
+						<span></span>
+						Option 1
+					</label>
+					<label for="radio-button-1" class="radio">
+						<input type="radio" name="option" id="radio-button-1">
+						<span></span>
+						Option 2
+					</label>
+				</div>
+				<div class="group">
+					
+				</div>
+				<div class="group">
+					<label for="radio-button-2" class="radio disabled">
+						<input type="radio" id="radio-button-2" disabled="disabled">
+						<span></span>
+						Option disabled
+					</label>
+				</div>
+				<div class="group">
+					<label for="radio-button-3" class="radio disabled">
+						<input type="radio" id="radio-button-3" disabled="disabled" checked="checked">
+						<span></span>
+						Option disabled checked
+					</label>
+				</div>
+			</section>
+
+			<section class="form card content">
+				<div class="group">
+					<label for="">Checkboxes</label>
+				</div>
+			
+			</section>
 		</div>
 
 	</main>

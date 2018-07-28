@@ -481,7 +481,8 @@ ul.menu-items li a {
 .form .group:last-child {
   margin-bottom: 0;
 }
-.form input {
+.form input,
+.form textarea {
   border: 1px solid #ddd;
   padding: 10px 8px 8px 8px;
   font-size: 0.9em;
@@ -491,7 +492,8 @@ ul.menu-items li a {
   border-radius: 2px;
   width: 200px;
 }
-.form input:invalid {
+.form input:invalid,
+.form textarea:invalid {
   border: 0.1px solid #f44336;
   -moz-box-shadow: 0px 0px 1px #f44336;
   -webkit-box-shadow: 0px 0px 1px #f44336;
@@ -499,24 +501,61 @@ ul.menu-items li a {
   -ms-box-shadow: 0px 0px 1px #f44336;
   box-shadow: 0px 0px 1px #f44336;
 }
-.form input.valid:valid {
+.form input.valid:valid,
+.form textarea.valid:valid {
   border: 0.1px solid #00796b;
 }
-.form input.disabled {
+.form input.disabled,
+.form textarea.disabled {
   background-color: rgba(128,128,128,0.1);
 }
-.form input:disabled {
+.form input[disabled],
+.form textarea[disabled] {
   background-color: rgba(128,128,128,0.1);
 }
-.form input.readonly {
+.form input.readonly,
+.form textarea.readonly {
   background-color: rgba(128,128,128,0.1);
 }
-.form input:readonly {
+.form input[readonly],
+.form textarea[readonly] {
   background-color: rgba(128,128,128,0.1);
 }
 .form label {
   margin: 4px;
   color: #222;
+}
+.radio.disabled {
+  opacity: 0.6;
+}
+.radio.disabled input[type="radio"] + * {
+  background-color: rgba(128,128,128,0.1);
+}
+.radio:not(.disabled) {
+  cursor: pointer;
+}
+.radio input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+.radio input[type="radio"][disabled] + * {
+  background-color: rgba(128,128,128,0.1);
+}
+.radio input[type="radio"] + * {
+  margin-left: 3px;
+  position: relative;
+  top: 2.7px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 1px solid #ccc;
+}
+.radio input[type="radio"]:checked + * {
+  border: 5px solid #00796b;
 }
 .group:invalid {
   border: 0.1px solid #f44336;

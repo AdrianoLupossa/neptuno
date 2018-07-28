@@ -7,6 +7,7 @@ noeditable()
 		&:last-child
 			margin-bottom 0
 	input
+	textarea
 		border 1px solid #ddd
 		padding 10px 8px 8px 8px
 		font-size 0.9em
@@ -20,17 +21,46 @@ noeditable()
 			border 0.1px solid $dark-green
 		&.disabled
 			noeditable()
-		&:disabled
+		&[disabled]
 			noeditable()
 		&.readonly
 			noeditable()
-		&:readonly
+		&[readonly]
 			noeditable()
 		
 				
 	label
 		margin 4px
 		color #222
+		
+.radio
+	&.disabled
+		opacity 0.6
+	&.disabled input[type="radio"] + *
+		noeditable()
+		
+.radio:not(.disabled)		
+	cursor pointer
+		
+.radio input[type="radio"]
+	visibility hidden
+	position absolute
+	margin-left -9999px
+	&[disabled] + *
+		noeditable()
+	
+.radio input[type="radio"] + *
+	margin-left 3px
+	position relative
+	top 2.7px
+	display inline-block
+	width 16px
+	height 16px
+	borderRadius(100%)
+	border 1px solid #ccc
+	
+.radio input[type="radio"]:checked + *
+	border 5px solid $dark-green
 		
 .group
 	&:invalid
