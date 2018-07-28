@@ -1,3 +1,6 @@
+noeditable()
+	background-color rgba(grey, 0.1)
+	
 .form 
 	.group
 		margin-bottom 15px
@@ -15,6 +18,15 @@
 			boxShadow(0px 0px 1px $red)
 		&.valid:valid
 			border 0.1px solid $dark-green
+		&.disabled
+			noeditable()
+		&:disabled
+			noeditable()
+		&.readonly
+			noeditable()
+		&:readonly
+			noeditable()
+		
 				
 	label
 		margin 4px
@@ -29,6 +41,7 @@
 		
 .form.block
 	input
+	textarea
 		width 100%
 	*
 		display block

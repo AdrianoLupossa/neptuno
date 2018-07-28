@@ -7,13 +7,13 @@
 </head>
 <body>
 	<header>
-		<nav class="menu text-center shadow-1">
+		<nav class="menu text-center shadow-1 green">
 			<a href="#" class="icon-bar">Menu</a>
 			<ul class="menu-items">
 				<li><a href="../index.html">Home</a></li>
-				<li class="active"><a href="_components.html">Components</a></li>
+				<li><a href="_components.html">Components</a></li>
 				<li><a href="_interface.html">Interface</a></li>
-				<li><a href="_forms.html">Forms</a></li>
+				<li class="active"><a href="_forms.html">Forms</a></li>
 				<li><a href="docs/index.html">Docs</a></li>
 			</ul>
 		</nav>
@@ -23,7 +23,7 @@
 			<h1 class="title">Form elements</h1>
 		</div>
 			<br/>
-		<div class="card-group">
+		<div class="card-group mobile">
 			
 			<div class="form card block content">
 				<form action="#">
@@ -32,7 +32,7 @@
 					</div>
 					<div class="group">
 						<label for="">Username</label>
-						<input type="text" placeholder="Your username..." />
+						<input type="text" value="Adriano Lupossa" placeholder="Your username..." />
 					</div>
 					<div class="group">
 						<label for="">Password</label>
@@ -41,6 +41,7 @@
 					<div class="group">
 						<button class="btn primary has-have">Login</button>
 					</div>
+					<a href="#">Forgot password ?</a>
 				</form>
 			</div>
 
@@ -52,15 +53,41 @@
 					<div class="group valid">
 						<label for="">Username</label>
 						<input type="text" placeholder="Your username..." required="required" />
+						<p class="text-error">Please fill this field</p>
 					</div>
 					<div class="group valid">
 						<label for="">Password</label>
 						<input type="password" placeholder="Your password..."  required="required"/>
+						<p class="text-error">This field is required</p>
 					</div>
 					<div class="group">
 						<button class="btn primary has-have block">Login</button>
 					</div>
 				</form>
+			</div>
+
+			<div class="form card block content">
+				<div class="group">
+					<label for="">Other elements</label>
+				</div>
+				<div class="group">
+					<label>Disabled</label>
+					<input type="text" value="This input is disabled" disabled="disabled">
+				</div>
+				<div class="group">
+					<label>Readonly</label>
+					<input type="text" value="This input is for readonly" readonly="readonly">
+				</div>
+				<div class="group">
+					<label for="textarea">Textarea</label>
+					<textarea id="textarea" rows="7"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-group">
+			<div class="card content" style="width: 100%;">
+				<h1 class="title">Hello world!</h1>
 			</div>
 		</div>
 
