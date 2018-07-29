@@ -40,6 +40,9 @@ noeditable()
 	*
 		display block
 		
+input:valid + [class *="text-"]
+	display none
+		
 .group
 	&:invalid
 		border 0.1px solid $red
@@ -77,6 +80,7 @@ noeditable()
 	width 16px
 	height 16px
 	border 1px solid #ccc
+	boxShadow(1px 1px 1px #ddd)
 
 .radio input[type="radio"] + *
 	borderRadius(100%)
