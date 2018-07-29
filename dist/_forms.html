@@ -39,7 +39,14 @@
 						<input type="password" placeholder="Your password..." />
 					</div>
 					<div class="group">
-						<button class="btn primary has-have">Login</button>
+						<label for="switch" class="switch circle">
+							Mostrar senha:
+							<input type="checkbox" id="switch" />
+							<span class='right'></span>
+						</label>
+					</div>
+					<div class="group">
+						<button type="button" class="btn primary has-wave">Login</button>
 					</div>
 					<a href="#">Forgot password ?</a>
 				</form>
@@ -61,7 +68,7 @@
 						<p class="text-error">This field is required</p>
 					</div>
 					<div class="group">
-						<button class="btn primary has-have block">Login</button>
+						<button class="btn primary has-wave block">Login</button>
 					</div>
 				</form>
 			</section>
@@ -80,7 +87,7 @@
 				</div>
 				<div class="group">
 					<label for="textarea">Textarea</label>
-					<textarea id="textarea" rows="7">Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!</textarea>
+					<textarea id="textarea" rows="7" >Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!</textarea>
 				</div>
 			</section>
 		</div>
@@ -89,6 +96,28 @@
 			<section class="form card content">
 				<div class="group">
 					<label for="">Switch Buttons</label>
+				</div>
+				<div class="switch-group">
+					<label for="default-switch" class="switch circle">
+						Segunda-feira:
+						<input type="checkbox" id="default-switch" />
+						<span class="right"></span>
+					</label>
+					<label for="switch-button-2" class="switch circle">
+						Terça-feira:
+						<input type="checkbox" id="switch-button-2">
+						<span class="right"></span>
+					</label>
+					<label for="switch-button-3" class="switch circle is-disabled">
+						Disabled Switch:
+						<input type="checkbox" id="switch-button-3" disabled="disabled">
+						<span class="right"></span>
+					</label>
+					<label for="switch-button-4" class="switch circle is-disabled">
+						Disabled Checked Switch:
+						<input type="checkbox" id="switch-button-4" disabled="disabled" checked="checkbox">
+						<span class="right"></span>
+					</label>
 				</div>
 			</section>
 			<section class="form card content">
@@ -111,14 +140,14 @@
 					
 				</div>
 				<div class="group">
-					<label for="radio-button-2" class="radio disabled">
+					<label for="radio-button-2" class="radio is-disabled">
 						<input type="radio" id="radio-button-2" disabled="disabled">
 						<span></span>
 						Option Disabled
 					</label>
 				</div>
 				<div class="group">
-					<label for="radio-button-3" class="radio disabled">
+					<label for="radio-button-3" class="radio is-disabled">
 						<input type="radio" id="radio-button-3" disabled="disabled" checked="checked">
 						<span></span>
 						Option Disabled Checked
@@ -143,14 +172,14 @@
 					</label>
 				</div>
 				<div class="group">
-					<label for="checkbox-2" class="checkbox disabled">
+					<label for="checkbox-2" class="checkbox is-disabled">
 						<input type="checkbox" id="checkbox-2" disabled="disabled">
 						<span></span>
 						Checkbox Disabled
 					</label>
 				</div>
 				<div class="group">
-					<label for="checkbox-2" class="checkbox disabled">
+					<label for="checkbox-2" class="checkbox is-disabled">
 						<input type="checkbox" id="checkbox-2" disabled="disabled" checked="checked">
 						<span></span>
 						Checkbox Disabled Checked
