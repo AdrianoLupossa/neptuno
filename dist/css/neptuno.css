@@ -1029,6 +1029,12 @@ a.btn {
   animation: loader 0.5s linear infinite;
   background-color: transparent;
 }
+.loader.fast {
+  animation: loader 0.1s linear infinite;
+}
+.loader.slow {
+  animation: loader 1.2s linear infinite;
+}
 .loader.sm,
 .loader.small {
   width: 40px;
