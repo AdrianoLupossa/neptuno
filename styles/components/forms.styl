@@ -52,13 +52,10 @@ noeditable()
 	*
 		display block
 		
-input:valid + [class *="text-"]
+input[required]:valid + [class *="text-"]
 	display none
 		
 .group
-	&:not(.mobile):invalid
-		border 0.1px solid $red
-		boxShadow(0px 0px 1px $red)
 	&:not(.mobile).valid input:valid
 		border 0.1px solid $dark-green
 		
