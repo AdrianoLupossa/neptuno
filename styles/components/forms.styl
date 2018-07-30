@@ -18,7 +18,7 @@ noeditable()
 			border 0.1px solid $red
 			boxShadow(0px 0px 1px $red)
 		&:not(.mobile).valid:valid
-			border 0.1px solid $dark-green
+			border 0.1px solid $green
 		&.is-disabled
 			noeditable()
 		&[disabled]
@@ -27,23 +27,13 @@ noeditable()
 			noeditable()
 		&[readonly]
 			noeditable()
+	input[required]:valid + [class *="text-"]
+		display none
 		
 	label
 		margin 4px
 		color #222
 		
-.form
-	input:not([type ="checkbox"])
-	textarea
-		&.mobile
-			border none
-			border-bottom 1px solid #ddd
-			overflow hidden
-			resize-x none
-			padding-bottom 10px
-			&:focus
-				border-bottom 1.9px solid $green
-
 		
 .form.block
 	input:not([type="checkbox"])
@@ -51,13 +41,39 @@ noeditable()
 		width 100%
 	*
 		display block
+	
+mobileTextFields()
+	outline none
+	border none
+	border-bottom 1px solid #ddd
+	overflow hidden
+	resize-x none
+	padding-bottom 10px
+	boxShadow(none)
+	&:focus:not([required])
+		border-bottom 1.95px solid $green
 		
-input[required]:valid + [class *="text-"]
-	display none
+.form
+	input:not([type ="checkbox"])
+	textarea
+		&.mobile
+			mobileTextFields()
 		
 .group
 	&:not(.mobile).valid input:valid
-		border 0.1px solid $dark-green
+		border 0.1px solid $green
+	&.mobile
+		input
+		textarea
+			mobileTextFields()
+		input[required]:invalid
+			mobileTextFields()
+			border-bottom 1px solid $red
+		&.valid 
+			input:valid
+			textarea:valid
+				border-bottom 1px solid $green
+	
 		
 .radio
 .checkbox
@@ -101,11 +117,11 @@ input[required]:valid + [class *="text-"]
 	borderRadius(2px)
 	
 .radio input[type="radio"]:checked + *
-	border 5px solid $dark-green
+	border 5px solid $green
 
 .checkbox input[type="checkbox"]:checked + *
-	border-color $dark-green
-	background-color $dark-green
+	border-color $green
+	background-color $green
 	&:after
 		content 'v'
 		position absolute
