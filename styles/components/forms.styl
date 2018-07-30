@@ -14,10 +14,10 @@ noeditable()
 		outline none
 		borderRadius(2px)
 		width 200px
-		&:invalid
+		&:not(.mobile):invalid
 			border 0.1px solid $red
 			boxShadow(0px 0px 1px $red)
-		&.valid:valid
+		&:not(.mobile).valid:valid
 			border 0.1px solid $dark-green
 		&.disabled
 			noeditable()
@@ -28,10 +28,22 @@ noeditable()
 		&[readonly]
 			noeditable()
 		
-				
 	label
 		margin 4px
 		color #222
+		
+.form
+	input:not([type ="checkbox"])
+	textarea
+		&.mobile
+			border none
+			border-bottom 1px solid #ddd
+			overflow hidden
+			resize-x none
+			padding-bottom 10px
+			&:focus
+				border-bottom 1.9px solid $green
+
 		
 .form.block
 	input:not([type="checkbox"])
@@ -41,10 +53,10 @@ noeditable()
 		display block
 		
 .group
-	&:invalid
+	&:not(.mobile):invalid
 		border 0.1px solid $red
 		boxShadow(0px 0px 1px $red)
-	&.valid input:valid
+	&:not(.mobile).valid input:valid
 		border 0.1px solid $dark-green
 		
 .radio
