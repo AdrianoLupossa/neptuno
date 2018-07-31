@@ -127,6 +127,8 @@ mobileTextFields()
 	margin-left -9999px
 	&[disabled] + *
 		noeditable()
+	&:active + *
+		background-color #f1f1f1
 	
 .radio input[type="radio"] + *
 .checkbox input[type="checkbox"] + *
@@ -207,7 +209,7 @@ $Height = 25
 .switch input[type="checkbox"] + *:after
 .switch input[type="radio"] + *:after
 	width 23px
-	background-color #fff
+	background-color $white
 	boxShadow(0 2px 5px rgba(black,0.3))
 
 .switch input[type="checkbox"]:checked + *:before
@@ -219,6 +221,19 @@ $Height = 25
 	transform(translateX(unit($Height, px)))
 
 // TYPES
+.switch.flat input[type="checkbox"]
+.switch.flat input[type="radio"]
+	&:checked + *:before
+		border 1px double $green
+	&:checked + *:after
+		background-color $green
+	& + *:before
+		background-color $white
+	& + *:after
+		boxShadow(none)
+		background-color #ddd
+		margin 1px
+
 .switch.round input[type="checkbox"] + *:after
 .switch.circle input[type="checkbox"] + *:after
 .switch.round input[type="radio"] + *:after

@@ -671,6 +671,12 @@ ul.menu-items li a {
 .switch input[type="radio"][disabled] + * {
   background-color: rgba(128,128,128,0.1);
 }
+.radio input[type="radio"]:active + *,
+.checkbox input[type="checkbox"]:active + *,
+.switch input[type="checkbox"]:active + *,
+.switch input[type="radio"]:active + * {
+  background-color: #f1f1f1;
+}
 .radio input[type="radio"] + *,
 .checkbox input[type="checkbox"] + * {
   margin-left: 3px;
@@ -794,6 +800,28 @@ ul.menu-items li a {
   -ms-transform: translateX(25px);
   -o-transform: translateX(25px);
   transform: translateX(25px);
+}
+.switch.flat input[type="checkbox"]:checked + *:before,
+.switch.flat input[type="radio"]:checked + *:before {
+  border: 1px double #009688;
+}
+.switch.flat input[type="checkbox"]:checked + *:after,
+.switch.flat input[type="radio"]:checked + *:after {
+  background-color: #009688;
+}
+.switch.flat input[type="checkbox"] + *:before,
+.switch.flat input[type="radio"] + *:before {
+  background-color: #fff;
+}
+.switch.flat input[type="checkbox"] + *:after,
+.switch.flat input[type="radio"] + *:after {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  background-color: #ddd;
+  margin: 1px;
 }
 .switch.round input[type="checkbox"] + *:after,
 .switch.circle input[type="checkbox"] + *:after,
