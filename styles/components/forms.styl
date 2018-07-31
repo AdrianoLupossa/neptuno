@@ -221,12 +221,15 @@ $Height = 25
 	transform(translateX(unit($Height, px)))
 
 // TYPES
-.switch.flat input[type="checkbox"]
-.switch.flat input[type="radio"]
+.switch.circle.flat input[type="checkbox"]
+.switch.circle.flat input[type="radio"]
+.switch.round.flat input[type="checkbox"]
+.switch.round.flat input[type="radio"]
 	&:checked + *:before
 		border 1px double $green
 	&:checked + *:after
 		background-color $green
+		transform(translateX(22.2px))
 	& + *:before
 		background-color $white
 	& + *:after
@@ -271,3 +274,15 @@ $Height = 25
 .switch.lg input[type="radio"]:checked + *:after
 .switch.large input[type="radio"]:checked + *:after
 	transform(translateX(37px))
+	
+.switch.flat.lg input[type="checkbox"] + *:after
+.switch.flat.large input[type="checkbox"] + *:after
+.switch.flat.lg input[type="radio"] + *:after
+.switch.flat.large input[type="radio"] + *:after
+	width 33px
+	
+.switch.flat.lg input[type="checkbox"]:checked + *:after
+.switch.flat.large input[type="checkbox"]:checked + *:after
+.switch.flat.lg input[type="radio"]:checked + *:after
+.switch.flat.large input[type="radio"]:checked + *:after
+	transform(translateX(32px))

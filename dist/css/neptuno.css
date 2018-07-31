@@ -801,20 +801,33 @@ ul.menu-items li a {
   -o-transform: translateX(25px);
   transform: translateX(25px);
 }
-.switch.flat input[type="checkbox"]:checked + *:before,
-.switch.flat input[type="radio"]:checked + *:before {
+.switch.circle.flat input[type="checkbox"]:checked + *:before,
+.switch.circle.flat input[type="radio"]:checked + *:before,
+.switch.round.flat input[type="checkbox"]:checked + *:before,
+.switch.round.flat input[type="radio"]:checked + *:before {
   border: 1px double #009688;
 }
-.switch.flat input[type="checkbox"]:checked + *:after,
-.switch.flat input[type="radio"]:checked + *:after {
+.switch.circle.flat input[type="checkbox"]:checked + *:after,
+.switch.circle.flat input[type="radio"]:checked + *:after,
+.switch.round.flat input[type="checkbox"]:checked + *:after,
+.switch.round.flat input[type="radio"]:checked + *:after {
   background-color: #009688;
+  -webkit-transform: translateX(22.2px);
+  -moz-transform: translateX(22.2px);
+  -ms-transform: translateX(22.2px);
+  -o-transform: translateX(22.2px);
+  transform: translateX(22.2px);
 }
-.switch.flat input[type="checkbox"] + *:before,
-.switch.flat input[type="radio"] + *:before {
+.switch.circle.flat input[type="checkbox"] + *:before,
+.switch.circle.flat input[type="radio"] + *:before,
+.switch.round.flat input[type="checkbox"] + *:before,
+.switch.round.flat input[type="radio"] + *:before {
   background-color: #fff;
 }
-.switch.flat input[type="checkbox"] + *:after,
-.switch.flat input[type="radio"] + *:after {
+.switch.circle.flat input[type="checkbox"] + *:after,
+.switch.circle.flat input[type="radio"] + *:after,
+.switch.round.flat input[type="checkbox"] + *:after,
+.switch.round.flat input[type="radio"] + *:after {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
@@ -866,6 +879,22 @@ ul.menu-items li a {
   -ms-transform: translateX(37px);
   -o-transform: translateX(37px);
   transform: translateX(37px);
+}
+.switch.flat.lg input[type="checkbox"] + *:after,
+.switch.flat.large input[type="checkbox"] + *:after,
+.switch.flat.lg input[type="radio"] + *:after,
+.switch.flat.large input[type="radio"] + *:after {
+  width: 33px;
+}
+.switch.flat.lg input[type="checkbox"]:checked + *:after,
+.switch.flat.large input[type="checkbox"]:checked + *:after,
+.switch.flat.lg input[type="radio"]:checked + *:after,
+.switch.flat.large input[type="radio"]:checked + *:after {
+  -webkit-transform: translateX(32px);
+  -moz-transform: translateX(32px);
+  -ms-transform: translateX(32px);
+  -o-transform: translateX(32px);
+  transform: translateX(32px);
 }
 .btn {
   color: #fbfbfb;
