@@ -534,11 +534,50 @@ ul.menu-items li a {
   margin: 4px;
   color: #222;
 }
+.form label.block {
+  display: block;
+}
+.form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  min-width: 200px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.form select:not([size]) {
+  height: 33px;
+}
+.form select:not([disabled]):not(.is-disabled) {
+  cursor: pointer;
+}
+.form select.is-disabled {
+  background-color: rgba(128,128,128,0.1);
+}
+.form select[disabled] {
+  background-color: rgba(128,128,128,0.1);
+}
+.form select.readonly {
+  background-color: rgba(128,128,128,0.1);
+}
+.form select[readonly] {
+  background-color: rgba(128,128,128,0.1);
+}
 .form.block input:not([type="checkbox"]),
-.form.block textarea {
+.form.block textarea,
+.form.block select {
   width: 100%;
 }
 .form.block * {
+  display: block;
+}
+.group.block input:not([type="checkbox"]),
+.group.block textarea,
+.group.block select {
+  width: 100%;
+}
+.group.block * {
   display: block;
 }
 .form input:not([type ="checkbox"]).mobile,

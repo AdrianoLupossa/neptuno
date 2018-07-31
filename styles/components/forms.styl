@@ -33,11 +33,39 @@ noeditable()
 	label
 		margin 4px
 		color #222
-		
+		&.block
+			display block
+	select
+		padding 10px
+		border 1px solid #ddd
+		background-color $white
+		min-width 200px
+		borderRadius(2px)
+		&:not([size])
+			height 33px
+		&:not([disabled]):not(.is-disabled)
+			cursor pointer
+		&.is-disabled
+			noeditable()
+		&[disabled]
+			noeditable()
+		&.readonly
+			noeditable()
+		&[readonly]
+			noeditable()
 		
 .form.block
 	input:not([type="checkbox"])
 	textarea
+	select
+		width 100%
+	*
+		display block
+		
+.group.block
+	input:not([type="checkbox"])
+	textarea
+	select
 		width 100%
 	*
 		display block
