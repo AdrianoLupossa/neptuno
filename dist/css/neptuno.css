@@ -704,19 +704,13 @@ ul.menu-items li a {
   background-color: #009688;
 }
 .checkbox input[type="checkbox"]:checked + *:after {
-  content: 'v';
+  content: '✓';
   position: absolute;
-  left: 3px;
+  left: 1.6px;
   font-size: 14px;
-  bottom: -1px;
+  bottom: -2.5px;
   color: #fff;
-  font-weight: bold;
   font-family: 'arial-black';
-  -webkit-transform: skewY(-40deg);
-  -moz-transform: skewY(-40deg);
-  -ms-transform: skewY(-40deg);
-  -o-transform: skewY(-40deg);
-  transform: skewY(-40deg);
 }
 .switch-group .switch {
   display: block;
