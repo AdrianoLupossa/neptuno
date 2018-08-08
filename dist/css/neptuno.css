@@ -236,6 +236,9 @@ h6 {
 }
 a {
   text-decoration: none;
+  color: #009688;
+}
+a:hover {
   color: #00796b;
 }
 code {
@@ -1274,7 +1277,10 @@ a.btn {
 .banner {
   height: 300px;
   padding: 10px;
-  background-color: #009688;
+  background-image: -webkit-linear-gradient(bottom, #eee, #ddd);
+  background-image: -o-linear-gradient(bottom, #eee, #ddd);
+  background-image: linear-gradient(bottom, #eee, #ddd);
+  border: 1px solid #eee;
   display: block;
   margin: auto;
   -moz-border-radius: 3px;
@@ -1282,5 +1288,5 @@ a.btn {
   border-radius: 3px;
 }
 .banner > .title {
-  color: #fff;
+  color: rgba(0,0,0,0.7);
 }
