@@ -418,9 +418,6 @@ code {
   margin: 0;
   background-color: #ddd;
   padding: 10px 10px 10px 0;
-  -moz-border-radius: 5px 5px 0 0;
-  -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
   list-style: none;
 }
 .tabs li {
@@ -1030,7 +1027,7 @@ a.btn {
 .btn.lg {
   padding: 1em;
 }
-.btn.has-wave:active:not(.is-disabled) {
+.btn.has-effect:active:not(.is-disabled) {
   opacity: 0.8;
 }
 .btn.is-disabled,
