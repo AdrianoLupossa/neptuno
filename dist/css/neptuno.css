@@ -421,9 +421,6 @@ code {
   list-style: none;
 }
 .tabs li {
-  -moz-border-radius: 5px 5px 0 0;
-  -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
   display: inline;
   margin-right: 5px;
   padding: 10px;
