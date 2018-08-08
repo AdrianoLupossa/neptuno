@@ -1,0 +1,50 @@
+active()
+	border 1px solid #bbb
+	border-top-color #ccc
+	border-bottom none
+	background-color #eee
+.tabs
+	position relative
+	margin 0
+	background-color #ddd
+	padding 10px 10px 10px 0
+	borderRadius(5px 5px 0 0)
+	list-style none
+	li
+		borderRadius(5px 5px 0 0)
+		display inline
+		margin-right 5px
+		padding 10px
+		&:last-child
+			margin-right 0
+		&.active
+			active()
+		&:target
+			active()
+		&:not(:target)
+			background-color #ddd
+			border none
+		&:hover
+			background-color #eee
+		&:target a + *
+			display block
+		a
+			padding 10px
+			display inline
+			& + *
+				position absolute
+				margin-top 10px
+				display none
+	&.primary
+		background-color $green
+		li
+			border-left none
+			&:target
+				background-color $dark-green
+			&:not(:target)
+				background-color $green
+			&:hover
+				background-color $dark-green
+			a
+				color $white
+		

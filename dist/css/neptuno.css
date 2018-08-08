@@ -410,6 +410,76 @@ code {
   -ms-box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
   box-shadow: 1px 2px 5px rgba(0,0,0,0.8) !important;
 }
+.tabs {
+  position: relative;
+  margin: 0;
+  background-color: #ddd;
+  padding: 10px 10px 10px 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  list-style: none;
+}
+.tabs li {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  display: inline;
+  margin-right: 5px;
+  padding: 10px;
+}
+.tabs li:last-child {
+  margin-right: 0;
+}
+.tabs li.active {
+  border: 1px solid #bbb;
+  border-top-color: #ccc;
+  border-bottom: none;
+  background-color: #eee;
+}
+.tabs li:target {
+  border: 1px solid #bbb;
+  border-top-color: #ccc;
+  border-bottom: none;
+  background-color: #eee;
+}
+.tabs li:not(:target) {
+  background-color: #ddd;
+  border: none;
+}
+.tabs li:hover {
+  background-color: #eee;
+}
+.tabs li:target a + * {
+  display: block;
+}
+.tabs li a {
+  padding: 10px;
+  display: inline;
+}
+.tabs li a + * {
+  position: absolute;
+  margin-top: 10px;
+  display: none;
+}
+.tabs.primary {
+  background-color: #009688;
+}
+.tabs.primary li {
+  border-left: none;
+}
+.tabs.primary li:target {
+  background-color: #00796b;
+}
+.tabs.primary li:not(:target) {
+  background-color: #009688;
+}
+.tabs.primary li:hover {
+  background-color: #00796b;
+}
+.tabs.primary li a {
+  color: #fff;
+}
 nav.menu {
   padding: 10px;
   background-color: #009688;
