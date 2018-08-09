@@ -432,19 +432,19 @@ code {
   border: 1px solid #bbb;
   border-top-color: #ccc;
   border-bottom: none;
-  background-color: #eee;
+  background-color: #fff;
 }
 .tabs li:target {
   border: 1px solid #bbb;
   border-top-color: #ccc;
   border-bottom: none;
-  background-color: #eee;
+  background-color: #fff;
 }
 .tabs li:not(:target) {
   background-color: #ddd;
   border: none;
 }
-.tabs li:hover {
+.tabs li:hover:not(:target) {
   background-color: #eee;
 }
 .tabs li:target a + * {

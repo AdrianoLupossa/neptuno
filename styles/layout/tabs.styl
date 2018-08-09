@@ -2,7 +2,7 @@ active()
 	border 1px solid #bbb
 	border-top-color #ccc
 	border-bottom none
-	background-color #eee
+	background-color #fff
 .tabs
 	position relative
 	margin 0
@@ -22,7 +22,7 @@ active()
 		&:not(:target)
 			background-color #ddd
 			border none
-		&:hover
+		&:hover:not(:target)
 			background-color #eee
 		&:target a + *
 			display block
