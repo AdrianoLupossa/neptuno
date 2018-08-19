@@ -481,72 +481,118 @@ nav.menu {
   padding: 10px;
   background-color: #009688;
 }
-@media screen and (max-width: 480px) {
-  nav.menu.text-center li {
-    line-height: 1.5;
-  }
-  nav.menu.mobile {
-    text-align: left;
-  }
-  nav.menu.mobile a.icon-bar {
-    padding: 6px;
-    border-radius: 3px;
-    background-color: #00796b;
-    display: inline;
-  }
-  nav.menu.mobile a:hover + ul.menu-items {
-    display: flex;
-  }
-  nav.menu.mobile.menu-items {
-    display: none;
-    flex-direction: column;
-    padding: 0;
-  }
-  nav.menu.mobile.menu-items:hover {
-    background-color: #00796b;
-  }
-  nav.menu .menu-items li {
-    padding: 0;
-  }
-  nav.menu .menu-items li.active {
-    background-color: transparent;
-  }
-  nav.menu .menu-items li:hover {
-    background-color: transparent;
-  }
-  nav.menu .menu-items li a:hover {
-    color: #ccc;
-  }
-}
-a.icon-bar {
+nav.menu .icon-bar,
+nav.menu input[type="checkbox"] {
   display: none;
+}
+nav.menu.mobile .icon-bar {
   color: #fff;
+  padding: 7px 10px 7px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  -moz-box-shadow: 1px 1px 5px #444;
+  -webkit-box-shadow: 1px 1px 5px #444;
+  -o-box-shadow: 1px 1px 5px #444;
+  -ms-box-shadow: 1px 1px 5px #444;
+  box-shadow: 1px 1px 5px #444;
+  -webkit-transition: opacity 0.1s ease-in;
+  -moz-transition: opacity 0.1s ease-in;
+  -o-transition: opacity 0.1s ease-in;
+  -ms-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+  cursor: pointer;
 }
-ul.menu-items {
+nav.menu.mobile .icon-bar:hover {
+  color: #f5f5f5;
+}
+nav.menu.mobile .icon-bar.has-effect:active {
+  opacity: 0.8;
+}
+nav.menu.mobile .icon-bar + input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+  margin-left: -9999px;
+}
+nav.menu.mobile .icon-bar + input[type="checkbox"]:not(:checked) + ul.menu-items {
+  position: absolute;
+  opacity: 0;
+}
+nav.menu.mobile ul.menu-items {
+  -webkit-transform: translateX(-45px);
+  -moz-transform: translateX(-45px);
+  -ms-transform: translateX(-45px);
+  -o-transform: translateX(-45px);
+  transform: translateX(-45px);
   list-style: none;
-  display: inline;
 }
-ul.menu-items li {
+nav.menu.mobile ul.menu-items li {
+  line-height: 1.7;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  padding: 10px;
-  display: inline;
-  margin-right: 5%;
   cursor: pointer;
 }
-ul.menu-items li:last-child {
-  margin-right: 0;
+nav.menu.mobile ul.menu-items li:hover {
+  background-color: transparent;
 }
-ul.menu-items li:hover {
-  background-color: rgba(0,121,107,0.7);
+nav.menu.mobile ul.menu-items li.active {
+  background-color: transparent;
 }
-ul.menu-items li.active {
-  background-color: rgba(0,121,107,0.7);
-}
-ul.menu-items li a {
+nav.menu.mobile ul.menu-items li a {
   padding: 10px;
   color: #fff;
+}
+nav.menu.mobile ul.menu-items li a:hover {
+  color: #ccc;
+}
+nav.menu:not(.mobile) {
+  text-align: center;
+}
+nav.menu:not(.mobile) ul.menu-items {
+  display: inline;
+}
+nav.menu:not(.mobile) ul.menu-items li {
+  cursor: pointer;
+  display: inline;
+  margin-right: 5%;
+  padding: 10px;
+}
+@media screen and (max-width: 767px) {
+  nav.menu:not(.mobile) ul.menu-items li {
+    line-height: 1.7;
+  }
+}
+nav.menu:not(.mobile) ul.menu-items li:last-child {
+  margin: 0;
+}
+nav.menu:not(.mobile) ul.menu-items li:hover {
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  nav.menu:not(.mobile) ul.menu-items li:hover {
+    background-color: rgba(0,121,107,0.7);
+  }
+}
+nav.menu:not(.mobile) ul.menu-items li.active {
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  nav.menu:not(.mobile) ul.menu-items li.active {
+    background-color: rgba(0,121,107,0.7);
+  }
+}
+nav.menu:not(.mobile) ul.menu-items li a {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  nav.menu:not(.mobile) ul.menu-items li a {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav.menu:not(.mobile) ul.menu-items li a:hover {
+    color: #ccc;
+  }
 }
 .form .group {
   margin-bottom: 15px;

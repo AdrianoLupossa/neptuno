@@ -1,61 +1,80 @@
 nav.menu
 	padding 10px
 	background-color $green
-	@media screen and (max-width 480px)
-		&.text-center
-			li
-				line-height 1.5
-				
-		&.mobile
-			text-align left
-				
-		&.mobile
-			a.icon-bar
-				padding 6px
-				border-radius 3px
-				background-color $dark-green
-				display inline
-				
-			a:hover + ul.menu-items
-				display flex
-			&.menu-items
-				display none
-				flex-direction column
-				padding 0
-				&:hover
-					background-color $dark-green
-					
-		.menu-items li
-			padding 0
-			&.active
-				background-color $transparent
-			&:hover
-				background-color $transparent
-			a:hover
-				color #ccc
-				
-
-a.icon-bar
-	display none
-	color $white
-		
-ul.menu-items
-	list-style none
-	display inline
-	li
-		borderRadius(3px)
-		padding 10px
-		display inline
-		margin-right 5%
-		cursor pointer
-		&:last-child
-			margin-right 0
-		&:hover
-			background-color rgba($dark-green, 0.7)
-		&.active
-			background-color rgba($dark-green, 0.7)
-		a
-			padding 10px
+	.icon-bar
+	input[type="checkbox"]
+		display none
+	&.mobile
+		.icon-bar
 			color $white
+			padding 7px 10px 7px 10px
+			border-radius 2px
+			//background-color $dark-green
+			display inline-block
+			boxShadow(1px 1px 5px #444)
+			transition(opacity 0.1s ease-in)
+			cursor pointer
+			&:hover
+				color #f5f5f5
+			&.has-effect:active
+				opacity 0.8
+			& + input[type="checkbox"]
+				position absolute
+				visibility hidden
+				margin-left -9999px
+				&:not(:checked) + ul.menu-items
+					position absolute
+					opacity 0
+		ul.menu-items
+			transform(translateX(-45px))
+			list-style none
+			li
+				line-height 1.7
+				borderRadius(3px)
+				cursor pointer
+				&:hover
+					background-color $transparent
+				&.active
+					background-color $transparent
+				a
+					padding 10px
+					color $white
+					&:hover
+						color #ccc
+						
+	&:not(.mobile)
+		text-align center	
+		ul.menu-items
+			display inline
+			li
+				border-radius(3px)
+				cursor pointer
+				display inline
+				margin-right 5%
+				padding 10px
+				@media screen and (max-width $screen-xs-max)
+					line-height 1.7			
+				&:last-child
+					margin 0
+				&:hover
+					background-color $transparent
+					@media screen and (min-width $screen-sm)
+						background-color rgba($dark-green, 0.7)	
+				&.active
+					background-color $transparent
+					@media screen and (min-width $screen-sm)
+						background-color rgba($dark-green, 0.7)	
+						
+				a
+					color $white
+					@media screen and (min-width $screen-sm)
+						padding 10px
+					@media screen and (max-width $screen-sm)
+						&:hover
+							color #ccc
+						
+					
+						
 		
+
 	
