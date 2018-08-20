@@ -489,7 +489,6 @@ nav.menu.mobile .icon-bar {
   color: #fff;
   padding: 7px 10px 7px 10px;
   border-radius: 2px;
-  display: inline-block;
   -moz-box-shadow: 1px 1px 5px #444;
   -webkit-box-shadow: 1px 1px 5px #444;
   -o-box-shadow: 1px 1px 5px #444;
@@ -501,6 +500,11 @@ nav.menu.mobile .icon-bar {
   -ms-transition: opacity 0.1s ease-in;
   transition: opacity 0.1s ease-in;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  nav.menu.mobile .icon-bar {
+    display: inline-block;
+  }
 }
 nav.menu.mobile .icon-bar:active {
   background-color: #00796b;
@@ -516,40 +520,48 @@ nav.menu.mobile .icon-bar + input[type="checkbox"] {
   visibility: hidden;
   margin-left: -9999px;
 }
-nav.menu.mobile .icon-bar + input[type="checkbox"]:not(:checked) + ul.menu-items {
-  position: absolute;
-  opacity: 0;
+@media screen and (max-width: 768px) {
+  nav.menu.mobile .icon-bar + input[type="checkbox"]:not(:checked) + ul.menu-items {
+    position: absolute;
+    opacity: 0;
+  }
 }
-nav.menu.mobile ul.menu-items {
-  -webkit-transform: translateX(-45px);
-  -moz-transform: translateX(-45px);
-  -ms-transform: translateX(-45px);
-  -o-transform: translateX(-45px);
-  transform: translateX(-45px);
-  list-style: none;
+@media screen and (max-width: 768px) {
+  nav.menu.mobile ul.menu-items {
+    -webkit-transform: translateX(-45px);
+    -moz-transform: translateX(-45px);
+    -ms-transform: translateX(-45px);
+    -o-transform: translateX(-45px);
+    transform: translateX(-45px);
+  }
 }
-nav.menu.mobile ul.menu-items li {
-  line-height: 1.7;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-nav.menu.mobile ul.menu-items li:hover {
-  background-color: transparent;
-}
-nav.menu.mobile ul.menu-items li.active {
-  background-color: transparent;
-}
-nav.menu.mobile ul.menu-items li.active a {
-  color: #ccc;
+@media screen and (max-width: 768px) {
+  nav.menu.mobile ul.menu-items li {
+    line-height: 1.7;
+  }
+  nav.menu.mobile ul.menu-items li:hover {
+    background-color: transparent;
+  }
+  nav.menu.mobile ul.menu-items li.active {
+    background-color: transparent;
+  }
+  nav.menu.mobile ul.menu-items li.active a {
+    color: #ccc;
+  }
 }
 nav.menu.mobile ul.menu-items li a {
   padding: 10px;
   color: #fff;
 }
-nav.menu.mobile ul.menu-items li a:hover {
-  color: #ccc;
+@media screen and (max-width: 768px) {
+  nav.menu.mobile ul.menu-items li a:hover {
+    color: #ccc;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav.menu {
+    text-align: center;
+  }
 }
 nav.menu:not(.mobile) {
   text-align: center;
@@ -558,45 +570,62 @@ nav.menu:not(.mobile) ul.menu-items {
   display: inline;
 }
 nav.menu:not(.mobile) ul.menu-items li {
-  cursor: pointer;
   display: inline;
   margin-right: 5%;
   padding: 10px;
 }
+nav.menu ul.menu-items {
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  nav.menu ul.menu-items {
+    display: inline;
+  }
+}
+nav.menu ul.menu-items li {
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  nav.menu ul.menu-items li {
+    display: inline;
+    margin-right: 5%;
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
-  nav.menu:not(.mobile) ul.menu-items li {
+  nav.menu ul.menu-items li {
     line-height: 1.7;
   }
 }
-nav.menu:not(.mobile) ul.menu-items li:last-child {
+nav.menu ul.menu-items li:last-child {
   margin: 0;
 }
-nav.menu:not(.mobile) ul.menu-items li:hover {
+nav.menu ul.menu-items li:hover {
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  nav.menu:not(.mobile) ul.menu-items li:hover {
+  nav.menu ul.menu-items li:hover {
     background-color: rgba(0,121,107,0.7);
   }
 }
-nav.menu:not(.mobile) ul.menu-items li.active {
+nav.menu ul.menu-items li.active {
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  nav.menu:not(.mobile) ul.menu-items li.active {
+  nav.menu ul.menu-items li.active {
     background-color: rgba(0,121,107,0.7);
   }
 }
-nav.menu:not(.mobile) ul.menu-items li a {
+nav.menu ul.menu-items li a {
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  nav.menu:not(.mobile) ul.menu-items li a {
+  nav.menu ul.menu-items li a {
     padding: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  nav.menu:not(.mobile) ul.menu-items li a:hover {
+  nav.menu ul.menu-items li a:hover {
     color: #ccc;
   }
 }
