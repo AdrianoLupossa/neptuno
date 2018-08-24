@@ -522,6 +522,7 @@ nav.menu.mobile .icon-bar + input[type="checkbox"] {
 }
 @media screen and (max-width: 768px) {
   nav.menu.mobile .icon-bar + input[type="checkbox"]:not(:checked) + ul.menu-items {
+    margin-left: -9999px;
     position: absolute;
     opacity: 0;
   }
@@ -551,12 +552,6 @@ nav.menu.mobile .icon-bar + input[type="checkbox"] {
 }
 nav.menu.mobile ul.menu-items li a {
   padding: 10px;
-  color: #fff;
-}
-@media screen and (max-width: 768px) {
-  nav.menu.mobile ul.menu-items li a:hover {
-    color: #ccc;
-  }
 }
 @media screen and (min-width: 768px) {
   nav.menu {

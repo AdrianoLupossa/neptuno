@@ -27,6 +27,7 @@ nav.menu
 				margin-left -9999px
 				&:not(:checked) + ul.menu-items
 					@media screen and (max-width $screen-sm)
+						margin-left -9999px
 						position absolute
 						opacity 0
 		ul.menu-items
@@ -44,10 +45,6 @@ nav.menu
 					
 				a
 					padding 10px
-					color $white
-					@media screen and (max-width $screen-sm)
-						&:hover
-							color #ccc
 						
 	@media screen and (min-width $screen-sm)
 		text-align center
