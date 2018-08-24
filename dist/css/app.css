@@ -27,3 +27,8 @@ footer a {
 .alerts {
 	margin-top: 20%;
 }
+
+.download-doc {
+	color: grey; 
+	border-bottom: 1px dotted grey;
+}
