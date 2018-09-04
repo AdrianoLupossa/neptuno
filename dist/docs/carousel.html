@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<title>Carousel - Neptuno</title>
+	<link rel="icon" href="../assets/icons/icon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/neptuno.css" />
+	<link rel="stylesheet" href="../css/app.css" />
+	<link rel="stylesheet" href="../css/prism.css" />
+	<meta property="og:author" content="Adriano Lupossa" />
+    <meta property="og:site_url" content="neptuno.github.io/dist/docs/carousel.html" />
+    <meta property="og:image" content="../assets/icons/icon-black.png" />
+</head>
+
+<body>
+	
+	<header>
+		<nav class="menu sidenav shadow-1 mobile">
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox" class="icon-bar has-effect">
+				<span></span>
+			</label>
+			<ul class="menu-items">
+				<li><a href="../../">Home</a></li>
+				<li><a href="../_components.html">Components</a></li>
+				<li><a href="../_interface.html">Interface</a></li>
+				<li><a href="../_forms.html">Forms</a></li>
+				<li class="active"><a href="index.html">Docs</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<div class="banner">
+			<div class="group right">
+				<img src="../assets/icons/icon-black.png" class="logo" alt="Logo do neptuno">
+			</div>
+			<h1 class="title">Documentation</h1>
+			<p>
+				Keep the learning simple. 
+			</p>
+			<p class='quote'>
+				<a href="#" class='download-doc'>Available</a> for offline use.
+			</p>
+			<div class='group'>
+				<button class="btn primary has-effect">Download</button>
+				<button class="btn has-effect">Customize</button>
+			</div>
+		</div>
+
+		<div class="flex-nowrap">
+			<section class="card container doc-content" id="carousel">
+				<h1>Lightbox</h1>
+				<p>Layout elements are just made to help you build simple and beautiful layouts.</p>
+				<div class="lightbox">
+					<section class="carousel">
+						<ul class="min">
+							<li><a href="#img1"><img src="../assets/img/adrian-infernus-281832-500.jpg"></a></li>
+							<li><a href="#img2"><img src="../assets/img/ales-krivec-107499-500.jpg"></a></li>
+							<li><a href="#img3"><img src="../assets/img/christian-joudrey-96208-500.jpg"></a></li>
+							<li><a href="#img4"><img src="../assets/img/david-klaasen-54203-500.jpg"></a></li>
+						</ul>
+						<div class="picture" id="img1">
+							<figure>
+								<a href="#img4" class="btn-prev"></a>
+								<a href="#card-carousel" class="btn-close"></a>
+								<a href="#img2" class="btn-next"></a>
+								<img src="../assets/img/adrian-infernus-281832-500.jpg">	
+							</figure>
+						</div>
+						<div class="picture" id="img2">
+							<figure>
+								<a href="#img1" class="btn-prev"></a>
+								<a href="#card-carousel" class="btn-close"></a>
+								<a href="#img3" class="btn-next"></a>
+								<img src="../assets/img/ales-krivec-107499-500.jpg">
+							</figure>
+						</div>
+						<div class="picture" id="img3">
+							<figure>
+								<a href="#img2" class="btn-prev"></a>
+								<a href="#card-carousel" class="btn-close"></a>
+								<a href="#img4" class="btn-next"></a>
+								<img src="../assets/img/christian-joudrey-96208-500.jpg">
+							</figure>
+						</div>
+						<div class="picture" id="img4">
+							<figure>
+								<a href="#img3" class="btn-prev"></a>
+								<a href="#card-carousel" class="btn-close"></a>
+								<a href="#img1" class="btn-next"></a>
+								<img src="../assets/img/david-klaasen-54203-500.jpg">
+							</figure>
+						</div>
+					</section>
+<p><pre class="language-markup"><code>&lt;section class="carousel"&gt;
+
+	&lt;ul class="min"&gt;
+		&lt;li&gt;&lt;a href="#img1"&gt;&lt;img src="../assets/img/adrian-infernus-281832-500.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#img2"&gt;&lt;img src="../assets/img/ales-krivec-107499-500.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#img3"&gt;&lt;img src="../assets/img/christian-joudrey-96208-500.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#img4"&gt;&lt;img src="../assets/img/david-klaasen-54203-500.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+	&lt;div class="picture" id="img1"&gt;
+		&lt;figure&gt;
+			&lt;a href="#img1" class="btn-prev"&gt;&lt;/a&gt;
+			&lt;a href="#card-carousel" class="btn-close"&gt;&lt;/a&gt;
+			&lt;a href="#img3" class="btn-next"&gt;&lt;/a&gt;
+			&lt;img src="../assets/img/adrian-infernus-281832-500.jpg"&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+
+	&lt;div class="picture" id="img2"&gt;
+		&lt;figure&gt;
+			&lt;a href="#img4" class="btn-prev"&gt;&lt;/a&gt;
+			&lt;a href="#card-carousel" class="btn-close"&gt;&lt;/a&gt;
+			&lt;a href="#img2" class="btn-next"&gt;&lt;/a&gt;
+			&lt;img src="../assets/img/ales-krivec-107499-500.jpg"&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+
+	&lt;div class="picture" id="img3"&gt;
+		&lt;figure&gt;
+			&lt;a href="#img2" class="btn-prev"&gt;&lt;/a&gt;
+			&lt;a href="#card-carousel" class="btn-close"&gt;&lt;/a&gt;
+			&lt;a href="#img4" class="btn-next"&gt;&lt;/a&gt;
+			&lt;img src="../assets/img/christian-joudrey-96208-500.jpg"&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+
+	&lt;div class="picture" id="img4"&gt;
+		&lt;figure&gt;
+			&lt;a href="#img3" class="btn-prev"&gt;&lt;/a&gt;
+			&lt;a href="#card-carousel" class="btn-close"&gt;&lt;/a&gt;
+			&lt;a href="#img1" class="btn-next"&gt;&lt;/a&gt;
+			&lt;img src="../assets/img/david-klaasen-54203-500.jpg"&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+
+&lt;/section&gt;
+
+</code></pre></p>
+				</div>
+				
+				<h2>Issues</h2>
+				<p>
+					Bug or features request? <a href="http://github.com/adrianolupossa/neptuno/issues">Open an Issue</a>
+				</p>
+
+			</section>
+			<aside>
+				<ul class="items-doc">
+					<button title="Browse source code in github" id="btn-source-code" class="btn secondary block center has-effect">Source Code</button>
+					<li><a href="index.html">Getting Started</a></li>
+					<li><a href="layout.html">Layout</a></li>
+					<li><a href="button.html">Buttons</a></li>
+					<li><a href="shadows.html">Shadow level</a></li>
+					<li><a href="#typography">Typography</a></li>
+					<li><a href="cards.html">Cards</a></li>
+					<li><a href="forms.html">Form components</a></li>
+					<li><a href="#helpers">Helpers</a></li>
+					<li><a href="tabs.html">Tabs</a></li>
+					<li><a href="alerts.html">Alerts</a></li>
+					<li><a href="preloaders.html">Preloaders</a></li>
+					<li class="active"><a href="carousel.html">Carousel</a></li>
+				</ul>
+			</aside>
+		</div>
+
+	</main>
+
+	<footer class="horizontal-align-center">
+		<a href="https://github.com/adrianolupossa/neptuno" target="_blank">Github</a>
+		<a href="mailto:adrianolupossa@gmail.com">Contact me</a>
+		<a href="LICENSE.md">License</a>
+	</footer>
+
+	<script src="../js/app.js"></script>
+	<script src="../js/prism.js"></script>
+</body>
+</html>
