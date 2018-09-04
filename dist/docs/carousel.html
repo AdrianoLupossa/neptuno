@@ -143,6 +143,112 @@
 &lt;/section&gt;
 
 </code></pre></p>
+
+					<h2>Lightbox with caption</h2>
+					<section class="carousel">
+						<ul class="min">
+							<li><a href="#paisagem"><img src="../assets/img/adrian-infernus-281832-500.jpg"></a></li>
+							<li><a href="#bird"><img src="../assets/img/david-klaasen-54203-500.jpg"></a></li>
+						</ul>
+						<div class="picture" id="paisagem">
+							<figure>
+								<a href="#bird" class="btn-prev"></a>
+								<a href="#card-carousel" class="btn-close"></a>
+								<a href="#bird" class="btn-next"></a>
+								<div class="inner">
+									<img src="../assets/img/adrian-infernus-281832-500.jpg">
+									<figcaption class="caption">
+										<h1>Uma boa paisagem</h1>
+										<div>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eveniet nam doloribus commodi beatae aspernatur saepe cupiditate provident, qui et omnis aperiam maiores itaque, fugit cum voluptatibus nulla possimus perferendis.
+										</div>
+									</figcaption>
+								</div>	
+							</figure>
+						</div>
+						<div class="picture" id="bird">
+							<figure>
+								<a href="#paisagem" class="btn-prev"></a>
+								<a href="#card-carousel" class="btn-close"></a>
+								<a href="#paisagem" class="btn-next"></a>
+								<div class="inner">
+									<img src="../assets/img/david-klaasen-54203-500.jpg">
+									<figcaption class="caption">
+										<h1 class="title">A good Bird</h1>
+										<div class="container">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet hic eum unde expedita molestias iure, esse tempore aliquam quos aliquid, ducimus ipsum quae modi quam illum fugit ad quisquam explicabo?
+										</div>
+									</figcaption>
+								</div>
+							</figure>
+						</div>
+					</section>
+<p><pre class="language-markup"><code>&lt;section class="carousel"&gt;
+
+	&lt;ul class="min"&gt;
+		&lt;li&gt;&lt;a href="#paisagem"&gt;&lt;img src="../assets/img/adrian-infernus-281832-500.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#bird"&gt;&lt;img src="../assets/img/david-klaasen-54203-500.jpg"&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+	&lt;div class="picture" id="paisagem"&gt;
+		&lt;figure&gt;
+			&lt;a href="#bird" class="btn-prev"&gt;&lt;/a&gt;
+			&lt;a href="#card-carousel" class="btn-close"&gt;&lt;/a&gt;
+			&lt;a href="#bird" class="btn-next"&gt;&lt;/a&gt;
+			&lt;div class="inner"&gt;
+				&lt;img src="../assets/img/adrian-infernus-281832-500.jpg"&gt;
+				&lt;figcaption class="caption"&gt;
+					&lt;h1&gt;Uma boa Paisagem&lt;/h1&gt;
+					&lt;div&gt;
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illum repellendus veniam dolorem, maxime nostrum accusantium soluta. Incidunt impedit dolorem odio ex error, laborum accusamus cupiditate distinctio, necessitatibus adipisci, omnis!
+					&lt;/div&gt;
+				&lt;/figcaption&gt;
+			&lt;/div&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+
+	&lt;div class="picture" id="bird"&gt;
+		&lt;figure&gt;
+			&lt;a href="#paisagem" class="btn-prev"&gt;&lt;/a&gt;
+			&lt;a href="#card-carousel" class="btn-close"&gt;&lt;/a&gt;
+			&lt;a href="#paisagem" class="btn-next"&gt;&lt;/a&gt;
+			&lt;div class="inner"&gt;
+				&lt;img src="../assets/img/david-klaasen-54203-500.jpg"&gt;
+				&lt;figcaption class="caption"&gt;
+					&lt;h1 class="title"&gt;A Good Bird&lt;/h1&gt;
+					&lt;div class="container"&gt;
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illum repellendus veniam dolorem, maxime nostrum accusantium soluta. Incidunt impedit dolorem odio ex error, laborum accusamus cupiditate distinctio, necessitatibus adipisci, omnis!
+					&lt;/div&gt;
+				&lt;/figcaption&gt;
+			&lt;/div&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+
+&lt;/section&gt;
+
+</code></pre></p>
+
+					<div id="material-box">
+						<h2>Material Box</h2>
+						<p>A simple image with zoom. <a href="#">See Material box example.</a></p>
+						<!-- <div class="materialbox">
+							<input type="checkbox" id="trigger">
+							<label for="trigger" data-caption='Hello! Material box'>
+								<img src="../assets/img/adrian-infernus-281832-500.jpg">
+							</label>
+						</div> -->
+						<p><code class="token keyword">data-caption</code> attribute is optional, use only if you want an image with caption.</p>
+					
+<p><pre class="language-markup"><code>&lt;div class="materialbox"&gt;
+	&lt;input type="checkbox" id="trigger"&gt;
+	&lt;label for="trigger" data-caption="Hello! Material box"&gt;
+		&lt;img src="../assets/img/adrian-infernus-281832-500.jpg"&gt;
+	&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+</p>
+					</div>
+
 				</div>
 				
 				<h2>Issues</h2>
