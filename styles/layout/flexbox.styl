@@ -1,141 +1,234 @@
 displayFlex()
 	display flex !important
-	
-.flex-row
+
+
+// DIRECTION OF CONTENT
+ 
+.row
 	displayFlex()
 	flex-direction row
 
-.flex-row-reverse
+.row-reverse
 	displayFlex()
 	flex-direction row-reverse
 
-.flex-column
+.col
+.column
 	displayFlex()
 	flex-direction column
 
-.flex-column-reverse
+.col-reverse
+.column-reverse
 	displayFlex()
 	flex-direction column-reverse
 	
-.flex-nowrap
-.flex-nobreakline
+
+// BREAK OF CONTENT
+
+.nobreak
+.nobr
+.nowrap
 	displayFlex()
 	flex-wrap nowrap
 	
-.flex-wrap
-.flex-breakline
+.break
+.br
+.wrap
 	displayFlex()
 	flex-wrap wrap
-	
-.flex-wrap-reverse
-.flex-breakline-reverse
+
+
+.break-reverse
+.br-reverse
+.wrap-reverse
 	displayFlex()
 	flex-wrap wrap-reverse
 	
-.justify-content-start
-.horizontal-align-left
-	displayFlex()
-	justify-content flex-start
 
-.justify-content-end
-.horizontal-align-right
-	displayFlex()
-	justify-content flex-end
 
-.justify-content-center
-.horizontal-align-center
-	displayFlex()
-	justify-content center
+// CONTENT SPACING
 	
 .space-between
-.flex-space-between
 	displayFlex()
 	justify-content space-between
 
 .space-around
-.flex-space-around
 	displayFlex()
 	justify-content space-around
 	
 .space-evenly
-.flex-space-evenly
 	displayFlex()
 	justify-content space-evenly
 	
-.align-self-start
-.align-self-top
+
+
+// CONTENT HORIZONTAL ALIGN 
+
+.left-align
+.justify-start
 	displayFlex()
-	align-self flex-start
+	justify-content flex-start
 	
-.align-self-end
-.align-self-bottom
+.right-align
+.justify-end
 	displayFlex()
-	align-self flex-end
-	
-.align-self-center
+	justify-content flex-end
+
+.center-align
+.justify-center
 	displayFlex()
-	align-self center
+	justify-content center
 	
-.algn-self-baseline
-	displayFlex()
-	align-self baseline
-	
-.align-self-stretch
-	displayFlex()
-	align-self stretch
-	
+
+
+// CONTENT VERTICAL ALIGN
+
+.top-align
 .align-items-start
-.align-items-top
-.vertical-align-top
 	displayFlex()
 	align-items flex-start
 	
+.bottom-align
 .align-items-end
-.vertical-align-bottom
 	displayFlex()
 	align-items flex-end
 	
+.middle-align
+.valign-center
 .align-items-center
-.vertical-align-center
 	displayFlex()
 	align-items center
 	
+
+// STRETCH ITEMS AND BASELINE CONTENT 
+	
 .align-items-baseline
-.vertical-align-baseline
+.baseline-items
+.baseline
 	displayFlex()
 	align-items baseline
 	
 .align-items-stretch
-.vertical-align-stretch
+.stretch-items
+.stretch
 	displayFlex()
 	align-items stretch
 	
-.align-content-start
-.align-content-top
+
+
+// ALIGN of CONTENT COLUMN
+
+.content-top
+.col-top
 	displayFlex()
 	align-content flex-start
 	
-.align-content-end
-.align-content-bottom
+.content-bottom
+.col-bottom
 	displayFlex()
 	align-content flex-end
 	
-.align-content-center
+.content-center
+.col-center
 	displayFlex()
 	align-content center
 	
-.align-content-space-between
+.content-space-between
+.col-space-between
 	displayFlex()
 	align-content space-between
 	
-.align-content-space-around
+.content-space-around
+.col-space-around
 	displayFlex()
 	align-content space-around
 	
-.align-content-baseline
+.content-baseline
+.col-baseline
 	displayFlex()
 	align-content baseline
 	
-.align-content-stretch
+.content-stretch
+.col-stretch
 	displayFlex()
 	align-content stretch
+	
+
+
+/* PROPERTIES FOR CHILDREN */
+
+order($number)
+	.order-{$number}
+		order $number
+
+order(1)
+order(2)
+order(3)
+order(4)
+order(5)
+order(6)
+order(7)
+order(8)
+order(9)
+order(10)
+
+
+// This defines the ability for a flex item to grow if necessary.
+grow($number)
+	.grow-{$number}
+		flex-grow $number
+		
+grow(1)
+grow(2)
+grow(3)
+grow(4)
+grow(5)
+grow(6)
+grow(7)
+grow(8)
+grow(9)
+grow(10)
+
+
+// This defines the ability for a flex item to shrink if necessary.
+shrink($number)
+	.shrink-{$number}
+		flex-shrink $number + 1
+	
+shrink(1)
+shrink(2)
+shrink(3)
+shrink(4)
+shrink(5)
+shrink(6)
+shrink(7)
+shrink(8)
+shrink(9)
+shrink(10)
+
+
+// This allows the default alignment to be overridden for individual flex items.
+.align-self-top
+.self-top
+	displayFlex()
+	align-self flex-start
+	
+.align-self-bottom
+.self-bottom
+	displayFlex()
+	align-self flex-end
+	
+.align-self-center
+.self-center
+	displayFlex()
+	align-self center
+	
+.algn-self-baseline
+.self-baseline
+	displayFlex()
+	align-self baseline
+	
+.align-self-stretch
+.self-stretch
+	displayFlex()
+	align-self stretch
