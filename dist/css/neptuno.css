@@ -1429,3 +1429,19 @@ a.btn {
 .banner > .title {
   color: rgba(0,0,0,0.7);
 }
+progress[value] {
+  width: 250px;
+  height: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: 10px;
+}
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+progress::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(left, #009688, #00796b);
+  background-image: -o-linear-gradient(left, #009688, #00796b);
+  background-image: linear-gradient(left, #009688, #00796b);
+}
