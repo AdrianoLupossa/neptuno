@@ -21,9 +21,14 @@
 			background rgba(black, 0.8)
 			position fixed
 			z-index 1
-			figure > img
+			.inner
+				position relative
+			.inner img
+			figure img
 				opacity 1
 		figure
+			&:hover .caption.hover
+				opacity 1
 			width 1000px
 			margin 150px auto
 			img
@@ -75,4 +80,20 @@
 					color #ccc
 				&:before
 					content 'x'
+			.caption
+				position absolute
+				bottom 3px
+				background-color rgba(black, 0.7)
+				display block
+				width 100%
+				color #fff
+				padding 7px
+				&.hover
+					transition(opacity 0.2s linear)
+					opacity 0
+				h1, h2, h3, h4
+					display block
+					line-height 1.5
+					margin 0
+					color #fff		
 		

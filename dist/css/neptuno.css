@@ -1480,12 +1480,19 @@ progress::-webkit-progress-value {
   position: fixed;
   z-index: 1;
 }
-.carousel .picture:target figure > img {
+.carousel .picture:target .inner {
+  position: relative;
+}
+.carousel .picture:target .inner img,
+.carousel .picture:target figure img {
   opacity: 1;
 }
 .carousel .picture figure {
   width: 1000px;
   margin: 150px auto;
+}
+.carousel .picture figure:hover .caption.hover {
+  opacity: 1;
 }
 .carousel .picture figure img {
   width: 100%;
@@ -1560,4 +1567,30 @@ progress::-webkit-progress-value {
 }
 .carousel .picture figure .btn-close:before {
   content: 'x';
+}
+.carousel .picture figure .caption {
+  position: absolute;
+  bottom: 3px;
+  background-color: rgba(0,0,0,0.7);
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 7px;
+}
+.carousel .picture figure .caption.hover {
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  opacity: 0;
+}
+.carousel .picture figure .caption h1,
+.carousel .picture figure .caption h2,
+.carousel .picture figure .caption h3,
+.carousel .picture figure .caption h4 {
+  display: block;
+  line-height: 1.5;
+  margin: 0;
+  color: #fff;
 }
