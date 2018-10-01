@@ -32,16 +32,13 @@
 	flex-direction row
 	flex-wrap nowrap
 	justify-content space-between
-	
-@media screen and (max-width 480px)
-	.card-group.mobile
+@media screen and (max-width $screen-sm)
+	&.mobile
 		display block
 		.card
+		.card.mobile
 			width 100%
-	
-	.card.mobile
-		width 100%	
-	
+			 	
 .card .content
 .card.content
 	font-size 10pt
