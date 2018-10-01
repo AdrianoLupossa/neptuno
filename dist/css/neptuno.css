@@ -1223,14 +1223,12 @@ a.btn {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-@media screen and (max-width: 480px) {
-  .card-group.mobile {
+@media screen and (max-width: 768px) {
+  .mobile {
     display: block;
   }
-  .card-group.mobile .card {
-    width: 100%;
-  }
-  .card.mobile {
+  .mobile .card,
+  .mobile .card.mobile {
     width: 100%;
   }
 }
@@ -1515,7 +1513,7 @@ progress::-webkit-progress-value {
 }
 @media screen and (max-width: 768px) {
   .carousel .picture figure img {
-    height: 98vh;
+    height: 99vh;
   }
 }
 .carousel .picture figure a.btn-prev,
@@ -1603,7 +1601,11 @@ progress::-webkit-progress-value {
   -o-transition: opacity 0.2s linear;
   -ms-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
-  opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  .carousel .picture figure .caption.hover {
+    opacity: 0;
+  }
 }
 .carousel .picture figure .caption h1,
 .carousel .picture figure .caption h2,
