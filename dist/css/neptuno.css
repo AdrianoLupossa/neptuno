@@ -160,11 +160,11 @@ body {
   display: block;
   margin: auto;
 }
-.left,
+.left:not(.tooltip.left),
 .pull-left {
   float: left;
 }
-.right,
+.right:not(.tootip.right),
 .pull-right {
   float: right;
 }
@@ -212,12 +212,6 @@ body {
 }
 .dark-red {
   background-color: #e51c23 !important;
-}
-.left {
-  float: left;
-}
-.right {
-  float: right;
 }
 .is-hide,
 .hide {
@@ -1634,7 +1628,7 @@ progress::-webkit-progress-value {
 }
 [class*="tooltip"]:after {
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
-  content: attr(area-label);
+  content: attr(title);
   height: 25px;
   line-height: 25px;
   padding: 0 10px;
@@ -1675,7 +1669,7 @@ progress::-webkit-progress-value {
 .tooltip.top:before,
 .tooltip-top:before {
   border-color: #222 transparent transparent transparent;
-  margin-bottom: 0;
+  margin-bottom: 1px;
 }
 .tooltip.top:hover:after,
 .tooltip-top:hover:after,
@@ -1705,7 +1699,7 @@ progress::-webkit-progress-value {
   transition: top 0.25s ease-in-out;
   top: 90%;
   left: -9999px;
-  margin-top: 12px;
+  margin-top: 11px;
 }
 .tooltip.bottom:before,
 .tooltip-bottom:before {
@@ -1745,7 +1739,7 @@ progress::-webkit-progress-value {
 .tooltip.right:before,
 .tooltip-right:before {
   border-color: transparent #222 transparent transparent;
-  margin-left: 0;
+  margin-left: 1.5px;
 }
 .tooltip.right:hover:after,
 .tooltip-right:hover:after,
@@ -1780,7 +1774,7 @@ progress::-webkit-progress-value {
 .tooltip.left:before,
 .tooltip-left:before {
   border-color: transparent transparent transparent #222;
-  margin-right: 0;
+  margin-right: 1.5px;
 }
 .tooltip.left:hover:after,
 .tooltip-left:hover:after,
@@ -1798,6 +1792,10 @@ progress::-webkit-progress-value {
 .tooltip.left:focus:before,
 .tooltip-left:focus:before {
   top: 7px;
+}
+.tootlip.right:not(.pull-right),
+.tootip.left:not(.pull-left) {
+  float: none;
 }
 [class*="tooltip"]:after,
 [class*="tooltip"]:before {
