@@ -1456,6 +1456,7 @@ progress::-webkit-progress-value {
   transition: transform 0.5s;
 }
 .carousel .min img:hover {
+  cursor: zoom-in;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
