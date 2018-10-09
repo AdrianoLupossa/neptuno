@@ -1621,3 +1621,55 @@ progress::-webkit-progress-value {
     flex-wrap: nowrap;
   }
 }
+.materialbox img,
+[type='checkbox'] + label > img {
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+@media screen and (max-width: 768px) {
+  .materialbox img,
+  [type='checkbox'] + label > img {
+    width: 100%;
+  }
+}
+.materialbox img:hover,
+[type='checkbox'] + label > img:hover {
+  opacity: 0.7;
+}
+.materialbox input,
+[type='checkbox'].materialbox {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -1000px;
+}
+.materialbox label {
+  cursor: zoom-in;
+}
+.materialbox + label {
+  cursor: zoom-in;
+}
+.materialbox > [type='checkbox']:checked + label,
+[type='checkbox']:checked + label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+.materialbox > [type='checkbox']:checked + label img,
+[type='checkbox']:checked + label img {
+  min-width: 700px;
+}
+.materialbox > [type='checkbox']:checked + label img:hover,
+[type='checkbox']:checked + label img:hover {
+  opacity: 1;
+}
