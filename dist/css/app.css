@@ -1,5 +1,37 @@
 @charset 'utf-8';
 
+.doc-content {
+	width: 85%;
+}
+
+#btn-source-code {
+	margin-bottom: 10px;
+}
+
+ul.items-doc {
+	padding: 0;
+}
+
+ul.items-doc li {
+	cursor: pointer;
+	list-style: none;
+	padding: 7px;
+	border-radius: 2px;
+}
+
+
+ul.items-doc li:hover a,
+ul.items-doc li:hover,
+ul.items-doc li.active a,
+ul.items-doc li.active {
+	background-color: #777;
+	color: #fff;
+}
+
+ul.items-doc li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
 .logo {
 	width: 100px;
 }

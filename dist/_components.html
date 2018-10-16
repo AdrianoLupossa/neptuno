@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content='width=device-width, initial-scale=1'>
 	<title>Neptuno - Components</title>
 	<link rel="icon" href="assets/icons/icon.png" />
 	<link rel="stylesheet" href="css/neptuno.css" />
@@ -89,8 +90,79 @@
 			
 		</div>
 
-		<div class="alerts">
-			<div class="alert error floating">
+		<div class="card" id="card-carousel" style="width: 100%;">
+			<section class="carousel content">
+				<h1>Lightbox</h1>
+				<ul class="min">
+					<li><a href="#img1"><img src="assets/img/adrian-infernus-281832-500.jpg"></a></li>
+					<li><a href="#img2"><img src="assets/img/ales-krivec-107499-500.jpg"></a></li>
+					<li><a href="#img3"><img src="assets/img/christian-joudrey-96208-500.jpg"></a></li>
+					<li><a href="#img3"><img src="assets/img/christian-joudrey-96208-500.jpg"></a></li>
+				</ul>
+				<div class="picture" id="img1">
+					<figure>
+						<a href="#img4" class="btn-prev"></a>
+						<a href="#card-carousel" class="btn-close"></a>
+						<a href="#img2" class="btn-next"></a>
+						
+						<div class="inner">
+							<img src="assets/img/adrian-infernus-281832-500.jpg">
+							<figcaption class="caption">
+								<h1>Uma boa paisagem</h1>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eveniet nam doloribus commodi beatae aspernatur saepe cupiditate provident, qui et omnis aperiam maiores itaque, fugit cum voluptatibus nulla possimus perferendis.
+								</div>
+							</figcaption>
+						</div>
+					</figure>
+				</div>
+				<div class="picture" id="img2">
+					<figure>
+						<a href="#img1" class="btn-prev"></a>
+						<a href="#card-carousel" class="btn-close"></a>
+						<a href="#img3" class="btn-next"></a>
+						<div class="inner">
+							<img src="assets/img/ales-krivec-107499-500.jpg">
+							<figcaption class="caption hover">
+								<h1>Uma outra paisagem</h1>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus dolor tempora vel. Fugit voluptate, autem accusamus dolorum delectus nostrum qui magnam quaerat cum blanditiis cumque, architecto, consequatur hic! Odit!
+								</div>
+							</figcaption>
+						</div>
+					</figure>
+				</div>
+				<div class="picture" id="img3">
+					<figure>
+						<a href="#img2" class="btn-prev"></a>
+						<a href="#card-carousel" class="btn-close"></a>
+						<a href="#img4" class="btn-next"></a>
+						<img src="assets/img/christian-joudrey-96208-500.jpg">
+					</figure>
+				</div>
+				<div class="picture" id="img4">
+					<figure>
+						<a href="#img3" class="btn-prev"></a>
+						<a href="#card-carousel" class="btn-close"></a>
+						<a href="#img1" class="btn-next"></a>
+						<img src="assets/img/david-klaasen-54203-500.jpg">
+					</figure>
+				</div>
+			</section>
+		</div>
+
+		<div id="material-box" style="text-align: center;">
+			<h2>Material Box</h2>
+			<div class="materialbox">
+				<input type="checkbox" id="trigger">
+				<label for="trigger" data-caption='Hello, world! Material box'>
+					<img src="assets/img/adrian-infernus-281832-500.jpg">
+				</label>
+			</div>
+		</div>
+
+		<div class="alerts hide">
+			<div class="alert error">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, eum quis odit voluptatem voluptatum id, deserunt fugiat ipsum quos nesciunt ullam tempore, expedita aliquid molestias aut cum voluptas asperiores.
 			</div>
 		</div>
