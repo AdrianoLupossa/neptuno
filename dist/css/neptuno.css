@@ -1406,7 +1406,7 @@ a.btn {
   }
 }
 .banner {
-  height: 300px;
+  min-height: 300px;
   padding: 10px;
   background-image: -webkit-linear-gradient(bottom, #eee, #ddd);
   background-image: -o-linear-gradient(bottom, #eee, #ddd);
@@ -1626,7 +1626,6 @@ progress::-webkit-progress-value {
   background-image: -o-linear-gradient(left, #009688, #00796b);
   background-image: linear-gradient(left, #009688, #00796b);
 }
-<<<<<<< HEAD
 .carousel .min {
   display: flex;
   flex-wrap: wrap;
@@ -1869,7 +1868,7 @@ progress::-webkit-progress-value {
 .materialbox > [type='checkbox']:checked + label img:hover,
 [type='checkbox']:checked + label img:hover {
   opacity: 1;
-=======
+}
 .modal .btn-close {
   color: #aaa;
   cursor: pointer;
@@ -1961,5 +1960,4 @@ progress::-webkit-progress-value {
 .modal-footer {
   border-top: #eaeaea solid 1px;
   text-align: right;
->>>>>>> feature/modal
 }
