@@ -1448,15 +1448,19 @@ progress::-webkit-progress-value {
 .modal .btn-close {
   color: #aaa;
   cursor: pointer;
-  font-size: 3rem;
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 10px;
   text-decoration: none;
 }
 .modal .btn-close:hover,
 .modal .btn-close:focus {
   color: #999;
+}
+.modal .btn-close:after {
+  content: 'x';
+  font-family: 'arial';
+  font-size: 1.7rem;
 }
 .modal-wrap:before {
   content: '';

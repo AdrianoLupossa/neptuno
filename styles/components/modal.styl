@@ -8,16 +8,18 @@
   .btn-close  
     color $gray-light 
     cursor pointer 
-    font-size 3.0rem 
     position absolute  
     top 0 
-    right 5px  
+    right 10px  
     text-decoration none 
 
     &:hover,
     &:focus
        color darken($gray-light, 10%) 
-       
+    &:after
+      content 'x'
+      font-family 'arial'
+      font-size 1.7rem 
 
 // Modal Wrap
 // -------------------------------------------------- 
