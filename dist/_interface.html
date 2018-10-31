@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
 	<title>Interface</title>
 	<meta name="description" content="" />
 	<link rel="icon" href="assets/icons/icon.png" />
+	<meta property="og:image" content="assets/icons/icon-black.png" />
 	<link rel="stylesheet" href="css/neptuno.css" />
+	<link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
 	<header>
@@ -26,6 +30,9 @@
 			<h1 class="title">Interface</h1>
 			<p>
 				A set of components to create beautiful and customizable interfaces.
+			</p>
+			<p>
+				A new way to use flexbox, through classes.
 			</p>
 			<p class='quote'>
 				beautiful components for beautiful interfaces.
@@ -58,83 +65,61 @@
 				</section>
 			</div>
 		</div>
-		<h2>Tabs</h2>
-		<section class="card" style="width: 100%;">
-			<ul class='tabs'>
-				<li class="active" id="tab">
-					<a href="#tab">First Tab</a>
-					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eligendi voluptas optio natus earum, aspernatur eveniet fugiat quis modi delectus omnis molestiae, deserunt iste similique. Odit atque eius beatae quam!
-					</div>
-				</li>
-				<li id="tab1">
-					<a href="#tab1">Second Tab</a>
-					<div class="content">
-						My Name is Blablablabla>:
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto asperiores pariatur debitis impedit repellendus nemo officiis enim amet, id nihil commodi temporibus voluptas nisi modi laudantium. Quaerat nam libero saepe.
-					</div>
-				</li>
-				<li id="tab2">
-					<a href="#tab2">Third Tab</a>
-					<div class="content">
-						Something :(
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis facilis, sint ullam quas. Aliquid, quae voluptates numquam modi eveniet enim labore, similique quod officiis harum deserunt iste assumenda ab tenetur!
-					</div>
-				</li>
-			</ul>
-		</section>
-
-		<div class="flex is-hide">
-			<h2>FLEX CLASS</h2>
-			<section class="container-flex">
-				<article class="item">1</article>
-				<article class="item">2</article>
-				<article class="item">3</article>
+		<div class="card-group mobile">
+			<section class="card content">
+				<ul class='tabs'>
+					<li class="active" id="tab">
+						<a href="#tab">First Tab</a>
+						<div class="content">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eligendi voluptas optio natus earum, aspernatur eveniet fugiat quis modi delectus omnis molestiae, deserunt iste similique. Odit atque eius beatae quam!
+						</div>
+					</li>
+					<li id="tab1">
+						<a href="#tab1">Second Tab</a>
+						<div class="content">
+							My Name is Blablablabla>:
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto asperiores pariatur debitis impedit repellendus nemo officiis enim amet, id nihil commodi temporibus voluptas nisi modi laudantium. Quaerat nam libero saepe.
+						</div>
+					</li>
+					<li id="tab2">
+						<a href="#tab2">Third Tab</a>
+						<div class="content">
+							Something :(
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis facilis, sint ullam quas. Aliquid, quae voluptates numquam modi eveniet enim labore, similique quod officiis harum deserunt iste assumenda ab tenetur!
+						</div>
+					</li>
+				</ul>
 			</section>
-			
-			<h2>Posicionamento dos itens dentro de um container</h2>
-			<code>
-				<p>container.flex-row (default)</p>
-				<p>container.flex-row-reverse</p>
-				<p>container.flex-column</p>
-				<p>container.flex-column-reverse</p>
-			</code>
 
-			<h2>Quebra de linha de itens dentro de um container</h2>
-			<code>
-				<p>container.flex-wrap</p>
-				<p>container.flex-nowrap (default)</p>
-				<p>container.flex-wrap-reverse</p>
-			</code>
-			<h2>Alinhamento horizontal dos itens dentro de um container</h2>
-			<code>
-				<p>container.horizontal-align-left</p>
-				<p>container.horizontal-align-right</p>
-				<p>container.horizontal-align-center</p>
-			</code>
-
-			<h2>Espaçamento horizontal entre os itens dentro Container</h2>
-			<code>
-				<p>container.space-between</p>
-				<p>container.space-around</p>
-				<p>container.space-evenly</p>
-			</code>
-
-			<h2>Alinhamento vertical dos itens dentro de um Container</h2>
-			<code>
-				<p>container.vertical-align-top</p>
-				<p>container.vertical-align-bottom</p>
-				<p>container.vertical-align-center</p>
-			</code>
-
-			<h2>Alinhamento vertical dos Itens</h2>
-
-			<code>
-				<p>item.align-self-top</p>
-				<p>item.align-self-bottom</p>
-				<p>item.align-self-center</p>
-			</code>
+			<section class="card content table-responsive">
+				<table class="table table-bordered table-condensed table-hover">
+					<thead class="thead-light">
+						<tr>
+							<th>Número do processo</th>
+							<th>Nome</th>
+							<th>Turma</th>
+							<th>Nota</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>240</td>
+							<td>Jean Piaget</td>
+							<td>LCC2K</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>890</td>
+							<td>Universidade Católica</td>
+							<td>LCC1T</td>
+							<td>10</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
 		</div>
+
+		
 	</main>
 </body>
 </html>
