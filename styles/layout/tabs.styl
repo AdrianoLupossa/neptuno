@@ -1,8 +1,12 @@
 active()
-	border 1px solid #bbb
-	border-top-color #ccc
-	border-bottom none
-	background-color #fff
+	@media (min-width $screen-sm)
+		border 1px solid #bbb
+		border-top-color #ccc
+		background-color #fff
+		border-bottom none
+	@media (max-width $screen-sm)
+		padding-bottom 5px
+		border-bottom 5px solid $green
 .tabs
 	position relative
 	margin 0
@@ -12,7 +16,10 @@ active()
 	li
 		display inline
 		margin-right 5px
-		padding 10px 5px 10px 5px
+		@media (max-width $screen-sm)
+			transition(all 0.5s ease-in)
+		@media (min-width $screen-sm)
+			padding 10px 5px 10px 5px
 		&:last-child
 			margin-right 0
 		&.active
