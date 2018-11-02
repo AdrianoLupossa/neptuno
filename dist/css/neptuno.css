@@ -734,7 +734,7 @@ nav.menu.mobile input[type="checkbox"]:checked ~ .icon-bar > span:after {
 nav.menu.mobile ul.menu-items li a {
   padding: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
   nav.menu {
     text-align: center;
   }
@@ -753,7 +753,7 @@ nav.menu:not(.mobile) ul.menu-items li {
 nav.menu ul.menu-items {
   list-style: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   nav.menu ul.menu-items {
     display: inline;
   }
@@ -761,7 +761,7 @@ nav.menu ul.menu-items {
 nav.menu ul.menu-items li {
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   nav.menu ul.menu-items li {
     display: inline;
     margin-right: 5%;
@@ -803,6 +803,46 @@ nav.menu ul.menu-items li a {
 @media screen and (max-width: 768px) {
   nav.menu ul.menu-items li a:hover {
     color: #ccc;
+  }
+}
+@media (max-width: 768px) {
+  nav.menu.mobile.sidenav input[type="checkbox"]:not(:checked) ~ ul.menu-items {
+    margin-left: 0;
+    opacity: 1;
+    -webkit-transform: translateX(-1000px);
+    -moz-transform: translateX(-1000px);
+    -ms-transform: translateX(-1000px);
+    -o-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+}
+@media (max-width: 768px) {
+  nav.menu.mobile.sidenav ul.menu-items {
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    background: #fff;
+    left: 0;
+    -moz-box-shadow: 1px 2px 1px #bbb;
+    -webkit-box-shadow: 1px 2px 1px #bbb;
+    -o-box-shadow: 1px 2px 1px #bbb;
+    -ms-box-shadow: 1px 2px 1px #bbb;
+    box-shadow: 1px 2px 1px #bbb;
+    -webkit-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+    -ms-transition: transform 0.5s linear;
+    transition: transform 0.5s linear;
+    overflow-y: auto;
+    z-index: 2;
+  }
+  nav.menu.mobile.sidenav ul.menu-items a {
+    color: #000;
+  }
+}
+@media (min-width: 768px) {
+  nav.menu.mobile.sidenav ul.menu-items {
+    width: 50%;
   }
 }
 .form .group {
