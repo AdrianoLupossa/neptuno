@@ -488,10 +488,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-table.bordered > thead > tr,
-table.bordered > tbody > tr {
-  border-bottom: 1px solid rgba(0,0,0,0.12);
-}
 table.striped tr {
   border-bottom: none;
 }
@@ -511,6 +507,10 @@ table.highlight > tbody > tr {
 }
 table.highlight > tbody > tr:hover {
   background-color: rgba(242,242,242,0.5);
+}
+table.bordered > thead > tr,
+table.bordered > tbody > tr {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
 }
 table.centered thead tr th,
 table.centered tbody tr td {
@@ -534,22 +534,25 @@ th {
     border-spacing: 0;
     display: block;
     position: relative;
-/* sort out borders */
+  }
+  table.responsive td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
   }
   table.responsive td:empty:before {
     content: '\00a0';
   }
-  table.responsive th,
-  table.responsive td {
-    margin: 0;
-    vertical-align: top;
-  }
   table.responsive th {
     text-align: left;
+    display: block;
+    text-align: right;
   }
   table.responsive thead {
     display: block;
     float: left;
+    border: 0;
+    border-right: 1px solid rgba(0,0,0,0.12);
   }
   table.responsive thead tr {
     display: block;
@@ -569,21 +572,8 @@ th {
     display: inline-block;
     vertical-align: top;
   }
-  table.responsive th {
-    display: block;
-    text-align: right;
-  }
-  table.responsive td {
-    display: block;
-    min-height: 1.25em;
-    text-align: left;
-  }
   table.responsive tr {
     padding: 0 10px;
-  }
-  table.responsive thead {
-    border: 0;
-    border-right: 1px solid rgba(0,0,0,0.12);
   }
   table.responsive.bordered th {
     border-bottom: 0;
@@ -599,6 +589,13 @@ th {
   }
   table.responsive.bordered tbody tr {
     border-right: 1px solid rgba(0,0,0,0.12);
+  }
+}
+@media only screen and (max-width: 992px) {
+  table.responsive th,
+  table.responsive td {
+    margin: 0;
+    vertical-align: top;
   }
 }
 nav.menu {

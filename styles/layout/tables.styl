@@ -1,127 +1,102 @@
-table, th, td {
-  border: none;
-}
+table, th, td
+    border none
 
-table {
-  width: 100%;
-  display: table;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+table
+    width 100%
+    display table
+    border-collapse collapse
+    border-spacing 0
+    &.striped
+        tr
+            border-bottom none
+        & > tbody
+            & > tr
+                &:nth-child(odd)
+                    background-color rgba(242, 242, 242, 0.5)
+                & > td
+                    border-radius 0
+    &.highlight
+        & > tbody
+            & > tr
+                -webkit-transition background-color .25s ease
+                transition background-color .25s ease
+                &:hover
+                    background-color rgba(242, 242, 242, 0.5)
 
 table.bordered > thead > tr,
-table.bordered > tbody > tr {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-}
+table.bordered > tbody > tr
+    border-bottom 1px solid rgba(0, 0, 0, 0.12)
 
-table.striped tr {
-  border-bottom: none;
-}
+table.centered thead tr th, table.centered tbody tr td
+    text-align center
 
-table.striped > tbody > tr:nth-child(odd) {
-  background-color: rgba(242, 242, 242, 0.5);
-}
+tr
+    border-bottom 1px solid rgba(0, 0, 0, 0.12)
 
-table.striped > tbody > tr > td {
-  border-radius: 0;
-}
+td, th
+    padding 15px 5px
+    display table-cell
+    text-align left
+    vertical-align middle
+    border-radius 2px
 
-table.highlight > tbody > tr {
-  -webkit-transition: background-color .25s ease;
-  transition: background-color .25s ease;
-}
+@media only screen and (max-width: 992px)
+    table
+        &.responsive
+            width 100%
+            border-collapse collapse
+            border-spacing 0
+            display block
+            position relative
+            td
+                display block
+                min-height 1.25em
+                text-align left
+                &:empty
+                    &:before
+                        content '\00a0'
+            th
+                text-align left
+                display block
+                text-align right
+            thead
+                display block
+                float left
+                border 0
+                border-right 1px solid rgba(0, 0, 0, 0.12)
+                tr
+                    display block
+                    padding 0 10px 0 0
+                    th
+                        &::before
+                            content "\00a0"
+            tbody
+                display block
+                width auto
+                position relative
+                overflow-x auto
+                white-space nowrap
+                tr
+                    display inline-block
+                    vertical-align top
+            tr
+                padding 0 10px
+            &.bordered
+                th
+                    border-bottom 0
+                    border-left 0
+                td
+                    border-left 0
+                    border-right 0
+                    border-bottom 0
+                tr
+                    border 0
+                tbody
+                    tr
+                        border-right 1px solid rgba(0, 0, 0, 0.12)
 
-table.highlight > tbody > tr:hover {
-  background-color: rgba(242, 242, 242, 0.5);
-}
-
-table.centered thead tr th, table.centered tbody tr td {
-  text-align: center;
-}
-
-tr {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-}
-
-td, th {
-  padding: 15px 5px;
-  display: table-cell;
-  text-align: left;
-  vertical-align: middle;
-  border-radius: 2px;
-}
-
-@media only screen and (max-width: 992px) {
-  table.responsive {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: block;
-    position: relative;
-    /* sort out borders */
-  }
-  table.responsive td:empty:before {
-    content: '\00a0';
-  }
-  table.responsive th,
-  table.responsive td {
-    margin: 0;
-    vertical-align: top;
-  }
-  table.responsive th {
-    text-align: left;
-  }
-  table.responsive thead {
-    display: block;
-    float: left;
-  }
-  table.responsive thead tr {
-    display: block;
-    padding: 0 10px 0 0;
-  }
-  table.responsive thead tr th::before {
-    content: "\00a0";
-  }
-  table.responsive tbody {
-    display: block;
-    width: auto;
-    position: relative;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  table.responsive tbody tr {
-    display: inline-block;
-    vertical-align: top;
-  }
-  table.responsive th {
-    display: block;
-    text-align: right;
-  }
-  table.responsive td {
-    display: block;
-    min-height: 1.25em;
-    text-align: left;
-  }
-  table.responsive tr {
-    padding: 0 10px;
-  }
-  table.responsive thead {
-    border: 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  table.responsive.bordered th {
-    border-bottom: 0;
-    border-left: 0;
-  }
-  table.responsive.bordered td {
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-  }
-  table.responsive.bordered tr {
-    border: 0;
-  }
-  table.responsive.bordered tbody tr {
-    border-right: 1px solid rgba(0, 0, 0, 0.12);
-  }
-}
+table.responsive th,
+table.responsive td
+  @media only screen and (max-width: 992px)
+      margin 0
+      vertical-align top
