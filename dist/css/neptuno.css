@@ -477,6 +477,127 @@ code {
 .tabs.primary li a {
   color: #fff;
 }
+table,
+th,
+td {
+  border: none;
+}
+table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table.striped tr {
+  border-bottom: none;
+}
+table.striped > tbody > tr:nth-child(odd) {
+  background-color: rgba(242,242,242,0.5);
+}
+table.striped > tbody > tr > td {
+  border-radius: 0;
+}
+table.highlight > tbody > tr {
+  -webkit-transition: background-color 0.25s ease;
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+table.highlight > tbody > tr:hover {
+  background-color: rgba(242,242,242,0.5);
+}
+table.bordered > thead > tr,
+table.bordered > tbody > tr {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+table.centered thead tr th,
+table.centered tbody tr td {
+  text-align: center;
+}
+tr {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+td,
+th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+@media only screen and (max-width: 992px) {
+  table.responsive {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+  }
+  table.responsive td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+  table.responsive td:empty:before {
+    content: '\00a0';
+  }
+  table.responsive th {
+    text-align: left;
+    display: block;
+    text-align: right;
+  }
+  table.responsive thead {
+    display: block;
+    float: left;
+    border: 0;
+    border-right: 1px solid rgba(0,0,0,0.12);
+  }
+  table.responsive thead tr {
+    display: block;
+    padding: 0 10px 0 0;
+  }
+  table.responsive thead tr th::before {
+    content: "\00a0";
+  }
+  table.responsive tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table.responsive tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  table.responsive tr {
+    padding: 0 10px;
+  }
+  table.responsive.bordered th {
+    border-bottom: 0;
+    border-left: 0;
+  }
+  table.responsive.bordered td {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  table.responsive.bordered tr {
+    border: 0;
+  }
+  table.responsive.bordered tbody tr {
+    border-right: 1px solid rgba(0,0,0,0.12);
+  }
+}
+@media only screen and (max-width: 992px) {
+  table.responsive th,
+  table.responsive td {
+    margin: 0;
+    vertical-align: top;
+  }
+}
 nav.menu {
   padding: 10px;
   background-color: #009688;
