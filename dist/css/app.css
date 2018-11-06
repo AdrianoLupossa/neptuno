@@ -15,8 +15,13 @@ ul.items-doc {
 ul.items-doc li {
 	cursor: pointer;
 	list-style: none;
+	padding: 3px;
+}
+
+ul.items-doc li a {
 	padding: 7px;
-	border-radius: 2px;
+	display: block;
+	border-radius: 4px;
 }
 
 
@@ -63,4 +68,32 @@ footer a {
 .download-doc {
 	color: grey; 
 	border-bottom: 1px dotted grey;
+}
+
+p {
+	max-width: 600px;
+}
+
+.block {
+	display: block;
+}
+
+/*  DOCS/LAYOUT RULES */
+
+#layout .container {
+	border: 1px solid #ccc;
+	width: 60%;
+}
+
+#layout .group {
+	margin-bottom: 20px;
+}
+
+.tables.group, 
+.margin {
+	margin-top: 100px;
+}
+
+pre[class*="language-"] {
+	width: 60%;
 }
