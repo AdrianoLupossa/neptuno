@@ -85,15 +85,25 @@ p {
 	width: 60%;
 }
 
-#layout .group {
-	margin-bottom: 20px;
+h1 {
+	font-size: 2.5em;
 }
 
-.tables.group, 
-.margin {
-	margin-top: 100px;
+h2 {
+	font-size: 2em;
+	margin-top: 50px;
 }
 
-pre[class*="language-"] {
-	width: 60%;
+@media (min-width: 780px) {
+	pre[class*="language-"] {
+		width: 60%;
+		font-size: small;
+		border-radius: 5px;
+		box-shadow: 1px 2px 1px #eee;
+	}
+
+	code {
+		padding: 3px !important;
+		box-shadow: 1px 2px 1px #eee;
+	}
 }
