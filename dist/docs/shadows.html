@@ -4,19 +4,18 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-compatible" content="ie=edge">
-	<title>Neptuno - Documentation</title>
+	<title>Shadow Level - Neptuno</title>
 	<link rel="icon" href="../assets/icons/icon.png" />
 	<link rel="stylesheet" type="text/css" href="../css/neptuno.css" />
 	<link rel="stylesheet" href="../css/app.css" />
 	<link rel="stylesheet" href="../css/prism.css" />
 	<meta property="og:author" content="Adriano Lupossa" />
-    <meta property="og:site_name" content="Neptuno" />
-    <meta property="og:site_url" content="neptuno.github.io" />
+    <meta property="og:site_url" content="neptuno.github.io/dist/docs/shadows.html" />
     <meta property="og:image" content="../assets/icons/icon-black.png" />
 </head>
 
 <body>
-
+	
 	<header>
 		<nav class="menu shadow-1 mobile">
 			<input type="checkbox" id="checkbox">
@@ -34,6 +33,7 @@
 	</header>
 
 	<main class="container">
+		
 		<div class="banner">
 			<div class="group right">
 				<img src="../assets/icons/icon-black.png" class="logo" alt="Logo do neptuno">
@@ -50,40 +50,39 @@
 				<button class="btn has-effect">Customize</button>
 			</div>
 		</div>
-
+		
 		<div class="flex-nowrap">
-			<section class="card container doc-content" id="install">
-				<h1>Getting Started</h1>
-				<p>What is neptuno ? Neptuno is just a simple CSS library with a set of components that I use in my works and my side projects.</p>
+			<section class="card container doc-content" id="shadows">
+				<h1>Shadows</h1>
+				<p>Neptuno has three levels of shadow. You can use shadows in all components :)</p>
 
-				<p>We always use components, neptuno components are UI Beauty and UX friendly, not all devs like to use big frameworks like Bootstrap or Materialize. Sometimes we need simple things to build simple apps.</p>
-
-				<p>With Neptuno you can use this simple responsive components with your custom CSS files.</p>
-
-				<h2>CDN</h2>
+				<div class="shadow-box green white-text shadow-1">Level 1</div>
+				<div class="shadow-box green white-text shadow-2">Level 2</div>
+				<div class="shadow-box green white-text shadow-3">Level 3</div>
 				<p>
-					You can use our <b>CDN</b> or <a href="#">download</a> the components.
-				</p>
-				<p>
-					<pre class="language-markup"> <code class="language-markup"><span class="token comment" spellcheck="true">&lt;!-- Compiled and minified CSS --&gt;</span>
- &lt;link rel="stylesheet" href="https://cdn.cloudfire/neptuno/neptuno.css" /&gt; </code></pre>
+<pre class="language-markup compressed">
+<code class="language-markup">&lt;div class="shadow-1"&gt;Level 1&lt;/div&gt;
+&lt;div class="shadow-2"&gt;Level 2&lt;/div&gt;
+&lt;div class="shadow-3"&gt;Level 3&lt;/div&gt;
+</code></pre>
 				</p>
 
+				
 				<h2>Issues</h2>
-				<p>Bug or features request ? <a href="http://github.com/adrianolupossa/neptuno/issues">Open an Issue</a></p>
+				<p>Bug or features request? <a href="http://github.com/adrianolupossa/neptuno/issues/new" target="_blank">Open an Issue</a></p>
 
 			</section>
 			<aside>
 				<ul class="items-doc">
 					<button title="Browse source code in github" id="btn-source-code" class="btn secondary block center has-effect">Source Code</button>
-					<li class="active"><a href="#install">Getting Started</a></li>
-					<li><a href="layout.html">Layout</a></li>
+					<li><a href="index.html">Getting Started</a></li>
+					<li><a href="layout.html#layout">Layout</a></li>
 					<li><a href="buttons.html">Buttons</a></li>
-					<li><a href="shadows.html">Shadow level</a></li>
+					<li class="active"><a href="shadows.html">Shadow level</a></li>
 					<li><a href="typography.html">Typography</a></li>
 					<li><a href="cards.html">Cards</a></li>
 					<li><a href="forms.html">Form elements</a></li>
-					<li><a href="flexClass.html">Helpers</a></li>
+					<li><a href="helpers.html">Helpers</a></li>
 					<li><a href="tabs.html">Tabs</a></li>
 					<li><a href="alerts.html">Alerts</a></li>
 					<li><a href="loaders.html">Loaders</a></li>
