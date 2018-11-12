@@ -1,10 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<title>Form Elements - Neptuno</title>
+	<link rel="icon" href="../assets/icons/icon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/neptuno.css" />
+	<link rel="stylesheet" href="../css/app.css" />
+	<link rel="stylesheet" href="../css/prism.css" />
+	<meta property="og:author" content="Adriano Lupossa" />
+    <meta property="og:site_url" content="neptuno.github.io/dist/docs/layout.html" />
+    <meta property="og:image" content="../assets/icons/icon-black.png" />
 </head>
+
 <body>
-	<h1>Form elements</h1>
+	
+	<header>
+		<nav class="menu sidenav shadow-1 mobile">
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox" class="icon-bar has-effect">
+				<span></span>
+			</label>
+			<ul class="menu-items">
+				<li><a href="../../">Home</a></li>
+				<li><a href="../_components.html">Components</a></li>
+				<li><a href="../_interface.html">Interface</a></li>
+				<li><a href="../_forms.html">Forms</a></li>
+				<li class="active"><a href="index.html">Docs</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<div class="banner">
+			<div class="group right">
+				<img src="../assets/icons/icon-black.png" class="logo" alt="Logo do neptuno">
+			</div>
+			<h1 class="title">Layout Elements</h1>
+			<p>
+				Build Beatiful layouts
+			</p>
+			<p class='quote'>
+				Simple to use, Simple to customize.
+			</p>
+			<div class='group'>
+				<button class="btn primary has-effect">Download</button>
+			</div>
+		</div>
+
+		<div class="flex-nowrap">
+			<section class="card container doc-content" id="layout">
+				<h1>Overview</h1>
+				<p>Layout elements are just made to help you build simple and beautiful layouts.</p>
+				<p>Elements: <strong>Containers, Tables</strong> and a new way to use <b>Flexbox</b>.</p>
+
+				<div class="group margin">
+					<h2>Containers</h2>
+					<p>
+						Containers are the most basic layout element, he just apply a 10px padding to your elements to get start quickly building your app.
+					</p>
+
+					<p>
+						Neptuno has two types of containers: default container and container compressed.
+					</p>
+				</div>
+
+				<div class="group">
+					<p>Example:</p>
+					<div class="container">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam saepe deleniti nihil, possimus alias delectus tempora inventore dolorum molestias officiis architecto aut consectetur minima distinctio soluta dolor ipsa nulla atque.
+					</div>
+					<p>
+						<em class="block">Note: Padding of 10px applied.</em>
+					</p>
+				</div>
+
+				<p>
+					<pre class="language-markup compressed"> <code class="language-markup">&lt;div class="container" &gt;
+	<span class="token comment" spellcheck="true">&lt;!-- Content here --&gt;</span>
+ &lt;/div&gt;
+</code></pre>
+				</p>
+
+				<h3>Compressed Container</h3>
+				<p>Compress all the text of elements, change <span class="token class-name">.container</span> class to <span class="token class-name">.content</span></p>
+
+				<div class="group tables">
+					<h2>Tables</h2>
+					<p>Tables are a nice way to organize a lot of data. We provide a few utility classes to help you style your table as easily as possible. In addition, to improve mobile experience, all tables on mobile-screen widths are centered automatically.</p>
+					<div>
+						<table class="table" style="width: 60%;">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Item</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alvin</td>
+									<td>Eclair</td>
+									<td>$0.87</td>
+								</tr>
+								<tr>
+									<td>Alan</td>
+									<td>Jellybean</td>
+									<td>$3.76</td>
+								</tr>
+								<tr>
+									<td>Jonathan</td>
+									<td>Lollipop</td>
+									<td>$7.00</td>
+								</tr>
+								<tr>
+									<td>Shannon</td>
+									<td>KitKat</td>
+									<td>$9.99</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+<pre class="language-markup"> 
+<code class="language-markup"><span class="token tag">&lt;table class="table"&gt;</span>
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Name&lt;/th&gt;
+			&lt;th&gt;Item&lt;/th&gt;
+			&lt;th&gt;Price&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Alvin&lt;/td&gt;
+			&lt;td&gt;Eclair&lt;/td&gt;
+			&lt;td&gt;$0.87&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Alan&lt;/td&gt;
+			&lt;td&gt;Jellybean&lt;/td&gt;
+			&lt;td&gt;$3.76&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Jonathan&lt;/td&gt;
+			&lt;td&gt;Lollipop&lt;/td&gt;
+			&lt;td&gt;$7.00&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+<span class="token tag">&lt;/table&gt;</span>
+</code>
+</pre>
+					<p>
+						- Containers
+						- Tables
+						- Flexbox Class
+						- Grids
+					</p>
+				</div>
+				<!-- 
+				<h2>Issues</h2>
+				<p>Bug or features request? <a href="http://github.com/adrianolupossa/neptuno/issues">Open an Issue</a></p> -->
+
+			</section>
+			<aside>
+				<ul class="items-doc">
+					<button title="Browse source code in github" id="btn-source-code" class="btn secondary block center has-effect">Source Code</button>
+					<li><a href="index.html">Introduction</a></li>
+					<li class="active"><a href="layout.html#layout">Layout</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#Shadows">Shadow level</a></li>
+					<li><a href="#typography">Typography</a></li>
+					<li><a href="#cards">Cards</a></li>
+					<li><a href="forms.html">Form components</a></li>
+					<li><a href="#helpers">Helpers</a></li>
+					<li><a href="#tabs">Tabs</a></li>
+					<li><a href="#alerts">Alerts</a></li>
+					<li><a href="#loaders">Loaders</a></li>
+					<li><a href="#carousel">Carousel</a></li>
+				</ul>
+			</aside>
+		</div>
+
+	</main>
+
+	<footer class="horizontal-align-center">
+		<a href="https://github.com/adrianolupossa/neptuno" target="_blank">Github</a>
+		<a href="mailto:adrianolupossa@gmail.com">Contact me</a>
+		<a href="LICENSE.md">License</a>
+	</footer>
+
+	<script src="../js/app.js"></script>
+	<script src="../js/prism.js"></script>
 </body>
 </html>
