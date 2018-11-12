@@ -91,12 +91,6 @@ h2 {
 	margin-top: 50px;
 }
 
-.small-button,
-.other-buttons {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
 @media (min-width: 780px) {
 	pre[class*="language-"] {
 		width: 60%;
@@ -109,4 +103,24 @@ h2 {
 		padding: 3px !important;
 		box-shadow: 1px 2px 1px #eee;
 	}
+}
+
+
+/* DOCS/BUTTON RULES */
+
+.small-button,
+.other-buttons {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* DOCS/SHADOW RULES */
+
+.shadow-box {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
 }
