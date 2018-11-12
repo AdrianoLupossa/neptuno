@@ -73,38 +73,122 @@
  &lt;input type="reset" class="btn primary" value="Reset" /&gt;
 </code></pre>
 					</p>
-					<p>
-						<em class="block">Note: We recommend only the use of Button tag.</em>
-					</p>
+					<p><em class="block">Note: We recommend only the use of Button tag.</em></p>
 				</div>
 	
 				<div class="group buttons-variations">
 					<h2>Buttons variations</h2>
-					<p>Neptune has many buttons for different actions</p>
-					<button class="btn">Default Button</button>
-					<button class="btn primary has-effect">Primary Button</button>
-					<button class="btn danger">Error Button</button>
-					<button class="btn secondary">Secondary Button</button>
-					<button class="btn warning">Warning Button</button>
-					<button class="btn inverse">Inverse Button</button>
-					
+					<p>Neptune has many buttons for different actions.</p>
+					<button class="btn">Default</button>
+					<button class="btn primary">Primary</button>
+					<button class="btn warning">Warning</button>
+					<button class="btn secondary">Secondary</button>
+					<button class="btn danger">Danger</button>
+					<button class="btn inverse">Inverse</button>
+					<a href="#">Link</a>
+					<p>
+<pre class="language-markup compressed"><code class="language-markup">
+ &lt;button class="btn"&gt;Default&lt;/button&gt;
+ &lt;button class="btn primary"&gt;Primary&lt;/button&gt;
+ &lt;button class="btn warning"&gt;Warning&lt;/button&gt;
+ &lt;button class="btn secondary"&gt;Secondary&lt;/button&gt;
+ &lt;button class="btn danger"&gt;Danger&lt;/button&gt;
+ &lt;button class="btn inverse"&gt;Inverse&lt;/button&gt;
+ &lt;a href="#"&gt;Link&lt;/a&gt;
+</code></pre>
+					</p>
+					<p><em class="block">Note: We recommend only the use of Button tag.</em></p>
+
 				</div>
 
-				<h3>Compressed Container</h3>
-				<p>Compress all the text of elements, change <span class="token class-name">.container</span> class to <span class="token class-name">.content</span></p>
-
-				<div class="group">
-					
+				<div class="group buttons-variations">
+					<h2>Button effects</h2>
+					<p>I add an opacity effect to feel the click.</p>
 					<p>
-						- Containers
-						- Tables
-						- Flexbox Class
-						- Grids
+						add <code class="language-markup token attr-value">class="has-effect"</code> to the Button tag to see a light effect when clicks.
+					</p>
+					<button class="btn has-effect">Default</button>
+					<button class="btn primary has-effect">Primary</button>
+					<button class="btn warning has-effect">Warning</button>
+					<button class="btn secondary has-effect">Secondary</button>
+					<button class="btn danger has-effect">Danger</button>
+					<button class="btn inverse has-effect">Inverse</button>
+					<p>
+<pre class="language-markup compressed"><code class="language-markup">
+ &lt;button class="btn has-effect"&gt;Default&lt;/button&gt;
+ &lt;button class="btn primary has-effect"&gt;Primary&lt;/button&gt;
+ &lt;button class="btn warning has-effect"&gt;Warning&lt;/button&gt;
+ &lt;button class="btn secondary has-effect"&gt;Secondary&lt;/button&gt;
+ &lt;button class="btn danger has-effect"&gt;Danger&lt;/button&gt;
+ &lt;button class="btn inverse has-effect"&gt;Inverse&lt;/button&gt;
+</code></pre>
 					</p>
 				</div>
-				<!-- 
+
+				
+				<div class="group buttons-disabled">
+					<h2>Disabled buttons</h2>
+					<p>Make buttons look inactive by adding the disabled boolean attribute to any <b class="language-markup token attr-value">.btn</b> element. <code class="language-markup">&lt;a&gt;</code> don’t support the disabled attribute, so you must add the <b class="language-markup token attr-value">.disabled</b> class to make it visually appear disabled.</p>
+					<p>
+						add <code class="language-markup token attr-value">disabled</code> attribute to make buttons inactive.
+					</p>
+					<button class="btn" disabled="disabled">Default</button>
+					<button class="btn primary" disabled="disabled">Primary</button>
+					<button class="btn warning" disabled="disabled">Warning</button>
+					<button class="btn secondary" disabled="disabled">Secondary</button>
+					<button class="btn danger" disabled="disabled">Danger</button>
+					<button class="btn inverse" disabled="disabled">Inverse</button>
+					<p>
+<pre class="language-markup compressed"><code class="language-markup">
+ &lt;button class="btn" disabled="disabled"&gt;Default&lt;/button&gt;
+ &lt;button class="btn primary" disabled="disabled"&gt;Primary&lt;/button&gt;
+ &lt;button class="btn warning" disabled="disabled"&gt;Warning&lt;/button&gt;
+ &lt;button class="btn secondary" disabled="disabled"&gt;Secondary&lt;/button&gt;
+ &lt;button class="btn danger" disabled="disabled"&gt;Danger&lt;/button&gt;
+ &lt;button class="btn inverse" disabled="disabled"&gt;Inverse&lt;/button&gt;
+</code></pre>
+					</p>
+				</div>
+
+				<div class="group other-buttons">
+					<h3>Button Size</h3>
+					<p>
+						add <code class="language-markup token attr-value">class="lg"</code> or <code class="language-markup token attr-value">class="sm"</code> for additional sizes.
+					</p>
+					<button class="btn large">Large Button</button>
+					<button class="btn primary lg">Large Button</button>
+					
+<p>
+<pre class="language-markup compressed"><code class="language-markup">&lt;button class="btn lg"&gt;Large Button&lt;/button&gt;
+&lt;button class="btn primary large"&gt;Large Button&lt;/button&gt;
+</code></pre>
+</p>					
+
+					<div class="group small-button">
+						<button class="btn sm">Small Button</button>
+						<button class="btn primary small">Small Button</button>
+<p>
+<pre class="language-markup compressed"><code class="language-markup">&lt;button class="btn sm"&gt;Small Button&lt;/button&gt;
+&lt;button class="btn primary small"&gt;Small Button&lt;/button&gt;
+</code></pre>
+</p>
+					</div>
+
+					<p>Create block level buttons—those that span the full width of a parent—by adding <code class="language-markup token attr-value">class="block"</code>.</p>
+					<div class="group" style="width: 60%;">
+						<button class="btn block">Block Level Button</button>
+						<button class="btn primary block">Block Level Button</button>
+					</div>
+<p>
+<pre class="language-markup compressed"><code class="language-markup">&lt;button class="btn block"&gt;Small Button&lt;/button&gt;
+&lt;button class="btn primary block"&gt;Small Button&lt;/button&gt;
+</code></pre>
+</p>
+
+				</div>
+				
 				<h2>Issues</h2>
-				<p>Bug or features request? <a href="http://github.com/adrianolupossa/neptuno/issues">Open an Issue</a></p> -->
+				<p>Bug or features request ? <a href="http://github.com/adrianolupossa/neptuno/issues">Open an Issue</a></p>
 
 			</section>
 

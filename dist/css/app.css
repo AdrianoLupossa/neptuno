@@ -1,7 +1,9 @@
 @charset 'utf-8';
 
 .doc-content {
-	width: 85%;
+	padding: 40px;
+	width: 70%;
+	margin: 20px 30px 0 20px;
 }
 
 #btn-source-code {
@@ -82,11 +84,17 @@ p {
 
 #layout .container {
 	border: 1px solid #ccc;
-	width: 60%;
+	width: 70%;
 }
 
 h2 {
 	margin-top: 50px;
+}
+
+.small-button,
+.other-buttons {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 @media (min-width: 780px) {
