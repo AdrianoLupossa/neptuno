@@ -1,4 +1,4 @@
-.text-danger
+.text-error
 	color $dark-red
 	
 .text-success
@@ -50,6 +50,13 @@ alertErrors(bgColor, color)
 		position relative
 		bottom 5px
 		cursor pointer
+		
+.alert:target
+	display none
+	
+.alert .title
+	display inline
+	border-bottom 0
 
 @media screen and (max-width 480px)
 	.alert.danger
