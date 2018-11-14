@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<title>Alerts - Neptuno</title>
+	<link rel="icon" href="../assets/icons/icon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/neptuno.css" />
+	<link rel="stylesheet" href="../css/app.css" />
+	<link rel="stylesheet" href="../css/prism.css" />
+	<meta property="og:author" content="Adriano Lupossa" />
+    <meta property="og:site_url" content="neptuno.github.io/dist/docs/alerts.html" />
+    <meta property="og:image" content="../assets/icons/icon-black.png" />
+</head>
+
+<body>
+	
+	<header>
+		<nav class="menu shadow-1 mobile">
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox" class="icon-bar has-effect">
+				<span></span>
+			</label>
+			<ul class="menu-items">
+				<li><a href="../../">Home</a></li>
+				<li><a href="../_components.html">Components</a></li>
+				<li><a href="../_interface.html">Interface</a></li>
+				<li><a href="../_forms.html">Forms</a></li>
+				<li class="active"><a href="index.html">Docs</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main class="container">
+		
+		<div class="banner">
+			<div class="group right">
+				<img src="../assets/icons/icon-black.png" class="logo" alt="Logo do neptuno">
+			</div>
+			<h1 class="title">Documentation</h1>
+			<p>
+				Keep the learning simple. 
+			</p>
+			<p class='quote'>
+				<a href="#" class='download-doc'>Available</a> for offline use.
+			</p>
+			<div class='group'>
+				<button class="btn primary has-effect">Download</button>
+				<button class="btn has-effect">Customize</button>
+			</div>
+		</div>
+
+		<div class="flex-wrap">
+			<section class="card container doc-content" id="alerts">
+				<h1>Alerts</h1>
+				<p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+
+	
+				<div class="alert success">
+					Work in progress! More detailed documentation is coming soon.
+				</div>
+
+
+				<div class="default-alerts">
+					<h2>Default Alerts</h2>
+					<p>Add color contextual class.</p>
+					<div class="alert success" role="alert">This is a success alert—check it out!</div>
+					<div class="alert warning" role="alert">This is a warning alert—check it out!</div>
+					<div class="alert danger" role="alert">This is a danger alert—check it out!</div>
+				<p>
+<pre class="language-markup compressed">
+<code class="language-markup">&lt;div class="alert success" role="alert"&gt;This is a success alert—check it out!&lt;/div&gt;
+&lt;div class="alert warning" role="alert"&gt;This is a warning alert—check it out!&lt;/div&gt;
+&lt;div class="alert danger" role="alert"&gt;This is a danger alert—check it out!&lt;/div&gt;
+</code></pre>
+				</p>
+				</div>
+
+				<div class="alert-dismissible">
+					<h2>Alert dismissible</h2>
+					<div class="alert warning" role="alert" id="dismiss">
+						<a href="#dismiss" class="close"></a>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+				<p>
+<pre class="language-markup compressed">
+<code class="language-markup">&lt;div class="alert warning" role="alert" id="dismiss"&gt;
+	&lt;a href="#dismiss" class="close"&gt;&lt;/a&gt;
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+&lt;/div&gt;
+</code></pre>
+				</p>					
+				</div>
+
+				<div class="alert-with-buttons">
+					<h2>Alerts with buttons</h2>
+					<div class="alert warning" role="alert" id="message">
+						<h1 class="title">Some Message</h1>
+						<a href="#message" class="close"></a>
+						<div class="container">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit vel atque at dicta vitae corporis est quo, delectus reiciendis, quam fugit nemo saepe! Quae autem praesentium in illum est molestiae.
+							</p>
+							<button class="btn has-effect primary">Okay</button>
+							<button class="btn has-effect">No, thanks</button>
+						</div>
+					</div>
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="alert warning" role="alert" id="message"&gt;
+	&lt;h1 class="title"&gt;Some Message&lt;/h1&gt;
+	&lt;a href="#dismiss" class="close"&gt;&lt;/a&gt;
+	&lt;div class="container"&gt;
+		&lt;p&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit velit nam eos. Repellendus dolorum quaerat, inventore. Minus quod neque culpa, aut id fugiat, alias. Qui recusandae, distinctio perferendis. Nihil, accusamus.
+		&lt;/p&gt;
+		&lt;button class="btn has-effect primary"&gt;Okay&;&lt;/button&gt;
+		&lt;button class="btn has-effect"&gt;No, thanks&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+				</div>
+
+				<div class="message-error">
+					<h2>State Messages</h2>
+					<p>We provide some state messages to give feedback.</p>
+					<div class="group">
+						<p class='text-error'>
+							Something is Wrong :(
+						</p>
+						<p class='text-success'>
+							Welcome Mr.Lupossa
+						</p>
+						<p class="text-warning">
+							Updating 20%, don't turn off your computer
+						</p>
+					</div>
+<pre class="language-markup">
+<code>&lt;div class="group"&gt;
+	&lt;p class="text-error"&gt;
+		Something is wrong :(
+	&lt;/p&gt;
+	&lt;p class="text-success"&gt;
+		Welcome Mr. Lupossa
+	&lt;/p&gt;
+	&lt;p class="text-warning"&gt;
+		Updating 20%, don't turn off your computer
+	&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+				</div>
+
+				
+				<h2>Issues</h2>
+				<p>Bug or features request ? <a href="http://github.com/adrianolupossa/neptuno/issues/new" target="_blank">Open an Issue</a></p>
+
+			</section>
+			<aside>
+				<ul class="items-doc">
+					<button title="Browse source code in github" id="btn-source-code" class="btn secondary block center has-effect">Source Code</button>
+					<li><a href="index.html">Getting Started</a></li>
+					<li><a href="layout.html#layout">Layout</a></li>
+					<li><a href="buttons.html">Buttons</a></li>
+					<li><a href="shadows.html">Shadow level</a></li>
+					<li><a href="typography.html">Typography</a></li>
+					<li><a href="cards.html">Cards</a></li>
+					<li><a href="forms.html">Form elements</a></li>
+					<li><a href="helpers.html">Helpers</a></li>
+					<li><a href="tabs.html">Tabs</a></li>
+					<li class="active"><a href="alerts.html">Alerts</a></li>
+					<li><a href="loaders.html">Loaders</a></li>
+					<li><a href="carousel.html">Carousel</a></li>
+				</ul>
+			</aside>
+		</div>
+
+	</main>
+
+	<footer class="horizontal-align-center">
+		<a href="https://github.com/adrianolupossa/neptuno" target="_blank">Github</a>
+		<a href="mailto:adrianolupossa@gmail.com">Contact me</a>
+		<a href="LICENSE.md">License</a>
+	</footer>
+
+	<script src="../js/app.js"></script>
+	<script src="../js/prism.js"></script>
+</body>
+</html>

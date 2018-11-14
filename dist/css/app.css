@@ -124,3 +124,9 @@ h2 {
 	padding: 10px;
 	border-radius: 5px;
 }
+
+/* DOCS/ALERTS RULES */
+
+.alert {
+	width: 70%;
+}
