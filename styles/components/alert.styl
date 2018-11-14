@@ -1,4 +1,4 @@
-.text-error
+.text-danger
 	color $dark-red
 	
 .text-success
@@ -18,7 +18,7 @@ alertErrors(bgColor, color)
 
 .alert.success
 	alertErrors($green, $dark-green)
-.alert.error
+.alert.danger
 	alertErrors($red, $dark-red)
 .alert.warning
 	alertErrors($orange, $dark-orange)
@@ -39,16 +39,20 @@ alertErrors(bgColor, color)
 	width 100%
 	
 .alert > .close
-	font-family verdana
 	float right
-	font-style normal
-	font-size 9pt
-	cursor pointer
+	color #777
 	&:hover
-		color $green
+		color #000
+	&:before
+		content 'x'
+		font-family verdana
+		font-size 14pt
+		position relative
+		bottom 5px
+		cursor pointer
 
 @media screen and (max-width 480px)
-	.alert.error
+	.alert.danger
 	.alert.warning
 	.alert.success
 		display block
