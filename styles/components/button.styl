@@ -56,6 +56,50 @@ a.btn
 	color #333
 	width 300px
 	height 170px
+	display inline-block
+	
+.btn.dropdown
+	position relative		
+	&::after
+		content "﹀"
+		position relative
+		margin-left 2px
+		top 1px
+		font-size 9px
+		font-weight bolder
+	&:active
+		background-color #ddd
+	[type="checkbox"]
+		position absolute
+		margin-left -1000px
+		visibility hidden
+		&:checked + *
+			display block
+		& + *
+			background-color #f2f2f2
+			boxShadow(5px 5px 10px #999)
+			display none
+			position absolute
+			top 39px
+			min-width 120px
+			left 0
+			border-radius 3px
+			margin 0
+			padding 0
+			z-index 3
+			& > .item
+				padding 10px
+				display block
+				a
+					user-select none
+					color inherit
+				&:hover
+					background-color #ddd
+	&.up
+		&::after
+			content "︿"
+			top -4px
+				
 		
 .btn.small
 .btn.sm
