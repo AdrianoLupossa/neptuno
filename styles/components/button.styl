@@ -59,7 +59,7 @@ a.btn
 	display inline-block
 	
 .btn.dropdown
-	position relative		
+	position relative	
 	&::after
 		content "﹀"
 		position relative
@@ -91,14 +91,16 @@ a.btn
 				padding 10px
 				display block
 				a
-					user-select none
 					color inherit
 				&:hover
 					background-color #ddd
+			@media (max-width $screen-sm)
+				width 50vw
+				
 	&.up
 		&::after
 			content "︿"
-			top -4px
+			top -4px	
 				
 		
 .btn.small
