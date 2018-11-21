@@ -149,7 +149,7 @@ h2 {
 
 /* DOCS/HELPERS */
 
-.item {
+#flexclasses .item {
 	width: 50%;
 	height: 100px;
 	background-color: #fff;

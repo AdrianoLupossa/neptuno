@@ -158,8 +158,8 @@
 
 					<div class="flex-wrap">
 						<h2>Flex-wrap</h2>
-						<p><code class="token keyword">class="wrap"</code> or <code class="token keyword">class="nowrap"</code> By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this classes.</p>
-						<img src="../assets/img/flex-wrap.svg" class="box flex-iamge" alt="CSS Flexbox layout: Flex-wrap">
+						<p><code class="token keyword">class="wrap"</code> or <code class="token keyword">class="nowrap"</code>. By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this classes.</p>
+						<img src="../assets/img/flex-wrap.svg" class="box flex-image" alt="CSS Flexbox layout: Flex-wrap">
 						<p>Example:</p>
 						<div class="container box wrap">
 							<article class="item">Item 1</article>
@@ -182,9 +182,9 @@
 						</ul>
 					</div>
 
-					<div class="justify-content">
-						<h2>Flex-Alignment</h2>
-						<p><code class="token keyword">class="center-align"</code> or <code class="token keyword">class="left-align"</code> or <code class="token keyword">class="right-align"</code> This defines the alignment along the main axis. It also exerts some control over the alignment of items when they overflow the line.</p>
+					<div class="flex-align">
+						<h2>Flex-alignment</h2>
+						<p><code class="token keyword">class="center-align"</code> or <code class="token keyword">class="left-align"</code> or <code class="token keyword">class="right-align"</code>. This defines the alignment along the main axis. It also exerts some control over the alignment of items when they overflow the line.</p>
 						<p>Example:</p>
 						<div class="container box row right-align">
 							<article class="item" style="width: 100px;">Item 1</article>
@@ -201,10 +201,36 @@
 </code></pre></p>						
 						<h5>Default Classes</h5>
 						<ul class="default-classes">
-							<li><code class="token keyword">nowrap or nobreak</code>: all flex items will be on one line</li>
-							<li><code class="token keyword">wrap or break</code>: flex items will wrap onto multiple lines, from top to bottom.</li>
-							<li><code class="token keyword">wrap-reverse or break-reverse</code>: sflex items will wrap onto multiple lines from bottom to top.</li>
-							<li><code class="token keyword">wrap-reverse or break-reverse</code>: sflex items will wrap onto multiple lines from bottom to top.</li>
+							<li><code class="token keyword">left-align or justify-start</code>: items are packed toward the start line.</li>
+							<li><code class="token keyword">right-align or justify-end</code>: items are packed toward to end line.</li>
+							<li><code class="token keyword">center-align or justify-center</code>: items are centered along the line.</li>
+						</ul>
+					</div>
+
+					<div class="flex-spacing">
+						<h2>Flex-spacing</h2>
+						<p><code class="token keyword">space-between</code> or <code class="token keyword">space-around</code> or <code class="token keyword">space-evenly</code>. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.</p>
+						<img src="../assets/img/flex-spacing.png" class="box flex-image" alt="CSS Flexbox layout: Flex-spacing">
+						<p>Example:</p>
+						<div class="container box row space-between">
+							<article class="item" style="width: 100px;">Item 1</article>
+							<article class="item" style="width: 100px;">Item 2</article>
+							<article class="item" style="width: 100px;">Item 3</article>
+							<article class="item" style="width: 100px;">Item 4</article>
+						</div>
+<p><pre class="language-markup"><code>&lt;div class="container row space-between"&gt;
+	&lt;article class="item" style="width: 100px;"&gt;Item 1&lt;/article&gt;
+	&lt;article class="item" style="width: 100px;"&gt;Item 2&lt;/article&gt;
+	&lt;article class="item" style="width: 100px;"&gt;Item 3&lt;/article&gt;
+	&lt;article class="item" style="width: 100px;"&gt;Item 4&lt;/article&gt;
+&lt;/div&gt;
+</code></pre></p>	
+
+						<h5>Default Classes</h5>
+						<ul class="default-classes">
+							<li><code class="token keyword">space-between</code>: items are evenly distributed in the line; first item is on the start line, last item on the end line.</li>
+							<li><code class="token keyword">space-around</code>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</li>
+							<li><code class="token keyword">space-evenly</code>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
 						</ul>
 					</div>
 				</div>
