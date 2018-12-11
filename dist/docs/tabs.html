@@ -105,6 +105,105 @@
 	</code>
 </pre>						
 					</p>
+
+					<div class="primary-tabs" style="margin-bottom: 100px;">
+						<h2>Square Tabs</h2>
+						<p>Add <code class="token keyword">class="square"</code> to make square tabs.</p>
+						<ul class='tabs square' style="width: 70%;">
+							<li id="tabSquare1">
+								<a href="#tabSquare1">Option 1</a>
+								<div class="content">
+									1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+							<li id="tabSquare2">
+								<a href="#tabSquare2">Option 2</a>
+								<div class="content">
+									2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+							<li id="tabSquare3">
+								<a href="#tabSquare3">Option 3</a>
+								<div class="content">
+									3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="primary-tabs" style="margin-bottom: 100px;">
+						<p>Add <code class="token keyword">class="primary"</code> to make tabs with primary color.</p>
+						<ul class='tabs square primary' style="width: 70%;">
+							<li id="tabPrimary1">
+								<a href="#tabPrimary1">Option 1</a>
+								<div class="content">
+									1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+							<li id="tabPrimary2">
+								<a href="#tabPrimary2">Option 2</a>
+								<div class="content">
+									2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+							<li id="tabPrimary3">
+								<a href="#tabPrimary3">Option 3</a>
+								<div class="content">
+									3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="customize-tabs">
+						<h2>Customize</h2>
+						<p>Use those selectors to customize tabs.</p>
+						<ul class='tabs square' style="width: 70%; margin-bottom: 100px;">
+							<li id="tabCustomized1">
+								<a href="#tabCustomized1">Option 1</a>
+								<div class="content">
+									1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+							<li id="tabCustomized2">
+								<a href="#tabCustomized2">Option 2</a>
+								<div class="content">
+									2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+							<li id="tabCustomized3">
+								<a href="#tabCustomized3">Option 3</a>
+								<div class="content">
+									3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae aliquid iure facere, dolorem iste delectus vitae autem ullam voluptates alias voluptatem eius suscipit, optio veniam adipisci nisi numquam, doloremque.
+								</div>
+							</li>
+						</ul>
+						
+<pre class="language-css"><code>.tabs {
+	background-color: #606060;
+ 	--color: #909090;
+}
+
+.tabs.square li {
+	border: none;
+}
+
+.tabs li a {
+	color:  #bbb;
+}
+
+.tabs li:hover,
+.tabs li:target {
+	background-color: var(--color);
+}
+
+.tabs li:hover a,
+.tabs li:target a {
+	color: #fff;
+}
+	
+</code></pre>
+					</div>
 				
 				<h2>Issues</h2>
 				<p>Bug or features request ? <a href="http://github.com/adrianolupossa/neptuno/issues/new" target="_blank">Open an Issue</a></p>

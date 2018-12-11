@@ -13,9 +13,11 @@ active()
 	background-color #ddd
 	padding 11px 10px 10px 0
 	list-style none
+	borderRadius(12px 12px 0 0)
 	li
 		display inline
 		margin-right 5px
+		borderRadius(6px 6px 0 0)
 		@media (max-width $screen-sm)
 			transition(all 0.5s ease-in)
 		@media (min-width $screen-sm)
@@ -29,7 +31,7 @@ active()
 		// &:not(:target):not(.active)
 		// 	background-color #ddd
 		// 	border none
-		&:hover:not(:target)
+		&:hover
 			background-color #eee
 		&:target a + *
 			display block
@@ -45,7 +47,7 @@ active()
 	&.primary
 		background-color $green
 		li
-			border-left none
+			border none
 			&:target
 				background-color $dark-green
 			&:not(:target)
@@ -54,6 +56,11 @@ active()
 				background-color $dark-green
 			a
 				color $white
+				
+.tabs.square
+	borderRadius(0)
+	& li
+		borderRadius(0)
 				
 .tabs-content .tab
 	display none

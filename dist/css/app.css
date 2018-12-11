@@ -130,6 +130,30 @@ h2 {
 	border-radius: 5px;
 }
 
+/* DOCS/TABS RULES */
+.customize-tabs .tabs {
+	background-color: #606060;
+	--color: #909090;
+}
+
+.customize-tabs .tabs.square li {
+	border: none;
+}
+
+.customize-tabs .tabs li a {
+	color:  #bbb;
+}
+
+.customize-tabs .tabs li:hover,
+.customize-tabs .tabs li:target {
+	background-color: var(--color);
+}
+
+.customize-tabs .tabs li:hover a,
+.customize-tabs .tabs li:target a {
+	color: #fff;
+}
+
 /* DOCS/ALERTS RULES */
 
 .alert {
