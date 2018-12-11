@@ -10,18 +10,18 @@
 alertErrors(bgColor, color)
 	display block
 	min-height 0
-	padding 15px
-	font-size 11pt
-	opacity 0.9
-	background-color rgba(bgColor, 0.4);
+	padding 17px 15px 15px 15px
+	font-size 12pt
+	background-color rgba(bgColor, 0.3);
 	color color
+	borderRadius(3px)
 
 .alert.success
 	alertErrors($green, $dark-green)
 .alert.danger
-	alertErrors($red, $dark-red)
+	alertErrors($red, darkred)
 .alert.warning
-	alertErrors($orange, $dark-orange)
+	alertErrors($orange, #7d6608)
 	
 .alert.floating
 	position fixed
