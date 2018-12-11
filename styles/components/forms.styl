@@ -235,6 +235,16 @@ $Height = 25
 		boxShadow(none)
 		background-color #ddd
 		margin 1px
+		
+.switch.flat input[type="checkbox"] + *:after
+.switch.flat input[type="radio"] + *:after
+	width 21px
+	
+.switch.circle.flat input[type="checkbox"]:checked + *:after
+.switch.circle.flat input[type="radio"]:checked + *:after
+.switch.round.flat input[type="checkbox"]:checked + *:after
+.switch.round.flat input[type="radio"]:checked + *:after
+	transform(translateX(24px))
 
 .switch.round input[type="checkbox"] + *:after
 .switch.circle input[type="checkbox"] + *:after
@@ -266,7 +276,7 @@ $Height = 25
 .switch.large input[type="checkbox"] + *:after
 .switch.lg input[type="radio"] + *:after
 .switch.large input[type="radio"] + *:after
-	width 37px
+	width 32px
 	
 .switch.lg input[type="checkbox"]:checked + *:after
 .switch.large input[type="checkbox"]:checked + *:after
@@ -278,10 +288,10 @@ $Height = 25
 .switch.flat.large input[type="checkbox"] + *:after
 .switch.flat.lg input[type="radio"] + *:after
 .switch.flat.large input[type="radio"] + *:after
-	width 33px
+	width 31px
 	
 .switch.flat.lg input[type="checkbox"]:checked + *:after
 .switch.flat.large input[type="checkbox"]:checked + *:after
 .switch.flat.lg input[type="radio"]:checked + *:after
 .switch.flat.large input[type="radio"]:checked + *:after
-	transform(translateX(32px))
+	transform(translateX(34px))
