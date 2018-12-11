@@ -7,33 +7,42 @@
 .text-warning
 	color $dark-orange
 	
+.alert
+	borderRadius(4px)
+	
 alertErrors(bgColor, color)
 	display block
 	min-height 0
-	padding 15px
-	font-size 11pt
-	opacity 0.9
-	background-color rgba(bgColor, 0.4);
+	padding 17px 15px 15px 15px
+	font-size 12pt
+	background-color rgba(bgColor, 0.3);
 	color color
 
 .alert.success
 	alertErrors($green, $dark-green)
 .alert.danger
-	alertErrors($red, $dark-red)
+	alertErrors($red, darkred)
 .alert.warning
-	alertErrors($orange, $dark-orange)
+	alertErrors($orange, #7d6608)
 	
 .alert.floating
 	position fixed
 	right 0
-	opacity 0.8
 	margin-right 5px
 	width 300px
 	&:not(.top)
 		bottom 10px
 
 .alert.floating.top
-	top 2px
+	top 10px
+	right 10px
+	
+.alert.floating.left
+	left 10px
+	bottom 10px
+	
+.alert.square
+	borderRadius(0)
 	
 .alert.block
 	width 100%
