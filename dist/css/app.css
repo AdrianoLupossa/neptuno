@@ -35,6 +35,18 @@
 	.btn.touch {
 		display: block;
 	}
+
+	.box {
+		width: 70%;
+	}
+
+	.alert {
+		width: 70%;
+	}
+
+	#layout .container {
+		width: 70%;
+	}
 }
 
 #btn-source-code {
@@ -115,7 +127,7 @@ p {
 
 #layout .container {
 	border: 1px solid #ccc;
-	width: 70%;
+	width: 100%;
 }
 
 h2 {
@@ -211,7 +223,7 @@ h2 {
 /* DOCS/ALERTS RULES */
 
 .alert {
-	width: 70%;
+	width: 100%;
 }
 
 /* DOCS/SWITCH RULES */
@@ -220,7 +232,7 @@ h2 {
 	background-color: #f2f2f2;
 	margin-bottom: 50px;
 	padding: 10px;
-	width: 70%;
+	width: 100%;
 	border-radius: 5px;
 	box-shadow: 1px 2px 1px #eee;
 }
@@ -252,4 +264,9 @@ h2 {
 
 .why-use ul li:not(:last-child) {
 	margin-bottom: 10px;
+}
+
+.no-border,
+.why-use .title {
+	border: none;
 }
