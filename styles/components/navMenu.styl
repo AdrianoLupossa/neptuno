@@ -8,6 +8,19 @@ $show-menu()
 	position absolute
 	opacity 0
 	
+$fixed()
+	position fixed
+	left 0
+	right 0
+	z-index 1
+	& + *
+		padding-top 3em
+		@media (max-width $screen-sm)
+			padding-top 4.2em
+header.fixed
+nav.menu.fixed
+	$fixed()
+		
 nav.menu
 	padding 10px
 	background-color $green
@@ -149,6 +162,7 @@ nav.menu.responsive.sidenav
 			width 80vw
 			background #fff
 			left 0
+			top 40px
 			boxShadow(1px 2px 1px #bbb)
 			transition(transform 0.5s linear)
 			overflow-y auto
