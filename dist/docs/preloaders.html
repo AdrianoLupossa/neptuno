@@ -58,10 +58,10 @@
 
 				<div class="default-preloader">
 					<h2>Default preloader</h2>
-					<span class="preloader"></span>
+					<span class="preloader" role="preloader"></span>
 				<p>
 <pre class="language-markup compressed">
-<code class="language-markup">&lt;span class="preloader"&gt;&lt;/span&gt;
+<code class="language-markup">&lt;span class="preloader" role="preloader"&gt;&lt;/span&gt;
 </code></pre>
 				</p>
 				</div>
@@ -69,14 +69,14 @@
 				<div class="preloader-variation">
 					<h2>Preloader variations</h2>
 					<p>Different colors for different states of loading.</p>
-					<span class="preloader success"></span>
-					<span class="preloader warning"></span>
-					<span class="preloader danger"></span>
+					<span class="preloader success" role="preloader"></span>
+					<span class="preloader warning" role="preloader"></span>
+					<span class="preloader danger" role="preloader"></span>
 				<p>
 <pre class="language-markup compressed">
-<code class="language-markup">&lt;span class="preloader success"&gt;&lt;/span&gt;
-&lt;span class="preloader warning"&gt;&lt;/span&gt;
-&lt;span class="preloader danger"&gt;&lt;/span&gt;
+<code class="language-markup">&lt;span class="preloader success" role="preloader"&gt;&lt;/span&gt;
+&lt;span class="preloader warning" role="preloader"&gt;&lt;/span&gt;
+&lt;span class="preloader danger" role="preloader"&gt;&lt;/span&gt;
 </code></pre>
 				</p>					
 				</div>
@@ -84,27 +84,27 @@
 				<div class="preloader-speed">
 					<h2>Preloader speed</h2>
 					<p>add <code class="markup token keyword">class="slow"</code> or <code class="markup token keyword">class="fast"</code> to change the speed of preloader.</p>
-					<span class="preloader slow"></span>
-					<span class="preloader fast"></span>
+					<span class="preloader slow" role="preloader"></span>
+					<span class="preloader fast" role="preloader"></span>
 				</div>
 
 				<div class="preloader-size">
 					<h2>Preloader size</h2>
 					<p>add <code class="markup token keyword">class="sm"</code> or <code class="markup token keyword">class="lg"</code> to change the size of preloader.</p>
-					<span class="preloader sm"></span>
-					<span class="preloader lg"></span>
+					<span class="preloader sm" role="preloader"></span>
+					<span class="preloader lg" role="preloader"></span>
 				</div>
 
 				<div class="progress-bar">
 					<h2>Progress element</h2>
 					<p>We provide this component to mesure the progress of tasks.</p>
 					<span>Complete:</span>
-				    <div class="progress">
+				    <div class="progress" role="progressbar" aria-valuemax="100" aria-valuenow="70">
 					  <div class="determinate" style="width: 70%"></div>
 				  	</div>
 					<p>
 <pre class="language-markup compressed">
-<code class="language-markup">&lt;div class="progress"&gt;
+<code class="language-markup">&lt;div class="progress" role="progressbar" aria-valuemax="100" aria-valuenow="70"&gt;
 	&lt;div class="determinate" style="width: 70%"&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -112,12 +112,12 @@
 
 					<h3>Indeterminate State</h3>
 					<span>Indeterminate:</span>
-					<div class="progress">
+					<div class="progress" role="progressbar">
 					  <div class="indeterminate"></div>
 				  	</div>
 				  	<p>
 <pre class="language-markup compressed">
-<code class="language-markup">&lt;div class="progress"&gt;
+<code class="language-markup">&lt;div class="progress" role="progressbar"&gt;
 	&lt;div class="indeterminate"&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
