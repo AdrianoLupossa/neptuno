@@ -6,6 +6,8 @@ var plumber = require("gulp-plumber");
 var rename = require("gulp-rename");
 var zip = require("gulp-zip");
 var del = require("del");
+var cleanCSS = require("gulp-clean-css");
+var imagemin = require("gulp-imagemin");
 
 // FILE SOURCES AND FILE OUTPUTS
 var target = {
@@ -18,7 +20,7 @@ var target = {
 
 /* STYLES TASKS */
 function Styles (compress, filename = "neptuno.css") {
-	gulp.src(target.stylus_src)
+	return gulp.src(target.stylus_src)
 		.pipe(plumber())
 		.pipe(stylus({
 			compress: compress
@@ -42,7 +44,7 @@ gulp.task("styles", function(){
 
 /* LIVERELOAD WITH BROWSER-SYNC*/
 gulp.task("browserSync", function(){
-	browserSync.init(["dist/**/*", "index.html"], {
+	return browserSync.init(["dist/**/*", "index.html"], {
 		server: {
 			host: "localhost"
 		},
@@ -60,7 +62,7 @@ gulp.task("default", ["styles", "browserSync", "watch-styles"]);
 
 // BUILD TASKS
 function Components (compress, output_filename) {
-	gulp.src(target.components_src)
+	return gulp.src(target.components_src)
 		.pipe(stylus({
 			compress: compress
 		}))
@@ -78,7 +80,7 @@ function Components (compress, output_filename) {
 };
 
 function Compress (output_filename) {
-	gulp.src([`build/${output_filename}.min.css`, `build/${output_filename}.css`])
+	return gulp.src([`build/${output_filename}.min.css`, `build/${output_filename}.css`])
 		.pipe(plumber())
 		.pipe(zip(`${output_filename}.zip`))
 		.pipe(gulp.dest(target.buildOutput))
@@ -118,6 +120,22 @@ gulp.task("build", ["build-components", "build-forms"], function(){
 	setTimeout(() => { gulp.start("compress-zip") }, 5000);
 	setTimeout(() => { gulp.start("clean") }, 6000);
 });
+
+
+// DIST OR DEPLOY TASKS
+gulp.task("minify-css", function () {
+	return gulp.src("dist/css/*")
+		.pipe(cleanCSS({compatibility: 'ie8'}))
+		.pipe(gulp.dest('dist/css/'));
+});
+
+gulp.task("compress-images", function(){
+	 gulp.src('dist/assets/img/**')
+        .pipe(imagemin())
+        .pipe(gulp.dest("dist/assets/img/"));
+});
+
+gulp.task("dist", ["minify-css"]);
 
 
 // gulp { browser-sync, compile-styles, watch-styles}

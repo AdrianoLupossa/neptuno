@@ -7,7 +7,8 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-minify-css": "^1.2.4",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-imagemin": "^3.0.0",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-stylus": "^2.7.0",
@@ -36,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/adrianolupossa/neptuno/issues"
   },
-  "homepage": "https://github.com/adrianolupossa/neptuno#readme"
+  "homepage": "https://github.com/adrianolupossa/neptuno#readme",
+  "dependencies": {
+    "imagemin-jpegtran": "^6.0.0"
+  }
 }
