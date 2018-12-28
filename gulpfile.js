@@ -7,7 +7,6 @@ var rename = require("gulp-rename");
 var zip = require("gulp-zip");
 var del = require("del");
 var cleanCSS = require("gulp-clean-css");
-var imagemin = require("gulp-imagemin");
 
 // FILE SOURCES AND FILE OUTPUTS
 var target = {
@@ -129,11 +128,11 @@ gulp.task("minify-css", function () {
 		.pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task("compress-images", function(){
-	 gulp.src('dist/assets/img/**')
-        .pipe(imagemin())
-        .pipe(gulp.dest("dist/assets/img/"));
-});
+// gulp.task("compress-images", function(){
+// 	 gulp.src('dist/assets/img/**')
+//         .pipe(imagemin())
+//         .pipe(gulp.dest("dist/assets/img/"));
+// });
 
 gulp.task("dist", ["minify-css"]);
 
