@@ -80,16 +80,17 @@ npm install
 # For start the server, watching your .styl files changes and compile CSS
 gulp
 
+# Compress zip files
+gulp build
+
 ```
 
 ### Pull Requests
 
 ```bash
 
-# Compress zip files
-gulp build
-
 # Open your Pull Request
+[New pull request](https://github.com/adrianolupossa/neptuno/pulls)
 
 ```
 
