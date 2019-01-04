@@ -1,87 +1,101 @@
+![Neptuno CSS Logo](logo.png "Neptuno - The CSS Library")
 # Neptuno - The CSS Library
 
-One Paragraph of project description goes here
+A set of UI components created with pure CSS, we always use components in our projects, I think this is the perfect tool for persons who loves simplicity.
 
-## Getting Started
+[![license](https://img.shields.io/github/license/adrianolupossa/neptuno.svg)](./LICENSE.md)
+[![GitHub contributors](https://img.shields.io/github/contributors/adrianolupossa/neptuno.svg)](https://github.com/adrianolupossa/neptuno/graphs/contributors)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+[View the project](https://adrianolupossa.github.io/neptuno)
 
-### Prerequisites
+## Install
 
-What things you need to install the software and how to install them
+Install via link or
+[download the zip](https://adrianolupossa.github.io/neptuno/build/Neptunocss.zip)
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
+```HTML
+<link rel="stylesheet" href="https://adrianolupossa.github.io/neptuno/dist/css/neptuno.min.css" /> 
 ```
 
-And repeat
+## Components
 
-```
-until finished
-```
+* [Carousel](https://adrianolupossa.github.io/neptuno/dist/docs/carousel.html "Carousel or Lightbox")
+* [Dropdown](https://adrianolupossa.github.io/neptuno/dist/docs/buttons.html#dropdown "Dropdown")
+* [Modal](https://adrianolupossa.github.io/neptuno/dist/docs/modal.html "Modal")
+* [Tabs](https://adrianolupossa.github.io/neptuno/dist/docs/tabs.html "Tab")
+* [Tooltip](https://adrianolupossa.github.io/neptuno/dist/docs/buttons.html#tooltip "Tooltip")
+* [Buttons](https://adrianolupossa.github.io/neptuno/dist/docs/buttons.html "Buttons")
+* [Cards](https://adrianolupossa.github.io/neptuno/dist/docs/cards.html#cards "Cards")
+* [Progressbar](https://adrianolupossa.github.io/neptuno/dist/docs/preloaders.html "Progressbar")
+* [Alerts](https://adrianolupossa.github.io/neptuno/dist/docs/alerts.html "Alerts")
+* [Tables](https://adrianolupossa.github.io/neptuno/dist/docs/tables.html "Tables")
+* [Colors](https://adrianolupossa.github.io/neptuno/dist/docs/colors.html "Colors")
+* [Flex Classes](https://adrianolupossa.github.io/neptuno/dist/docs/helpers.html "FlexClasses")
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Browser Support
 
-Explain how to run the automated tests for this system
+Chrome | Firefox | Internet Explorer | Opera | Safari | Edge |
+|---|---|---|---|---|---|
+Android | Yes | Yes | N/A | Untested | N/A | N/A |
+iOS | No | N/A | N/A | Untested | Yes |N/A |
+Mac OS X | Yes | Yes | N/A | Untested |Yes |N/A |
+Windows   | Yes | Yes | Yes (9+) | Untested | Yes | Yes |
 
-### Break down into end to end tests
+| |Internet Explorer   |
+|---|---|
+| Carousel |9+ * |
+| Dropdown |9+ * |
+| Modal |9+ * |
+| Tab | 9+ * |
+| Tooltip | 8+ * ** |
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+\* [CSS3 transitions](http://caniuse.com/#search=css%20transition) are not supported in IE8 and below.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+For [Issues](https://github.com/adrianolupossa/neptuno/issues), pull requests and coding standards.
 
-## Versioning
+The CSS should be modified using the [Stylus](https://learnboost.github.io/stylus/) preprocessor.
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+### Getting Started
 
-## Authors
+```bash
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+# 1. Fork this repository and clone it into the current directory
+git clone https://github.com/<your-username>/neptuno.git
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+# 2. Navigate to the newly cloned directory
+cd neptuno
+
+# 3. Install the dependencies
+npm install
+
+```
+
+### Development
+
+```bash
+
+# For start the server, watching your .styl files changes and compile CSS
+gulp
+
+```
+
+### Pull Requests
+
+```bash
+
+# Compress zip files
+gulp build
+
+# Open your Pull Request
+
+```
 
 ## License
 
+[MIT License](https://adrianolupossa.github.io/neptuno/LICENSE.md) © Adriano Lupossa
+## License
+
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
