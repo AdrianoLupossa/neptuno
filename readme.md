@@ -96,6 +96,3 @@ gulp build
 ## License
 
 [MIT License](https://adrianolupossa.github.io/neptuno/LICENSE.md) © Adriano Lupossa
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
