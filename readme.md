@@ -90,7 +90,6 @@ gulp build
 ```bash
 
 # Open your Pull Request
-[New pull request](https://github.com/adrianolupossa/neptuno/pulls)
 
 ```
 
