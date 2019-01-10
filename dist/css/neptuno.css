@@ -1254,7 +1254,7 @@ ul.menu-items li a {
   display: block;
 }
 .form select {
-  padding: 10px;
+  padding: 6px;
   border: 1px solid #ddd;
   background-color: #fff;
   min-width: 200px;
