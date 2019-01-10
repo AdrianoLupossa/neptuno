@@ -756,6 +756,9 @@ a:hover {
     padding: 10px 5px 10px 5px;
   }
 }
+.tabs li:first-child {
+  border-radius: 12px 6px 0 0;
+}
 .tabs li:last-child {
   margin-right: 0;
 }
