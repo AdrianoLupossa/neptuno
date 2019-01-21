@@ -14,7 +14,7 @@
     "gulp-zip": "^4.2.0"
   },
   "directories": {
-    "doc": "docs"
+    "doc": "dist/docs"
   },
   "repository": {
     "type": "git",
