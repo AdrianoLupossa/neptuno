@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<title>WebComponents - Neptuno</title>
+	<link rel="icon" href="../assets/icons/icon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/neptuno.min.css" />
+	<link rel="stylesheet" href="../css/app.css" />
+	<link rel="stylesheet" href="../css/prism.css" />
+	<meta property="og:author" content="Adriano Lupossa" />
+    <meta property="og:site_url" content="adrianolupossa.github.io/neptuno/dist/docs/tables.html" />
+    <meta property="og:image" content="../assets/icons/icon-black.png" />
+
+    <style>
+
+    	/* Toolbar Style Code */
+
+    	toolbar-item label {
+    		--main-color: #009688;
+    		border: 1px solid var(--main-color);
+			color: var(--main-color);
+    		padding: 5px 2rem 5px 2rem;
+    		border-radius: 3px;
+    		cursor: pointer;
+    	}
+
+    	toolbar-item:active label {
+    		background-color: rgba(0, 150, 136, 0.2);
+    		cursor: pointer;
+    	}    	
+
+    	toolbar-item input:not(:checked) label {
+			background-color: var(--main-color);
+			color: #fff;
+    	}
+
+    	toolbar-item:first-child label {
+    		border-right: none;
+    	}
+
+    	toolbar-item:last-child label {
+    		border-left: none;
+    		position: relative;
+    		right: 5.5px;
+    	}
+
+    	input:checked + label {
+			background-color: var(--main-color);
+			color: #fff;
+    	}
+
+    	toolbar-item input {
+    		position: absolute;
+    		visibility: hidden;
+    		margin-left: -1000px;
+    	}
+
+
+    	/* Material Search Input */
+
+    	.search-input {
+    		border: 1px solid #ddd;
+    		box-shadow: 1px 1px 1px #ccc;
+    		padding: 13px;
+    		outline: none;
+    	}
+
+    	/* Alert Dialog */
+
+    	alert {
+    		text-align: center;
+    		background-color: #fff;
+    		border: 1px solid #eee;
+    		box-shadow: 1px 1px 1px #eee;
+    		border-radius: 5px;
+    		width: 280px;
+    		display: block;
+    	}
+
+    	alert button {
+    		width: 100%;
+    		border: none;
+    		background-color: transparent;
+    		border-top: 1px solid #ddd;
+    		padding: 10px;
+    		color: rgb(0, 118, 255);
+    		outline: none;
+    	}
+
+    </style>
+
+</head>
+
+<body>
+	
+	<header role="header">
+		<nav class="menu shadow-1 responsive">
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox" class="icon-bar has-effect">
+				<span></span>
+			</label>
+			<ul class="menu-items" role="navigation">
+				<li><a href="../../" role="menuitem">Home</a></li>
+				<li><a href="../components.html" role="menuitem">Components</a></li>
+				<li><a href="../forms.html" role="menuitem">Forms</a></li>
+				<li class="active"><a href="index.html" role="menuitem">Docs</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container" role="main">
+		<h1>Web components</h1>
+		<p class="description">Components rebuild with web components</p>
+			
+		<toolbar-container>
+			<h2>Toolbar</h2>
+			<toolbar-item>
+				<input type="radio" id="radio-button" />
+				<label for="radio-button">One</label>
+			</toolbar-item>
+			<toolbar-item>
+				<input type="radio" id="radio-button2" />
+				<label for="radio-button2">Two</label>
+			</toolbar-item>
+		</toolbar-container>
+
+		<div>
+			<h2>Material text input</h2>
+			<input type="search" placeholder="Search" class="search-input" style="width: 280px;">
+		</div>
+
+		<alert-container>
+			<h2>Alert Dialog</h2>
+			<alert>
+				<h4>Alert</h4>
+				<p>Hello world!</p>
+				<button>OK</button>
+			</alert>
+		</alert-container>
+	</main>
+
+	<footer class="center-align">
+		<a href="https://github.com/adrianolupossa/neptuno" target="_blank">Github</a>
+		<a href="mailto:adrianolupossa@gmail.com">Contact me</a>
+		<a href="LICENSE.md">License</a>
+	</footer>
+
+	<script src="../js/prism.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132317891-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-132317891-1');
+	</script>
+
+</body>
+</html>
