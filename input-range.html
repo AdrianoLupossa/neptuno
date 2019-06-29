@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Range</title>
+    <style>
+
+        body {
+            background-color: #f2f2f2;  font-family: sans-serif;
+        }
+
+        label {
+            color: #333;
+            display: block;
+        }
+
+        .range, .range2 {
+            display: block;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Input Range effience in mobile</h1>
+    <form action="#">
+        <div>
+            <label for="escala">
+                Qual é o seu nível de experiência em javascript ? Tenta colocar: 80
+            </label>
+            <div style="margin-top: 2rem; text-align: center;">
+                <span class="range">0</span>
+                <input type="range" value="0" name="escala" id="escala">
+            </div>
+            
+            <p>Percebeu ? é uma droga, agora veja o exemplo abaixo usando o atributo step</p>    
+            <div style="text-align: center;">
+                <span class="range2">0</span>
+                <input type="range" step="20" value="0" name="escala" id="escala2">
+            </div>
+            
+        </div>
+    </form>
+
+    <script>
+        const escala = document.querySelector("#escala");
+        const escala2 = document.querySelector("#escala2");
+        const range = document.querySelector("span.range");
+        const range2 = document.querySelector("span.range2");
+        escala.oninput = function () { range.innerText = escala.value; }
+        escala2.oninput = function() { range2.innerText = escala2.value; }
+    </script>
+</body>
+</html>
